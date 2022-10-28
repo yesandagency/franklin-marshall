@@ -1,0 +1,30 @@
+<!-- BEGIN Variation: Accordion -->
+<!-- DEV NOTE: Accordion is the parent component which can contain sub-components: `Rich Text` and `CTA Single` (labelled with comments when used below) -->
+<div class="md:p-6 lg:p-10 md:bg-white">
+  <h2 class="title-sm">{{ data.heading }}</h2>
+  <p class="mt-4 body">{{ data.body }}</p>
+  <app-accordion tag="div" class="mt-5" allow-multiple>
+    <div class="md:text-right mb-2">
+      <app-accordion-all class="py-2 text-14 text-blue uppercase tracking-wide leading-1" mode="expand">Expand All</app-accordion-all>
+      <app-accordion-all class="py-2 ml-4 md:ml-5 text-14 text-blue uppercase tracking-wide leading-1" mode="collapse">Collapse All</app-accordion-all>
+    </div>
+    <ul>
+      {% for accordion in data.accordions %}
+        <li class="block py-1 md:py-2 first:border-t-2 border-b-2 border-blue-ash">
+          <!-- DEV NOTE: `controls` value on `app-accordion-button` needs to match `id` on corresponding `app-accordion-panel` (concatenating loop index works well) -->
+          <app-accordion-button controls="accordion-{{ loop.index0 }}" class="flex justify-between items-center w-full py-4 text-18 md:text-24 leading-110 font-semibold">
+            {{ accordion.buttonText }}
+            <span class="accordion-icon w-4 h-4 ml-3"></span>
+          </app-accordion-button>
+          <app-accordion-panel id="accordion-{{ loop.index0 }}">
+            <!-- DEV NOTE: Accordion Panel can contain sub-components: `WYSIWYG` and `CTA Single` (labelled with comments when used below) -->
+            {% for item in accordion.panelContent %}
+              {% include "components/rich-text-subcomponent.html" %}
+            {% endfor %}
+          </app-accordion-panel>
+        </li>
+      {% endfor %}
+    </ul>
+  </app-accordion>
+</div>
+<!-- END Variation: Accordion -->

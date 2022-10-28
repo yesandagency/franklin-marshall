@@ -1,0 +1,76 @@
+---
+permalink: "{{ page.filePathStem }}.html"
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Franklin & Marshall College</title>
+
+    <!-- DEV NOTE: Staging only - remove in production -->
+    <meta name="robots" content="noindex" />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://use.typekit.net/pwb1gdv.css" />
+    <link rel="stylesheet" href="/assets/app.css" />
+  </head>
+
+  <!-- DEV NOTE: Homepage <body> tag needs class of `home` for nav to work correctly -->
+  <body
+    class="{{ 'debug-screens' if project.env == 'development' }} {{ bodyClass }}"
+  >
+    <!-- DEV NOTE: Vue uses this div with `id="app"` to mount. All pages need this div/id wrapping all page content for javascript to function properly -->
+    <div id="app" v-cloak>
+      {% include "components/header.html" %} {% if
+      page.filePathStem.includes('notifications') %} {% include
+      "components/top-bar.html" %} {% endif %}
+      <main id="main" class="mt-16 md:mt-20">{{ content | safe }}</main>
+      {% include "components/footer.html" %}
+    </div>
+
+    <script src="/assets/main.js"></script>
+
+    <!-- DEV NOTE: BEGIN Google CSE (only needs to exist on Search Results page) -->
+    <script
+      async
+      src="https://cse.google.com/cse.js?cx=004005157062119441817%3Ammfncme3bwa"
+    ></script>
+    <script>
+      const regex = new RegExp("[\\?&]q=([^&#]*)");
+      let searchQuery = regex.exec(window.location.search);
+      searchQuery =
+        searchQuery === null
+          ? ""
+          : decodeURIComponent(searchQuery[1].replace(/\+/g, " "));
+      const cseInput = document.querySelector(`[data-gse-input]`);
+      if (cseInput) {
+        cseInput.value = searchQuery;
+      }
+    </script>
+    <!-- DEV NOTE: END Google CSE -->
+
+    <!-- DEV NOTE: BEGIN IE support message -->
+    <script>
+      const ua = window.navigator.userAgent;
+      const isIE = /MSIE|Trident/.test(ua);
+      if (isIE) {
+        const message = document.createElement("div");
+        message.classList.add("ie-message");
+        message.innerHTML =
+          '<p class="title-sm">Internet Explorer is not supported on this site.</p><p class="mt-8 body">We recommend upgrading to a <a class="underline" target="_blank" href="https://browsehappy.com/">modern browser</a> for improved security and speed.</p>';
+        document.body.appendChild(message);
+      }
+    </script>
+    <!-- DEV NOTE: END IE support message -->
+
+    <!-- DEV NOTE: BEGIN JS support message -->
+    <noscript>
+      <div class="ie-message">
+        <p class="title-sm">JavaScript is required to view this site.</p>
+        <p class="mt-8 body">Please enable JavaScript to continue browsing.</p>
+      </div>
+    </noscript>
+    <!-- DEV NOTE: END JS support message -->
+  </body>
+</html>

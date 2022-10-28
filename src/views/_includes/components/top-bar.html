@@ -1,0 +1,20 @@
+TEST
+{% if global.alertBar or global.notificationBar %}
+  <div class="top-bar">
+    <!-- DEV NOTE: `<top-bar>` component can be used for Notification (CMS Content) or Alerts (Blackboard API - https://developer.blackboard.com/portal/displayApi/Learn). -->
+    <!-- Both support h1-h6, p, strong, em and text links in content -->
+    {% if global.notificationBar %}
+      <!-- Notification: needs `notiifcation-id` prop so we can check sessionStorage to see if user has dismissed the notification (`updated at` timestamp works well if available) -->
+      <top-bar notification-id="test">
+        {{ global.notificationBar.message | safe }}
+      </top-bar>
+    {% endif %}
+    {% if global.alertBar %}
+      <!-- Alert Mode: needs `mode="alert"` prop to switch styles and disable dimissing -->
+      <!-- Modern Campus to pull in content server-side from Blackboard API -->
+      <top-bar mode="alert">
+        {{ global.alertBar.message | safe }}
+      </top-bar>
+    {% endif %}
+  </div>
+{% endif %}

@@ -1,0 +1,7 @@
+{% macro ctaIcon(name, wrapperClass, backClass, frontClass, tag='div') %}
+{% from "macros/svg.html" import svg %}
+<{{ tag }} class="cta-icon {{ wrapperClass }}">
+  {{ svg(name, 'adhere ' + backClass) }}
+  {{ svg(name, 'cta-icon__front adhere ' + frontClass) }}
+</{{ tag }}>
+{% endmacro %}

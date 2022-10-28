@@ -1,0 +1,40 @@
+<div class="c-four-up-card">
+  <div class="c-four-up-card-container">
+
+    <div class="c-four-up-card__title-image">
+      <div class="c-four-up-card__title">
+      {{ data.heading }}
+      </div>
+      <div class="c-four-up-card__image" style="background: url('{{ data.image }}') center center; background-repeat: no-repeat; background-size: cover;">
+
+      </div>
+    </div>
+
+    <div class="c-four-up-card__cards">
+        {% for cta in data.ctas %}
+
+        <div class="c-four-up-card__card">
+          <div class="c-four-up-card__card-contents">
+            <h3>{{ cta.title }}</h3>
+            <p>{{ cta.copy | safe }}</p>
+
+            <a class="inline-flex items-center mt-4 font-display font-semibold text-16 leading-110 button blue" href="{{ cta.link }}">
+              {{ cta.linktitle }}
+              <div class="cta-icon ml-3 lg:ml-3 overflow-hidden flex-shrink-0">
+                {% include '../../../assets/images/icon-diagonal-icon.svg' %}
+                <div class="cta-icon__front adhere">
+                  {% include '../../../assets/images/icon-diagonal-icon.svg' %}
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="c-four-up-card__card-icon"><img src="_resources/images/icon-{{ cta.icon }}.svg"  alt="{{ cta.icon }}"></div>
+        </div>
+
+        {% endfor %}
+
+
+    </div>
+
+  </div>
+</div>

@@ -1,0 +1,121 @@
+title: Collin College
+desc: '
+Since offering its first classes at area high schools in 1985, Collin College has expanded to  7 Campuses, 6 Centers, as well as online classes.
+'
+address: ''
+phone: ''
+phoneLink: ''
+prefootertitle: Start your journey <em>today.</em>
+prefooterlinks:
+  - title: Explore Programs
+    href: /
+  - title: Apply Now
+    href: /
+  - title: Plan Your Visit
+    href: /
+linksPrimary:
+  - label: Contact Us
+    href: /
+  - label: Locations
+    href: /
+  - label: News
+    href: /
+  - label: COVID-19
+    href: /
+  - label: Programs & Courses
+    href: /
+  - label: Diversity & Inclusion
+    href: /
+  - label: Give Now
+    href: /
+  - label: Academic Calendar
+    href: /
+  - label: Careers at Collin College
+    href: /
+linksSecondary:
+  - label: Board Policies
+    href: /
+  - label: Annual Security & Fire Safety Reports
+    href: /
+  - label: Required Links
+    href: /
+  - label: Report Fraud, Waste and Abuse
+    href: /
+  - label: Privacy Policy
+    href: /
+  - label: Accessibility
+    href: /
+  - label: Terms of Use
+    href: /
+campusCenter:
+  - address: '
+  <span>Frisco Campus</span>
+  <p>9700 Wade Blvd.<br/>
+  Frisco, TX 75035</p>
+  '
+  - address: '
+  <span>McKinney Campus</span>
+  <p>2200 W. University Dr.<br/>
+  McKinney, TX 75071</p>
+  '
+  - address: '
+  <span>Plano Campus</span>
+  <p>2800 E. Spring Creek Pkwy.<br/>
+  Plano, Texas 75074</p>
+  '
+  - address: '
+  <span>Technical Campus</span>
+  <p>2550 Bending Branch Way<br/>
+  Allen, TX 75013</p>
+  '
+  - address: '
+  <span>Wylie Campus</span>
+  <p>391 Country Club Rd<br/>
+  Wylie, TX 75098</p>
+  '
+  - address: '
+  <span>Celina Campus</span>
+  <p>2505 Kinship Pkwy<br/>
+  Celina, TX 75009</p>
+  '
+  - address: '
+  <span>Farmersville Campus</span>
+  <p>501 S. Collin Pkwy<br/>
+  Farmersville, TX 75442</p>
+  '
+  - address: '
+  <span>Collin Higher Education Center</span>
+  <p>3452 Spur 399<br/>
+  McKinney, TX 75069</p>
+  '
+  - address: '
+  <span>Courtyard Center</span>
+  <p>4800 Preston Park Blvd.<br/>
+  Plano, TX 75086</p>
+  '
+  - address: '
+  <span>Public Safety Training Center</span>
+  <p>3600 Redbud Blvd.<br/>
+  McKinney, TX 75069</p>
+  '
+  - address: '
+  <span>Rockwall Center</span>
+  <p>2301 John King Blvd.<br/>
+  Rockwall, TX 75087</p>
+  '
+  - address: '
+  <span>iCollin Virtual Campus</span>
+  <p>Online</p>
+  '
+socialLinks:
+  - property: facebook
+    href: /
+  - property: twitter
+    href: /
+  - property: instagram
+    href: /
+  - property: youtube
+    href: /
+  - property: linkedin
+    href: /
+

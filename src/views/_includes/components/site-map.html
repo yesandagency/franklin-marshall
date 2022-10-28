@@ -1,0 +1,19 @@
+<div class="c-site-map">
+  <div class="c-site-map__contain">
+    {% for section in data.sections %}
+    <div class="c-site-map__section">
+      <h3>{{ section.title }}</h3>
+
+      <ul>
+        {% for link in section.links %}
+          <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+        {% endfor %}
+      </ul>
+
+    </div>
+    {% endfor %}
+  </div>
+</div>
+
+
+

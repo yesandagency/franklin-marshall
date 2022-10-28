@@ -1,0 +1,22 @@
+.c-video-block{
+
+  display: block;
+  position: relative;
+  width: 100%;
+  padding: 0px 4.545454545%;
+  margin-bottom: 60px;
+
+}
+
+.c-video-block p{
+  font-size: 12px;
+  display: block;
+  position: relative;
+  width: 100%;
+  margin: 30px 0px;
+}
+
+.c-video-block .w-full{
+  border-radius: 10px;
+  overflow: hidden;
+}

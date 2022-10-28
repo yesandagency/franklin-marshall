@@ -1,0 +1,7 @@
+{% macro svg(name, classes) %}
+  {% if name %}
+    <svg aria-hidden="true" {% if classes %}class="{{ classes }}"{% endif %} xmlns="http://www.w3.org/2000/svg">
+      <use xlink:href="/_resources/images/symbol.svg#{{ name }}"/>
+    </svg>
+  {% endif %}
+{% endmacro %}

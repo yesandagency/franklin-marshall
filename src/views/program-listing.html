@@ -1,0 +1,153 @@
+---
+layout: main.html
+components:
+  - name: hero-standard
+    heading: 'Programs & Courses'
+
+    breadcrumbs:
+      - title: Collin College
+        link: '#'
+      - title: Academics
+        link: '#'
+      - title: Programs & Courses
+        link: '#'
+
+  - name: filterable
+    intro: '
+    Collin College offers associate of arts (AA), associate of arts in teaching (AAT), associate of applied science (AAS), associate of science (AS), bachelor of science in nursing (BSN) and bachelor of applied technology (BAT) degrees in addition to a variety of certificates. Click on a subject below to learn more about what Collin College can teach you.
+    '
+    elements:
+    - type: search
+      id: search
+      width: '40%'
+      caption: Enter Keyword
+    - type: select
+      id: select1
+      width: '15%'
+      options:
+      - value: all
+        caption: All Degree Levels
+      - value: aa
+        caption: Associate's
+      - value: ba
+        caption: Bachelor of Arts
+      - value: bs
+        caption: Bachelor of Science
+      - value: ma
+        caption: Master's
+      - value: doc
+        caption: PhD/Doctorate
+
+    - type: select
+      id: select2
+      width: '15%'
+      options:
+      - value: interests
+        caption: Interests
+      - value: lorem
+        caption: Lorem
+      - value: ipsum
+        caption: Ipsum
+      - value: dolor
+        caption: Dolor
+
+    - type: select
+      id: select3
+      width: '15%'
+      options:
+      - value: locations
+        caption: Locations
+      - value: celina
+        caption: Celina
+      - value: lorem
+        caption: Lorem
+      - value: ipsum
+        caption: Ipsum
+      - caption: Dolor
+
+    - type: submit
+      id: submit
+      caption: Find
+
+  - name: course-listing
+    entries:
+    - title: Accounting
+      id: account1
+      programs:
+        - title: Lorem Ipsum Dolor
+          link: '#'
+          path: Enter The Workforce, Enhance My Skillset
+        - title: Lorem Ipsum Dolor Sit Amet Consectetur Adipiscing
+          link: '#'
+          path: Transfer, Advance My Career
+        - title: Lorem Ipsum Dolor Sit
+          link: '#'
+          path: Bachelor's Degree
+    - title: Activity Care Professional
+      id: activity1
+      programs:
+        - title: Lorem Ipsum Dolor
+          link: '#'
+          path: Enter The Workforce, Enhance My Skillset
+        - title: Lorem Ipsum Dolor Sit Amet Consectetur Adipiscing
+          link: '#'
+          path: Transfer, Advance My Career
+        - title: Lorem Ipsum Dolor Sit
+          link: '#'
+          path: Bachelor's Degree
+    - title: Accounting
+      id: account2
+      programs:
+        - title: Lorem Ipsum Dolor
+          link: '#'
+          path: Enter The Workforce, Enhance My Skillset
+        - title: Lorem Ipsum Dolor Sit Amet Consectetur Adipiscing
+          link: '#'
+          path: Transfer, Advance My Career
+        - title: Lorem Ipsum Dolor Sit
+          link: '#'
+          path: Bachelor's Degree
+    - title: Activity Care Professional
+      id: activity2
+      programs:
+        - title: Lorem Ipsum Dolor
+          link: '#'
+          path: Enter The Workforce, Enhance My Skillset
+        - title: Lorem Ipsum Dolor Sit Amet Consectetur Adipiscing
+          link: '#'
+          path: Transfer, Advance My Career
+        - title: Lorem Ipsum Dolor Sit
+          link: '#'
+          path: Bachelor's Degree
+    - title: Accounting
+      id: account3
+      programs:
+        - title: Lorem Ipsum Dolor
+          link: '#'
+          path: Enter The Workforce, Enhance My Skillset
+        - title: Lorem Ipsum Dolor Sit Amet Consectetur Adipiscing
+          link: '#'
+          path: Transfer, Advance My Career
+        - title: Lorem Ipsum Dolor Sit
+          link: '#'
+          path: Bachelor's Degree
+    - title: Activity Care Professional
+      id: activity3
+      programs:
+        - title: Lorem Ipsum Dolor
+          link: '#'
+          path: Enter The Workforce, Enhance My Skillset
+        - title: Lorem Ipsum Dolor Sit Amet Consectetur Adipiscing
+          link: '#'
+          path: Transfer, Advance My Career
+        - title: Lorem Ipsum Dolor Sit
+          link: '#'
+          path: Bachelor's Degree
+
+---
+
+{% from "macros/component.html" import loadComponent %}
+
+{% for component in components %}
+  {{ loadComponent(component) }}
+{% endfor %}

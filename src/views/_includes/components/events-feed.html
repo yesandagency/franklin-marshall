@@ -1,0 +1,24 @@
+<div class="c-events-feed">
+  <div class="c-events-feed-container">
+      <h2>{{ data.title | safe }}</h2>
+      {% if data.showAll %}
+      <a href="#" class="c-events-feed-container__show-all inline-flex items-center font-display font-semibold text-16 leading-110 button blue">View All</a>
+      {% endif %}
+
+      <div class="c-events-feed-listing">
+        <div class="c-events-feed-listing__dates">
+          <ul>
+          {% for date in data.dates %}
+
+            <li>
+              <span>{{ date.date }}</span><br/>
+              <a href="{{ date.link }}">{{ date.title }}</a>
+              {% include '../../../assets/images/arrow-blue-large.svg' %}
+            </li>
+
+          {% endfor %}
+          </ul>
+        </div><div class="c-events-feed-listing__image" style="background: '{{ data.image }}' center center; background-size: cover; background-repeat: none;"></div>
+      </div>
+  </div>
+</div>

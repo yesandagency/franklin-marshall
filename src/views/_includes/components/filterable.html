@@ -1,0 +1,47 @@
+<div class="c-filterable">
+
+  <div class="c-filterable-contain">
+    {% if data.intro %}
+    <div class="c-filterable-contain__intro">{{ data.intro }}</div>
+    {% endif %}
+  </div>
+
+  <div class="c-filterable-elements">
+    <div class="c-filterable-elements__contain">
+
+      <form>
+      {% for element in data.elements %}
+
+        {% if element.type === 'search' %}
+        <label for="{{ element.id }}">Search</label>
+        <input aria-label="search" class="c-form-element__search" id="{{ element.id }}" type='{{ element.type }}' placeholder="{{ element.caption }}" style="width: {{ element.width }};">
+
+        {% endif %}
+
+        {% if element.type === 'select' %}
+
+        <select aria-label="select" title="{{ element.id }}" class="c-form-element__select" id="{{ element.id }}" style="width: {{ element.width }};">
+
+          {% for option in element.options %}
+
+          <option aria-label="option" value="{{ option.value }}">{{ option.caption }}</option>
+
+          {% endfor %}
+
+        </select>
+
+        {% endif %}
+
+        {% if element.type === 'submit' %}
+
+        <input aria-label="submit" class="c-form-element__submit" type="submit" value="{{ element.caption }}" id="{{ element.id }}" style="width: {{ element.width }};">
+
+        {% endif %}
+
+      {% endfor %}
+      </form>
+
+    </div>
+  </div>
+
+</div>

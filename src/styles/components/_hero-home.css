@@ -1,0 +1,119 @@
+.home-hero__quick-links{
+  z-index: 200;
+  margin-top: -50px;
+  padding: 0px 2.2727272725% 60px;
+  position: relative;
+}
+
+.home-hero__quick-links-contain{
+  background: #F0ECE6;
+  padding: 45px 2.2727272725% 60px;
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+}
+
+.home-hero__quick-links-contain .home-hero__quick-link{
+  width: calc(100% / 3);
+  margin-right: 45px;
+  border-right: 1px solid #7D6749;
+}
+
+.home-hero__quick-links-contain .home-hero__quick-link:last-child{
+  margin-right: 0px;
+  border-right: 0px;
+}
+
+.home-hero__quick-links-contain .home-hero__quick-link p{
+  font-size: 12px !important;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 600;
+  color: #7D6749;
+  margin-bottom: 1rem;
+}
+
+.home-hero__quick-links-contain .home-hero__quick-link a{
+  font-size: 20px;
+  display: block;
+  width: calc(100% - 45px);
+  position: relative;
+  color: #004088;
+  border-bottom: 2px solid #004088;
+  transition: .2s ease-in-out;
+}
+
+.home-hero__quick-links-contain .home-hero__quick-link a:hover{
+  width: calc(100% - 25px);
+  color: black;
+}
+
+.home-hero__quick-links-contain .home-hero__quick-link a svg{
+  float: right;
+}
+
+.gradient-hero-bg{
+  display: none;
+}
+
+.feature-cta{
+  padding: 0px 2.2727272725%;
+  margin: 0 auto;
+}
+
+
+@media screen and (max-width: 768px){
+
+  .c-header-home__content, .c-header-home__content > *{
+    width: 100% !important;
+  }
+
+  .c-header-home__content h1{
+    line-height: 56px;
+  }
+
+  .c-header-home__content .button.blue{
+    width: auto !important;
+  }
+
+  .home-hero__quick-links-contain{
+    padding: 20px 2.2727272725% 20px;
+  }
+
+  .home-hero__quick-links-contain .home-hero__quick-link{
+    margin-right: 20px;
+  }
+
+  .home-hero__quick-links-contain .home-hero__quick-link a{
+    width: calc(100% - 20px);
+  }
+
+}
+
+@media screen and (max-width: 600px){
+
+  .home-hero__quick-links{
+    padding: 20px 4.545454545% 20px
+  }
+
+  .home-hero__quick-links-contain{
+    display: block;
+    padding: 20px 4.545454545% 20px;
+  }
+
+  .home-hero__quick-links-contain .home-hero__quick-link{
+    width: 100%;
+    border-right: 0px;
+    margin-bottom: 30px;
+  }
+
+  .home-hero__quick-links-contain .home-hero__quick-link:last-of-type{
+    margin-bottom: 0px;
+  }
+
+  .home-hero__quick-links-contain .home-hero__quick-link a{
+    margin-right: 0px;
+    width: 100%;
+  }
+
+}

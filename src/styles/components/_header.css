@@ -1,0 +1,472 @@
+.hero{
+  margin-top: 96px;
+}
+
+.the-header{
+  z-index: 2000;
+}
+
+.home .the-header.scroll-top {
+  @apply bg-opacity-0;
+}
+
+.home .the-header.scroll-top .the-header__logo {
+  @apply hidden;
+}
+
+.the-header__logo-white {
+  @apply hidden;
+}
+
+.home .the-header.scroll-top .the-header__logo-white {
+  @apply block;
+}
+
+.the-header__button {
+  @apply text-blue;
+}
+
+.home .the-header.scroll-top .the-header__button {
+  @apply text-white;
+}
+
+header{
+  box-shadow: 0px 0px 10px rgb(0 0 0 / 20%);
+}
+
+.c-header-contain{
+  padding: 0px 4.166666667%;
+}
+
+.c-header-logo{
+  width: 170px;
+  margin-right: 60px;
+}
+.c-header-navigation{
+  width: calc(100% - 170px);
+  display: flex;
+}
+
+.c-header-cougarweb-login{
+  margin-left: auto;
+  height: 30px;
+  line-height: 30px;
+  font-size: 12px;
+  font-weight: 600;
+  align-self: center;
+  padding: 0px 10px;
+}
+
+.c-header-utility-options{
+  color: black;
+  text-transform: none;
+  display: flex;
+  align-self: center;
+  margin-right: 30px;
+  font-weight: 600;
+
+  transition: .2s ease-in-out;
+}
+
+
+.c-header-navigation button{
+  color: black;
+  transition: .2s ease-in-out;
+}
+
+.c-header-navigation button:hover{
+  color: #0059F3;
+}
+
+
+.c-header-utility-options:hover{
+  color: #0059F3;
+}
+
+#menu-primary{
+  background: #003f8e; /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #003f8e 0%, #002b4d 49%, #003064 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #003f8e 0%,#002b4d 49%,#003064 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #003f8e 0%,#002b4d 49%,#003064 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#003f8e', endColorstr='#003064',GradientType=1 );
+  margin-right: 0px;
+  width: calc(100% - 180px);
+}
+
+.c-header-utility-dropdown{
+  width: 300px !important;
+  border: 1px solid #004088;
+  border-radius: 5px;
+  left: -50%;
+  padding: 10px 15px !important;
+}
+
+.c-header-utility-dropdown li{
+
+}
+
+.c-header-utility-dropdown li a{
+  text-align: center;
+  line-height: 24px;
+  margin: 15px 0px;
+  font-size: 16px;
+  color: black;
+  font-weight: 400;
+}
+
+.the-header__button{
+  background: none !important;
+}
+
+.c-search-trigger, .c-primary-menu-trigger{
+  color: black !important;
+}
+
+.c-primary-menu-trigger{
+  padding-left: 0px;
+}
+
+.c-primary-menu-trigger b{
+  font-weight: 600;
+}
+
+.c-primary-menu-dropdown{
+  width: 915px;
+  top: 6rem !important;
+  right: 0px;
+}
+
+.c-primary-menu-dropdown #menu-primary{
+  padding: 60px !important;
+  width: 900px;
+}
+
+.c-primary-menu-dropdown #menu-primary a{
+  font-family: "Domaine";
+  font-weight: 400;
+  color: white;
+  padding: 30px 0px;
+  left: -10px;
+}
+
+.c-primary-menu-dropdowb #menu-primary a:hover{
+  color: #81DEEB !important;
+}
+
+.c-primary-menu-dropdown #menu-primary a > svg{
+  display: inline-block;
+  top: 25px;
+  margin-left: 20px;
+  position: relative;
+  transform: translateY(-50%);
+  transition: .2s ease-in-out;
+}
+
+.c-primary-menu-dropdown #menu-primary a:hover > svg{
+  top: 20px;
+  margin-left: 25px;
+
+}
+
+.c-primary-menu-dropdown #menu-primary > a{
+
+  margin-bottom: 20px;
+
+}
+
+
+.c-primary-menu-dropdown li.block{
+  border-bottom: 1px solid #0059F3;
+  padding-bottom: 20px;
+}
+
+.c-primary-menu__footer-contain li{
+
+}
+
+.c-primary-menu-dropdown li.block ul{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0px !important;
+}
+
+.c-primary-menu-dropdown li.block ul li{
+  border-bottom: 0px;
+  width: calc(100% / 3);
+  height: auto !important;
+  margin-bottom: 5px;
+  padding-bottom: calc(15px / 2);
+}
+
+.c-primary-menu-dropdown li.block ul li a{
+  padding: 0px !important;
+  font-size: 15px;
+  font-family: "Garnett" !important;
+}
+
+.c-menu-primary__footer{
+  display: block;
+  position: relative;
+  width: 100% !important;
+  padding: 45px 70px;
+  background: #0A213C;
+}
+
+  .c-menu-primary__footer .subtitle{
+    display: none;
+  }
+
+.c-primary-menu__footer-contain{
+  display: flex;
+  align-content: space-around;
+  position: relative;
+  padding: 0px !important;
+  margin: 0 auto !important;
+}
+
+.c-primary-menu-link{
+  height: 45px;
+  line-height: 45px;
+  border: 2px solid white;
+  font-family: "Garnett";
+  padding: 0px 20px !important;
+  white-space: nowrap;
+  line-height: 45px;
+  color: white;
+  margin-right: 30px;
+  font-weight: 600;
+}
+
+
+#header-search-input{
+  background: none !important;
+  font-weight: 100;
+  color: white !important;
+  padding: 0px 45px 0px 50px;
+}
+
+.c-search-contain > svg{
+  position: absolute;
+  left: 0px;
+  top: 50%;
+  height: 30px;
+  display: block;
+  transform: translateY(-50%);
+  width: 30px;
+}
+
+.c-search-contain > svg path,
+.c-search-contain > svg line{
+  stroke: white;
+}
+
+.c-search-panel{
+  top: 96px !important;
+}
+
+.c-search-submit{
+  display: block;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: auto !important;
+  background: none !important;
+}
+
+.c-search-contain{
+  display: block;
+  position: relative;
+}
+
+.c-primary-menu__footer-contain li{
+  border-bottom: 0px !important;
+}
+
+li:not(:last-child) .resource-link__inner {
+  @apply border-b-2 border-blue-navy;
+}
+
+.menu-desktop__button {
+  @apply relative text-white text-opacity-50 transition-colors;
+}
+
+.menu-desktop__button:hover,
+.menu-desktop__button:focus,
+.menu-desktop__button[aria-expanded="true"] {
+  @apply text-opacity-100;
+}
+
+.menu-desktop__button::before {
+  @apply block w-0 h-0.5 mt-3.5 mr-3 bg-orange duration-350 ease-in-out;
+  transtion-property: width;
+  content: "";
+}
+
+.menu-desktop__button[aria-expanded="true"]::before {
+  @apply w-8;
+}
+
+@screen lg {
+  .menu-desktop__button::before {
+    @apply mt-5;
+  }
+
+  .menu-desktop__button[aria-expanded="true"]::before {
+    @apply w-14;
+  }
+}
+
+.audience__button {
+  @apply relative bg-white;
+}
+
+.audience__button::before {
+  @apply absolute top-0 left-0 block w-full h-full bg-orange transform scale-x-0 origin-left transition-transform z-0;
+  content: "";
+}
+
+.audience__button:hover::before,
+.audience__button[aria-expanded="true"]::before {
+  @apply scale-x-100;
+}
+
+.audience__item:nth-child(-n+2) {
+  @apply border-t-2;
+}
+
+top-24{
+  top: 6rem;
+}
+
+.md\:top-26{
+  top: 6rem;
+}
+
+
+
+
+@media screen and (max-width: 1140px){
+
+  .c-primary-menu-dropdown{
+    left: 0px;
+    width: 100%;
+  }
+
+  .c-primary-menu-dropdown #menu-primary{
+    width: 100%;
+  }
+
+}
+
+
+
+@media screen and (max-width: 1080px){
+
+  .c-header-utility-options{
+    display: none !important;
+  }
+
+}
+
+
+
+@media screen and (max-width: 800px){
+
+  .c-header-navigation{
+    justify-content: flex-end;
+  }
+
+  .information-dropdown{
+    display: none !important;
+  }
+
+  .c-header-navigation button{
+    display: flex;
+  }
+
+  .c-search-panel{
+    margin-left: auto;
+  }
+
+  .c-header-cougarweb-login{
+    display: none;
+  }
+
+}
+
+
+
+@media screen and (max-width: 768px){
+
+  .c-search-panel{
+    top: 0px !important;
+    z-index: 175;
+  }
+
+  .c-search-submit{
+    display: none !important;
+  }
+
+  .c-search-trigger{
+    padding-top: 13px !important;
+  }
+
+  .c-search-panel > div{
+    padding: 20px 0px;
+  }
+
+  .c-search-panel .container,
+  .c-search-panel .container > div{
+    margin: 0px;
+    width: 100%;
+  }
+
+  .c-search-panel .container{
+    padding: 0px 4.166666667%;
+  }
+
+  .c-menu-primary__footer{
+    padding: 4.166666667%;
+  }
+
+  .c-primary-menu-dropdown #menu-primary{
+    padding: 0px 4.166666667% 4.166666667% !important;
+  }
+
+  .c-primary-menu-dropdown #menu-primary .container{
+    margin: 0px;
+    width: 100%;
+  }
+
+  .c-primary-menu-dropdown #menu-primary a > svg {
+      display: inline-block;
+      top: 8px;
+      margin-left: 10px;
+      position: relative;
+      transform: translateY(-50%);
+      transition: .2s ease-in-out;
+  }
+
+  .c-primary-menu-dropdown #menu-primary a:hover > svg{
+    top: 8px;
+    margin-left: 10px;
+  }
+
+  .c-primary-menu-dropdown li.block ul li a svg{
+    display: none !important;
+  }
+
+  .c-primary-menu-dropdown li.block ul li{
+    width: 100%;
+    margin-bottom: 0px;
+  }
+
+  .c-primary-menu__footer-contain{
+    display: block;
+  }
+
+  .c-search-trigger > span, .c-primary-menu-trigger b{
+    display: none !important;
+  }
+
+}

@@ -1,0 +1,60 @@
+.c-academic-calendar{
+  display: block;
+  position: relative;
+  width: 100%;
+  padding: 60px 4.545454545%;
+  background: #E6F2FF;
+}
+
+.c-academic-calendar__contain{
+  background: white;
+  padding: 60px 40px;
+  position: relative;
+  display: block;
+  border-radius: 5px;
+}
+
+.c-academic-calendar__table{
+  width: 100%;
+  display: block;
+  position: relative;
+}
+
+.c-academic-calendar__table tbody{
+  width: 100%;
+  display: table;
+  position: relative;
+}
+
+.c-academic-calendar__top-row{
+  width: 100%;
+  position: relative;
+  font-size: 20px;
+  color: #004088;
+  border-bottom: 2px solid #0059F3;
+}
+
+.c-academic-calendar__top-row td{
+  width: 20%;
+}
+
+.c-academic-calendar__top-row .c-academic-calendar__semester{
+  width: 60%;
+  height: 60px;
+}
+
+.c-academic-calendar__row{
+  line-height: 60px;
+  border-bottom: 1px solid #eeee;
+}
+
+.c-academic-calendar__row td{
+  font-size: 16px !important;
+}
+
+.c-academic-calendar__row .c-academic-calendar__semester{
+  font-weight: 600;
+  padding: 20px 0px;
+  line-height: 25px;
+  color: #004088;
+}

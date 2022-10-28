@@ -1,0 +1,26 @@
+<div class="c-directory {{ data.color }}">
+
+  <div class="c-directory__contain">
+
+    <h2>{{ data.title }}</h2>
+
+    <div class="c-directory__listing">
+
+      {% for entry in data.entries %}
+
+      <div class="c-directory__listing-entry">
+
+        <h2 class="heading">{{ entry.heading }}</h2>
+        <h3 class="large">{{ entry.large }}</h3>
+        <span class="small">{{ entry.small | safe }}</span>
+        <p class="bottom">{{ entry.bottom | safe }}</p>
+
+      </div>
+
+      {% endfor %}
+
+    </div>
+
+  </div>
+
+</div>

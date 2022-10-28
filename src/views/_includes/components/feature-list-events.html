@@ -1,0 +1,38 @@
+<!-- DEV NOTE: Modern Campus to consume calendarwiz RSS feed server-side to populate events -->
+<!-- Example Feed URL: http://www.calendarwiz.com/calendars/rssfeeder.xml?crd=daytona-state-events&len=200&days=30&events=100&title=DSC%20Calendar%20Events&cat=all -->
+
+<!-- DEV NOTE: Supports Image and Heading variations to populate the area next to rich-text (commented below) -->
+<!-- DEV NOTE: `feature-list--left` and `feature-list--right` classes control layout -->
+<!-- DEV NOTE: `background-white` and `background-blue` classes control background color -->
+<section class="feature-list--{{ data.layout }} background-{{ data.color }}">
+  <div class="container">
+    <div class="feature-list__row md:flex justify-between">
+      <div class="relative md:w-10/22 xl:w-8/22 md:min-h-64 lg:min-h-80 xl:mx-1/22 mb-8 md:mb-0">
+        {% if data.heading %}
+          <!-- BEGIN VARIATION: Heading -->
+          <h3 class="title-md">{{ data.heading }}</h3>
+          <!-- END VARIATION: Heading -->
+        {% elif data.image %}
+          <!-- BEGIN VARIATION: Image -->
+          <img class="md:absolute md:top-0 md:left-0 w-full h-96 md:h-full object-cover" src="{{ data.image }}" alt="Alt Text">
+          <!-- END VARIATION: Image -->
+        {% endif %}
+      </div>
+      <div class="relative md:w-9/22 md:mx-1/22 md:mt-14">
+        {% if data.title %}
+          <h3 class="meta-sm text-blue-gray transform md:rotate-180 md:absolute md:-left-6 lg:-left-7 md:writing-mode-vertical">{{ data.title }}</h3>
+        {% endif %}
+        <div class="mt-2 md:mt-0 border-t-2 md:border-t-0 md:border-l-2 border-orange pt-8 md:pt-0 md:pl-8 lg:pl-10">
+          <ul>
+            <!-- DEV NOTE: Modern Campus to pull in title/link from calendarwiz RSS feed server-side to populate <li>'s -->
+            {% for event in data.eventsRss %}
+              <li class="block mb-8 last:mb-0">
+                <a href="{{ event.link }}" target="_blank" class="title-xs hover-highlight">{{ event.title }}</a>
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

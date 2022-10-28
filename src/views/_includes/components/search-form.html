@@ -1,0 +1,11 @@
+<form class="flex items-end" action="{{ header.search.url }}" method="GET">
+  <div class="w-full c-search-contain">
+
+    {% include '../../../assets/images/icon-search.svg' %}
+    <label for="{{ headerSearchInputId }}">Search</label>
+    <input name="q" title="{{ headerSearchInputId }}" id="{{ headerSearchInputId }}" class="w-full h-14 md:h-16 lg:h-20 placeholder-white text-18 md:text-24 leading-1 font-semibold bg-transparent focus:bg-blue-navy focus:bg-opacity-50 border-0 border-b-2 border-blue focus:ring-transparent transition-colors" type="text" placeholder="{{ header.search.placeholder }}">
+    <button class="flex flex-center flex-shrink-0 w-14 md:w-16 lg:w-20 h-14 md:h-16 lg:h-20 bg-blue hover:bg-blue-navy transition-colors c-search-submit" type="submit">
+      <span>{% include '../../../assets/images/arrow-large-diagonal.svg' %}</span>
+    </button>
+  </div>
+</form>

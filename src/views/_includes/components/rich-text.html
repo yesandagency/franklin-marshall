@@ -1,0 +1,10 @@
+<!-- DEV NOTE: WYSIWYG (aka Rich Text) is the parent component which can contain sub-components: `WYSIWYG`, `CTA Group`, `CTA Description`, and `CTA Single` (labelled with comments when used below) -->
+<div class="background-blue">
+  <div class="container">
+    <div class="md:px-1/22 lg:px-3/22 xl:px-5/22">
+      {% for item in data.items %}
+        {% include "components/rich-text-subcomponent.html" %}
+      {% endfor %}
+    </div>
+  </div>
+</div>

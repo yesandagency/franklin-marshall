@@ -1,0 +1,177 @@
+---
+layout: sidebar.html
+menu:
+  title: Menu Title
+  parentLink:
+    label: Academic Departments
+    href: /
+  cta:
+    label: Apply Now
+    href: /
+  links:
+    - label: College of Health & Public Services
+      href: /
+      isCurrentPage: true
+      subLinks:
+        - label: Sub Link 1
+          href: /
+        - label: Sub Link 2
+          href: /
+        - label: Sub Link 3
+          href: /
+    - label: College of Business, Engineering & Technology
+      href: /
+    - label: College of Arts & Sciences
+      isCurrentParent: true
+      href: /
+      subLinks:
+        - label: Educator Prep Institute
+          href: /
+        - label: School of Behavioral and Social Science
+          href: /
+        - label: School of Biological and Physical Sciences
+          href: /
+          isCurrentPage: true
+        - label: School of Education
+          href: /
+        - label: School of Health & Wellness
+          href: /
+    - label: College of Workforce & Continuing Education
+      href: /
+      subLinks:
+        - label: Sub Link 1
+          href: /
+        - label: Sub Link 2
+          href: /
+        - label: Sub Link 3
+          href: /
+sidebarComponents:
+  - type: wysiwyg
+    cmsName: WYSIWYG
+    content: default
+  - type: cta-single
+    cmsName: CTA Single
+    link:
+      href: /
+      label: Explore Degrees
+  - type: cta-description
+    cmsName: CTA Description
+    link:
+      href: /
+      label: Apply Today
+      description: Reasons why you should apply to this program lorem ipsum sit dolor sed ut perspiciatis unde omnis iste natus
+  - type: cta-group
+    cmsName: CTA Group
+    links:
+      - href: /
+        label: Explore Degrees
+      - href: /
+        label: Lorem Ipsum
+      - href: /
+        label: Sit Dolor et Amet
+      - href: /
+        label: Nemo Enim Ipsam Vol
+      - href: /
+        label: Sed Quia Magni
+  - name: accordion-sidebar
+    cmsName: Accordion (Sidebar)
+    heading: Find the Pathway for you
+    body: Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+    accordions:
+      - buttonText: International Students
+        panelContent:
+          - type: wysiwyg
+            cmsName: WYSIWYG
+            content: '<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem <a href="#">ipsum quia dolor</a> sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>'
+          - type: cta-single
+            cmsName: CTA Single
+            link:
+              href: /
+              label: Explore Degrees
+      - buttonText: Transfer Students
+        panelContent:
+          - type: wysiwyg
+            cmsName: WYSIWYG
+            content: '<p>Voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p><p>Sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>'
+      - buttonText: Transient Students
+        panelContent:
+          - type: wysiwyg
+            cmsName: WYSIWYG
+            content: '<p>voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>'
+components:
+---
+
+{% from "macros/svg.html" import svg %}
+{% from "macros/cta.html" import ctaIcon %}
+{% from "macros/component.html" import loadComponent %}
+
+<div id="main" class="mt-16 md:mt-20 background-blue">
+  <div class="container">
+    <div class="md:flex justify-center">
+      <aside class="md:w-8/22 lg:w-7/22 xl:w-6/22 2xl:w-5/22 mb-10 md:mb-0">
+        <sidebar-disclosure class="bg-white shadow-blue text-16 leading-130">
+          {% if menu.parentLink %}
+            <a class="block py-5 px-7 bg-blue-navy text-white font-semibold hover:underline" href="{{ menu.parentLink.href }}">{{ menu.parentLink.label }}</a>
+          {% endif %}
+          <app-accordion tag="div">
+            <ul class="sidebar__menu">
+              {% for item in menu.links %}
+                {% if item.isCurrentPage %}
+                  <!-- DEV NOTE: <li> needs class of `sidebar__item--current` and `aria-current="page"` attribute if link is the current page -->
+                {% endif %}
+                <li class="sidebar__item{{ ' sidebar__item--current' if item.isCurrentPage }}">
+                  <div class="sidebar__item-inner">
+                    <a class="sidebar__link" href="{{ item.href }}"{% if item.isCurrentPage %} aria-current="page"{% endif %}>{{ item.label }}</a>
+                    {% if item.subLinks %}
+                      <!-- DEV NOTE: `controls` value on `app-accordion-button` needs to match `id` on corresponding `app-accordion-panel` (concatenating loop index works well) -->
+                      <!-- DEV NOTE: `default-expanded` property needs to be present on `app-accordion-button` if current page is within its sub-menu -->
+                      <app-accordion-button controls="sidebar-{{ loop.index0 }}"{% if item.isCurrentParent %} default-expanded {% endif %}class="flex flex-center w-9 h-9 ml-3 flex-shrink-0 text-blue hover:text-blue-navy">
+                        <span class="sr-only">Toggle panel</span>
+                        <span class="accordion-icon w-4 h-4"></span>
+                      </app-accordion-button>
+                    {% endif %}
+                  </div>
+                  {% if item.subLinks %}
+                    <app-accordion-panel id="sidebar-{{ loop.index0 }}">
+                      <ul class="sidebar__sub-menu">
+                        {% for link in item.subLinks %}
+                          {% if link.isCurrentPage %}
+                            <!-- DEV NOTE: <li> needs class of `sidebar__item--current` and `aria-current="page"` attribute if link is the current page -->
+                          {% endif %}
+                          <li class="sidebar__item{{ ' sidebar__item--current' if link.isCurrentPage }}">
+                            <a class="sidebar__link" href="{{ link.href }}"{% if link.isCurrentPage %} aria-current="page"{% endif %}>{{ link.label }}</a>
+                          </li>
+                        {% endfor %}
+                      </ul>
+                    </app-accordion-panel>
+                  {% endif %}
+                </li>
+              {% endfor %}
+            </ul>
+          </app-accordion>
+          {% if menu.cta %}
+            <div class="pt-5 pb-7 px-7">
+              <a class="cta-outline" href="{{ menu.cta.href }}">
+                <span class="relative">{{ menu.cta.label }}</span>
+                {{ ctaIcon('arrow', 'w-6 h-6 ml-2.5 flex-shrink-0', 'text-red', 'text-orange') }}
+              </a>
+            </div>
+          {% endif %}
+        </sidebar-disclosure>
+      </aside>
+      <main class="md:w-13/22 lg:w-12/22 xl:w-11/22 md:ml-1/22 xl:ml-2/22">
+        <!-- DEV NOTE: the content next to the sidebar can be either Rich-Text or Accordion content. They are not intended to co-exist even though they are shown together in our demo -->
+        {% for item in sidebarComponents %}
+          {% if item.name %}
+            {{ loadComponent(item) }}
+          {% else %}
+            {% include "components/rich-text-subcomponent.html" %}
+          {% endif %}
+        {% endfor %}
+      </main>
+    </div>
+  </div>
+</div>
+{% for component in components %}
+  {{ loadComponent(component) }}
+{% endfor %}

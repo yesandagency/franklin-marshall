@@ -1,0 +1,76 @@
+.c-faq-block{
+  display: block;
+  position: relative;
+  width: 100%;
+  padding: 60px 4.545454545%;
+}
+
+
+.c-faq-block h2{
+  font-family: Domaine;
+  font-size: 45px;
+  display: block;
+  color: #004088;
+  position: relative;
+}
+
+.c-faq-block .c-faq__questions{
+  display: block;
+  position: relative;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.c-faq__question-answer:first-of-type{
+  border-top: 1px solid #cfcfcf;
+}
+
+.c-faq__question-answer{
+  border-bottom: 1px solid #cfcfcf;
+}
+
+.c-faq__question{
+  display: block;
+  position: relative;
+  width: 100%;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.c-faq__question h3{
+  min-height: 60px;
+  display: block;
+  line-height: 60px;
+  position: relative;
+  width: 100%;
+  font-weight: 400;
+}
+
+.c-faq__answer{
+  padding-top: 15px;
+  display: none;
+  position: relative;
+  padding-bottom: 20px;
+  width: 100%;
+}
+.c-faq__question-answer:first-of-type .c-faq__answer{
+  display: block;
+}
+
+.c-faq__expand{
+  display: block;
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  right: 0px;
+  top: 10px;
+  cursor: pointer;
+}
+
+.c-faq__expand svg{
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  display: block;
+}

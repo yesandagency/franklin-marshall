@@ -1,0 +1,74 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  @apply font-sans text-blue-navy;
+}
+
+
+@font-face {
+  font-family: "Domaine";
+  src: url(/_resources/images/fonts/domaine-text-bold.woff2);
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Domaine";
+  src: url(/_resources/images/fonts/domaine-text-regular.woff2);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Domaine";
+  src: url(/_resources/images/fonts/domaine-text-regular-italic.woff2);
+  font-weight: 500;
+  font-style: italic;
+}
+
+
+@font-face {
+  font-family: "Garnett";
+  src: url(/_resources/images/fonts/Garnett-Regular.woff2);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Garnett";
+  src: url(/_resources/images/fonts/Garnett-RegularItalic.woff2);
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Garnett";
+  src: url(/_resources/images/fonts/Garnett-Semibold.woff2);
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Garnett";
+  src: url(/_resources/images/fonts/Garnett-SemiboldItalic.woff2);
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Garnett";
+  src: url(/_resources/images/fonts/Garnett-Bold.woff2);
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Garnett";
+  src: url(/_resources/images/fonts/Garnett-BoldItalic.woff2);
+  font-weight: 700;
+  font-style: italic;
+}
+

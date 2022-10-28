@@ -1,0 +1,195 @@
+.c-program-listing{
+  display: block;
+  position: relative;
+  width: 100%;
+  padding: 0px 4.545454545% 60px;
+}
+
+.c-program-listing__contain{
+  display: block;
+  position: relative;
+  border-top: 1px solid #D0C9C0;
+  width: 100%;
+}
+
+.c-program-listing__contain .c-program-listing__entry{
+  border-bottom: 1px solid black;
+  line-height: 36px;
+  padding: 45px 0px;
+  font-size: 28px;
+  position: relative;
+  font-family: Domaine;
+}
+
+.c-program-listing__contain .c-program-listing__entry .c-program-listing__available{
+  position: absolute;
+  display: inline-block;
+  right: 0px;
+  bottom: 0px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  height: 25px;
+  line-height: 25px;
+  text-transform: uppercase;
+  padding: 0px 15px;
+  color: white;
+  letter-spacing: 1px;
+  font-weight: 600;
+  background: #004088;
+  font-family: Garnett;
+  font-size: 11px;
+}
+
+.c-program-listing__contain .c-program-listing__entry p{
+  display: block;
+  position: relative;
+  width: 100%;
+  padding-right: 250ppx;
+}
+
+.c-program-listing__contain .c-program-listing__entry .c-program-listing__expand{
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 40px;
+  width: 40px;
+  border-radius: 40px;
+  border: 1px solid #D0C9C0;
+  cursor: pointer;
+  transition: .2s ease-in-out;
+}
+
+.c-program-listing__contain .c-program-listing__entry .c-program-listing__expand:hover{
+  border: 3px solid #E8F2FF;
+}
+
+.c-program-listing__contain .c-program-listing__entry .c-program-listing__expand svg{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.c-program-listing__contain .c-program-listing__entry .c-program-listing__expand.is-open svg{
+  display: none !important;
+}
+
+.c-program-listing__contain .c-program-listing__entry .c-program-listing__contract{
+  display: none;
+}
+
+.c-program-listing__contain .c-program-listing__entry .c-program-listing__expand.is-open .c-program-listing__contract{
+  display: block;
+}
+
+.c-program-listing__contain .c-program-listing__entry .c-program-listing__expand.is-open .c-program-listing__contract svg{
+  display: block !important;
+}
+
+
+.c-program-list__collapsible{
+  opacity: 0;
+  height: 0px;
+  position: relative;
+  display: block;
+  transition: .2s ease-in-out;
+}
+
+.c-program-list__collapsible.is-open{
+  height: 100%;
+  opacity: 1;
+}
+
+.c-program-list__courses{
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+
+.c-program-list__courses div{
+  font-family: "Garnett";
+  font-size: 16px;
+}
+
+.c-program-list__courses div:nth-of-type(odd){
+  width: 55%;
+  font-weight: 600;
+  color: #004088;
+}
+
+.c-program-list__courses div:nth-of-type(even){
+  width: 45%;
+}
+
+.c-program-list__courses div:nth-of-type(1),
+.c-program-list__courses div:nth-of-type(2) {
+
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #004088;
+  border-bottom: 1px solid #D0C9C0;
+  margin-bottom: 15px;
+
+}
+
+.c-program-list__courses div a svg{
+  position: relative;
+  display: inline;
+}
+
+.c-program-list__courses div a{
+      margin-right: 10px;
+      transition: .2s ease-in-out;
+}
+
+.c-program-list__courses div a:hover{
+  color: black;
+  margin-right: 15px;
+}
+
+
+
+.c-pagination-links{
+  display: block;
+  position: relative;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 60px;
+}
+
+.c-pagination-links a, .c-pagination-links span{
+  margin-right: 10px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.c-pagination-link-active{
+  font-size: 20px;
+  text-decoration: underline;
+}
+
+
+@media screen and (max-width: 600px){
+
+  .c-program-list__courses div:nth-of-type(2){
+    display: none;
+  }
+
+  .c-program-list__courses div:nth-of-type(odd),
+  .c-program-list__courses div:nth-of-type(even){
+    width: 100%;
+  }
+
+  .c-program-list__courses div:nth-of-type(odd){
+    line-height: 22px;
+  }
+
+  .c-program-list__courses div:nth-of-type(even){
+    margin-bottom: 15px;
+  }
+
+}

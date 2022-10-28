@@ -1,0 +1,108 @@
+.c-page-not-found{
+  display: block;
+  position: relative;
+  width: 100%;
+  margin-top: 96px;
+  padding: 90px 4.545454545%;
+}
+
+.c-page-not-found__contain{
+  display: block;
+  position: relative;
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.c-page-not-found__contain h1{
+  font-size: 14px;
+  text-transform: uppercase;
+  display: block;
+  position: relative;
+  color: #0059F3;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 40px;
+}
+
+.c-page-not-found__contain h2{
+  font-size: 65px;
+  font-weight: 600;
+  line-height: 72px;
+  color: #004088;
+  margin-bottom: 60px;
+}
+
+.c-page-not-found__contain .c-page-not-found__a{
+  margin-bottom: 30px;
+  display: inline-block;
+  position: relative;
+  font-size: 20px;
+  font-weight: 300;
+  padding-right: 60px;
+  border-bottom: 2px solid #eee;
+  line-height: 40px;
+  transition: .2s ease-in-out;
+}
+
+
+.c-page-not-found__contain .c-page-not-found__a:hover{
+  color: #0059F3;
+  border-bottom: 2px solid #0059F3;;
+}
+
+.c-page-not-found__contain .c-page-not-found__a svg{
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: block;
+
+  transition: .2s ease-in-out;
+}
+
+.c-page-not-found__contain .c-page-not-found__a:hover svg{
+  right: -20px;
+}
+
+.c-page-not-found__search-label{
+  display: block;
+}
+
+.c-page-not-found__search-input{
+  max-width: 600px;
+  width: 100%;
+  border: 0px;
+  border-bottom: 1px solid black;
+  display: block;
+  font-size: 20px;
+  color: black;
+  position: relative;
+}
+
+.c-page-not-found__search{
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 41px;
+  margin: 20px auto 0;
+  max-width: 600px;;
+}
+
+.c-page-not-found__search svg{
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  height: 20px;
+  width: 20px;
+  transform: translateY(-50%);
+  display: block;
+}
+
+
+.c-page-not-found__search svg path,
+.c-page-not-found__search svg line{
+  stroke: #004088;
+  stroke-width: 3px;
+}

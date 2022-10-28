@@ -1,0 +1,165 @@
+.c-interactive-list{
+  background: #003f8e;
+  background: linear-gradient(135deg, #003f8e 0%,#002b4d 49%,#003064 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#003f8e', endColorstr='#003064',GradientType=1 );
+  padding: 90px calc(4.545454545% - 30px) 90px 4.545454545%;
+}
+
+
+.c-interactive-list h2{
+  display: block;
+  position: relative;
+  color: white;
+  font-weight: 600;
+}
+
+.c-interactive-list h2:before{
+  display: inline-block;
+  position: relative;
+  border-radius: 15px;
+  background: #0059F3;
+  content: "";
+  height: 10px;
+  width: 10px;
+  margin-right: 15px;
+  top: -1px;
+}
+
+.c-interactive-list__container{
+  display: flex;
+  position: relative;
+  width: 100%;
+}
+
+.c-interactive-list__container .c-interactive-list__locations{
+  width: calc(100% / 3 + 30px);
+  padding-top: 150px;
+  padding-right: 30px;
+}
+
+.c-interactive-list__container .c-interactive-list__locations li{
+  display: list-item;
+  position: relative;
+  color: white;
+  line-height: 75px;
+  height: 75px;
+  border-bottom: 2px solid #C8B9A5;
+  font-family: Domaine;
+  font-size: 28px;
+  cursor: pointer;
+  transition: .2s ease-in-out;
+}
+
+
+.c-interactive-list__container .c-interactive-list__locations li:hover, .c-interactive-list__container .c-interactive-list__locations li.is-open{
+  color: #FDC126;
+  border-bottom: 2px solid #FDC126;
+  cursor: normal;
+}
+
+.c-interactive-list__container .c-interactive-list__locations li a{
+  width: 100%;
+  display: block;
+}
+
+.c-interactive-list__container .c-interactive-list__locations li .c-location__title-mobile{
+  display: none;
+  padding-right: 30px;
+}
+
+.c-interactive-list__container .c-interactive-list__locations li .c-location__title-mobile svg{
+  position: absolute;
+  right: 0px;
+  top: calc(50% + 10px);
+  transform: translateY(-50%);
+  display: block;
+  height: 16px;
+  width: 16px;
+}
+
+
+.c-interactive-list__container .c-interactive-list__location-details{
+  width: calc(100% / 3 * 2);
+  padding-left: 90px;
+}
+
+.c-interactive-list__container .c-interactive-list__location-details img{
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.c-interactive-list__location-detail{
+  display: none;
+}
+
+.c-interactive-list__location-detail.is-open{
+  display: block;
+}
+
+.c-interactive-list__location-sublocation{
+  position: relative;
+  width: 100%;
+  color: white;
+  margin-bottom: 25px;
+  padding-right: 30px;
+}
+
+
+
+.c-interactive-list__location-sublocation-title{
+  display: block;
+  position: relative;
+  width: 100%;
+  border-bottom: 1px solid white;
+  margin-bottom: 10px;
+}
+
+.c-interactive-list__location-sublocation-title h3{
+  font-family: Domaine;
+  font-size: 26px;
+  font-weight: bold;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.c-interactive-list__location-sublocation-title a{
+  float: right;
+  margin-top: 0px;
+  font-size: 12px;
+  line-height: 30px;
+  padding: 0px 20px;
+  height: 30px;
+}
+
+.c-interactive-list__location-sublocation-details{
+  display: flex;
+  color: #AFC4D7;
+}
+
+.c-interactive-list__location-sublocation-details a{
+  text-decoration: underline !important;
+}
+
+.c-interactive-list__location-sublocation-details > div:first-of-type{
+  width: 70%;
+}
+
+.c-interactive-list__location-sublocation-details > div:last-of-type{
+  width: 30%;
+  text-align: right;
+}
+
+
+@media screen and (max-width: 768px){
+
+
+  .c-interactive-list__container .c-interactive-list__locations li .c-location__title-mobile{
+    display: block;
+  }
+
+  .c-interactive-list__container .c-interactive-list__locations li .c-location__title{
+    display: none;
+  }
+
+
+}

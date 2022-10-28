@@ -1,0 +1,354 @@
+{
+  "filters": [
+    {
+      "slug": "college",
+      "title": "College",
+      "placeholder": "All Colleges",
+      "options": [
+        {
+          "slug": "health-public-services",
+          "title": "College of Health & Public Services"
+        },
+        {
+          "slug": "arts-sciences",
+          "title": "College of Arts & Sciences"
+        }
+      ]
+    },
+    {
+      "slug": "department",
+      "title": "Department",
+      "placeholder": "All Departments",
+      "options": [
+        {
+          "slug": "dental-services",
+          "title": "School of Dental Services"
+        },
+        {
+          "slug": "education",
+          "title": "School of Education"
+        }
+      ]
+    },
+    {
+      "slug": "location",
+      "title": "Location",
+      "placeholder": "All Locations",
+      "options": [
+        {
+          "slug": "daytona-beach-campus",
+          "title": "Daytona Beach Campus"
+        },
+        {
+          "slug": "deland-campus",
+          "title": "DeLand Campus"
+        },
+        {
+          "slug": "deltona-campus",
+          "title": "Deltona Campus"
+        },
+        {
+          "slug": "new-smyrna-beach-edgewater-campus",
+          "title": "New Smyrna Beach/Edgewater Campus"
+        },
+        {
+          "slug": "flagler-palm-coast-campus",
+          "title": "Flagler/Palm Coast Campus"
+        },
+        {
+          "slug": "advanced-technology-college",
+          "title": "Advanced Technology College"
+        },
+        {
+          "slug": "news-journal-center",
+          "title": "News-Journal Center"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "id": "0",
+      "name": "Some One",
+      "title": "Department Chair, Professor",
+      "url": "/faculty/some-url-path",
+      "image": {
+        "src": "https://picsum.photos/id/10/400/400",
+        "alt": "Alt Text"
+      },
+      "address": "School of  Biological & Physical Sciences<br>123 Biology Lane<br>Daytona, FL 07070",
+      "phone": "(999) 999-9999",
+      "email": "name@daytonastate.edu",
+      "college": [
+        "health-public-services",
+        "arts-sciences"
+      ],
+      "department": [
+        "dental-services"
+      ],
+      "location": [
+        "daytona-beach-campus"
+      ]
+    },
+    {
+      "id": "1",
+      "name": "John Doe",
+      "title": "Department Chair, Professor",
+      "url": "/faculty/some-url-path",
+      "image": {
+        "src": "https://picsum.photos/id/11/400/400",
+        "alt": "Alt Text"
+      },
+      "address": "School of  Biological & Physical Sciences<br>123 Biology Lane<br>Daytona, FL 07070",
+      "phone": "(999) 999-9999",
+      "email": "name@daytonastate.edu",
+      "college": [
+        "health-public-services"
+      ],
+      "department": [],
+      "location": [
+        "daytona-beach-campus"
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Jane Doe",
+      "title": "Department Chair, Professor",
+      "url": "/faculty/some-url-path",
+      "image": {
+        "src": "https://picsum.photos/id/12/400/400",
+        "alt": "Alt Text"
+      },
+      "address": "School of  Biological & Physical Sciences<br>123 Biology Lane<br>Daytona, FL 07070",
+      "phone": "(999) 999-9999",
+      "email": "name@daytonastate.edu",
+      "college": [
+        "health-public-services"
+      ],
+      "department": [],
+      "location": [
+        "daytona-beach-campus"
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Someone Else",
+      "title": "Department Chair, Professor",
+      "url": "/faculty/some-url-path",
+      "image": {
+        "src": "https://picsum.photos/id/13/400/400",
+        "alt": "Alt Text"
+      },
+      "address": "School of  Biological & Physical Sciences<br>123 Biology Lane<br>Daytona, FL 07070",
+      "phone": "(999) 999-9999",
+      "email": "name@daytonastate.edu",
+      "college": [
+        "arts-sciences"
+      ],
+      "department": [],
+      "location": [
+        "daytona-beach-campus"
+      ]
+    },
+    {
+      "id": "4",
+      "name": "Another Person",
+      "title": "Department Chair, Professor",
+      "url": "/faculty/some-url-path",
+      "image": {
+        "src": "https://picsum.photos/id/14/400/400",
+        "alt": "Alt Text"
+      },
+      "address": "School of  Biological & Physical Sciences<br>123 Biology Lane<br>Daytona, FL 07070",
+      "phone": "(999) 999-9999",
+      "email": "name@daytonastate.edu",
+      "college": [
+        "health-public-services"
+      ],
+      "department": [],
+      "location": [
+        "deland-campus"
+      ]
+    },
+    {
+      "id": "5",
+      "name": "Firstname Lastname",
+      "title": "Department Chair, Professor",
+      "url": "/faculty/some-url-path",
+      "image": {
+        "src": "https://picsum.photos/id/15/400/400",
+        "alt": "Alt Text"
+      },
+      "address": "School of  Biological & Physical Sciences<br>123 Biology Lane<br>Daytona, FL 07070",
+      "phone": "(999) 999-9999",
+      "email": "name@daytonastate.edu",
+      "college": [
+        "health-public-services"
+      ],
+      "department": [],
+      "location": [
+        "deland-campus"
+      ]
+    },
+    {
+      "id": "6",
+      "name": "Firstname Lastname",
+      "title": "Department Chair, Professor",
+      "url": "/faculty/some-url-path",
+      "image": {
+        "src": "https://picsum.photos/id/16/400/400",
+        "alt": "Alt Text"
+      },
+      "address": "School of  Biological & Physical Sciences<br>123 Biology Lane<br>Daytona, FL 07070",
+      "phone": "(999) 999-9999",
+      "email": "name@daytonastate.edu",
+      "college": [
+        "arts-sciences"
+      ],
+      "department": [],
+      "location": [
+        "deland-campus"
+      ]
+    },
+    {
+      "id": "7",
+      "name": "Firstname Lastname",
+      "title": "Department Chair, Professor",
+      "url": "/faculty/some-url-path",
+      "image": {
+        "src": "https://picsum.photos/id/17/400/400",
+        "alt": "Alt Text"
+      },
+      "address": "School of  Biological & Physical Sciences<br>123 Biology Lane<br>Daytona, FL 07070",
+      "phone": "(999) 999-9999",
+      "email": "name@daytonastate.edu",
+      "college": [
+        "health-public-services"
+      ],
+      "department": [],
+      "location": [
+        "deltona-campus"
+      ]
+    },
+    {
+      "id": "8",
+      "name": "Firstname Lastname",
+      "title": "Department Chair, Professor",
+      "url": "/faculty/some-url-path",
+      "image": {
+        "src": "https://picsum.photos/id/18/400/400",
+        "alt": "Alt Text"
+      },
+      "address": "School of  Biological & Physical Sciences<br>123 Biology Lane<br>Daytona, FL 07070",
+      "phone": "(999) 999-9999",
+      "email": "name@daytonastate.edu",
+      "college": [
+        "health-public-services"
+      ],
+      "department": [],
+      "location": [
+        "deltona-campus"
+      ]
+    },
+    {
+      "id": "9",
+      "name": "Firstname Lastname",
+      "title": "Department Chair",
+      "url": "/faculty/some-url-path",
+      "image": {
+        "src": "https://picsum.photos/id/19/400/400",
+        "alt": "Alt Text"
+      },
+      "address": "School of  Biological & Physical Sciences<br>123 Biology Lane<br>Daytona, FL 07070",
+      "phone": "(999) 999-9999",
+      "email": "name@daytonastate.edu",
+      "college": [
+        "health-public-services"
+      ],
+      "department": [],
+      "location": [
+        "deltona-campus"
+      ]
+    },
+    {
+      "id": "10",
+      "name": "Firstname Lastname",
+      "title": "Department Chair, Professor",
+      "url": "/faculty/some-url-path",
+      "image": {
+        "src": "https://picsum.photos/id/20/400/400",
+        "alt": "Alt Text"
+      },
+      "address": "School of  Biological & Physical Sciences<br>123 Biology Lane<br>Daytona, FL 07070",
+      "phone": "(999) 999-9999",
+      "email": "name@daytonastate.edu",
+      "college": [
+        "health-public-services"
+      ],
+      "department": [],
+      "location": [
+        "deltona-campus"
+      ]
+    },
+    {
+      "id": "11",
+      "name": "Firstname Lastname",
+      "title": "Professor",
+      "url": "/faculty/some-url-path",
+      "image": {
+        "src": "https://picsum.photos/id/21/400/400",
+        "alt": "Alt Text"
+      },
+      "address": "School of  Biological & Physical Sciences<br>123 Biology Lane<br>Daytona, FL 07070",
+      "phone": "(999) 999-9999",
+      "email": "name@daytonastate.edu",
+      "college": [
+        "health-public-services"
+      ],
+      "department": [],
+      "location": [
+        "deltona-campus"
+      ]
+    },
+    {
+      "id": "12",
+      "name": "Firstname Lastname",
+      "title": "Department Chair, Professor",
+      "url": "/faculty/some-url-path",
+      "image": {
+        "src": "https://picsum.photos/id/22/400/400",
+        "alt": "Alt Text"
+      },
+      "address": "School of  Biological & Physical Sciences<br>123 Biology Lane<br>Daytona, FL 07070",
+      "phone": "(999) 999-9999",
+      "email": "name@daytonastate.edu",
+      "college": [
+        "arts-sciences"
+      ],
+      "department": [],
+      "location": [
+        "daytona-beach-campus"
+      ]
+    },
+    {
+      "id": "13",
+      "name": "Firstname Lastname",
+      "title": "Department Chair, Professor",
+      "url": "/faculty/some-url-path",
+      "image": {
+        "src": "https://picsum.photos/id/23/400/400",
+        "alt": "Alt Text"
+      },
+      "address": "School of  Biological & Physical Sciences<br>123 Biology Lane<br>Daytona, FL 07070",
+      "phone": "(999) 999-9999",
+      "email": "name@daytonastate.edu",
+      "college": [
+        "health-public-services"
+      ],
+      "department": [],
+      "location": [
+        "daytona-beach-campus"
+      ]
+    }
+  ]
+}

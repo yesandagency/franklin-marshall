@@ -1,0 +1,41 @@
+.c-search-results{
+  display: block;
+  position: relative;
+  width: 100%;
+  padding: 0px 4.545454545% 0px;
+}
+
+.c-search-results__contain{
+  display: block;
+  position: relative;
+  width: 100%;
+}
+
+.c-result{
+  padding: 0px 0px 45px;
+  display: block;
+  position: relative;
+  border-bottom: 1px solid #eee;
+  padding-right: 90px;
+  margin-bottom: 45px;
+}
+
+.c-result h3{
+  font-family: Domaine;
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: #004088;
+}
+
+.c-result .c-result__url{
+  font-size: 12px;
+  color: #004088;
+  font-weight: 500;
+  margin-bottom: 20px;
+  letter-spacing: calc(1px / 2);
+}
+
+.c-result  .c-result__desc{
+  font-size: 16px;
+  line-height: 28px;
+}

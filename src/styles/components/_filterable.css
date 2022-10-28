@@ -1,0 +1,131 @@
+.c-filterable{
+  display: block;
+  position: relative;
+  width: 100%;
+  padding: 60px 4.545454545% 0px;
+}
+
+.c-filterable-contain{
+  width: 100%;
+  display: block;
+  position: relative;
+}
+
+.c-filterable-contain__intro{
+  width: 75%;
+  font-size: 16px;
+  line-height: 30px;
+  margin-bottom: 60px;
+}
+
+.c-filterable-contain__intro + .c-filterable-elements__contain{
+  padding: 60px 0px;
+}
+
+.c-filterable-elements__contain{
+  display: flex;
+  position: relative;
+  padding: 0px 0px 60px;
+  width: 100%;
+}
+
+.c-filterable-elements__contain form{
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+
+.c-form-element{
+  margin-right: 25px;
+  position: relative;
+}
+
+.c-form-element__search{
+  border: 0px;
+  border-bottom: 1px solid #CFCFCF;
+  font-family: Garnett;
+  font-size: 20px;
+  color: black;
+  font-weight: 300;
+  outline: none;
+  padding: 10px 30px 10px 0px;
+  margin-right: 20px;
+  background: url('/_resources/images/icon-search.svg');
+  background-position: center right;
+  background-repeat: no-repeat;
+  transition: .2s ease-in-out;
+}
+
+.c-form-element__search:focus,
+.c-form-element__search:active{
+  outline: none !important;
+
+  --tw-ring-color: transparent;
+  --tw-ring-offset-shadow: inset 0 0 0 0 transparent;
+  --tw-ring-shadow: inset 0 0 0 0 transparent;
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  border-color: transparent;
+  border-bottom: 1px solid #0059F3;
+}
+
+.c-form-element__select{
+  border-radius: 50px;
+  border: 1px solid #CFCFCF;
+  margin-right: 20px;
+  background: url('/_resources/images/icon-dropdown.svg');
+  background-position: 95% center;
+  background-repeat: no-repeat;
+  font-size: 14px;
+  color: black;
+  font-weight: 300;
+  outline: none;
+  padding: 10px 40px 10px 30px;
+  transition: .2s ease-in-out;
+}
+
+.c-form-element__submit{
+  background: #0059F3;
+  color: white;
+  font-family: Garnett;
+  font-size: 14px;
+  padding: 0px 25px;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: .2s ease-in-out;
+}
+
+.c-form-element__submit:hover{
+  background: #0A213C;
+}
+
+@media screen and (max-width: 980px){
+
+  .c-filterable-contain__intro{
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+}
+
+
+@media screen and (max-width: 800px){
+
+  .c-filterable-elements__contain form{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .c-filterable-elements__contain form > *{
+    width: 100% !important;
+    margin: 10px;
+  }
+
+  .c-filterable-elements__contain form > .c-form-element__submit{
+    height: 45px;
+    line-height: 45px;
+    width: 200px !important;
+    align-self: center;
+  }
+
+}

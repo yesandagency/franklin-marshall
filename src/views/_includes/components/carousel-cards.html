@@ -1,0 +1,21 @@
+<section class="background-blue overflow-hidden">
+  <carousel-cards title="{{ data.title }}">
+    {% for card in data.cards%}
+      <a class="card bg-white w-card mr-10 flex-shrink-0" href="{{ card.link }}">
+        <div class="relative w-full h-80 2xl:h-96 bg-blue-ash overflow-hidden">
+          <img class="filter__image adhere object-cover pointer-events-none" src="{{ card.thumbnail }}" alt="Alt text">
+        </div>
+        <div class="p-8 md:p-10">
+          <h3 class="title-sm mb-5">{{ card.title }}</h3>
+          <p class="body mb-5">{{ card.content }}</p>
+          <div class="font-semibold text-18 leading-140">
+            <span class="hover-highlight-child">
+              {{ card.linkText }}
+              {{ svg('arrow', 'inline-block w-6 h-6 mb-1 ml-2 text-red') }}
+            </span>
+          </div>
+        </div>
+      </a>
+    {% endfor %}
+  </carousel-cards>
+</section>

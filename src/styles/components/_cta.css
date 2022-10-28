@@ -1,0 +1,71 @@
+.cta-icon {
+  @apply relative block transform transition-transform;
+}
+
+a:hover .cta-icon,
+button:hover .cta-icon {
+  transform: translateX(0.2rem) translateZ(0);
+}
+
+.cta-icon__front {
+  @apply transition-clip-path duration-350 ease-linear;
+  clip-path: inset(0 100% 0 0);
+}
+
+a:hover .cta-icon__front,
+button:hover .cta-icon__front {
+  clip-path: inset(-5% -5% -5% -5%);
+}
+
+.cta-line {
+  @apply relative block py-7;
+}
+
+.cta-line--blue {
+  @apply py-6;
+}
+
+.cta-line::before,
+.cta-line::after {
+  @apply absolute bottom-0 left-0 w-full h-0.5 bg-orange;
+  content: "";
+}
+
+.cta-line--blue::before {
+  @apply bg-blue;
+}
+
+.cta-line::after {
+  @apply bg-blue-navy transform origin-left scale-x-0 transition-transform;
+}
+
+.cta-line--blue::after {
+  @apply bg-orange;
+}
+
+.cta-line:hover::after {
+  @apply scale-x-100;
+}
+
+.cta-outline {
+  @apply relative flex justify-center items-center py-3 px-6 font-semibold text-18 leading-160 text-center border-2 border-blue-navy transition-colors;
+}
+
+.cta-outline:hover {
+  @apply text-white;
+}
+
+.cta-outline::before {
+  @apply absolute top-0 left-0 w-full h-full bg-blue-navy transform scale-x-0 origin-left transition-transform;
+  content: "";
+}
+
+.cta-outline:hover::before {
+  @apply scale-x-100;
+}
+
+
+.c-feature-cta{
+  padding: 0px 2.2727272725%;
+  margin: 0 auto;
+}

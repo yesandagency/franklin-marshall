@@ -1,0 +1,17 @@
+<section class="relative hero">
+  <!-- DEV NOTE: If background image is not set by user in the CMS, it should use default: `/_resources/images/background.jpg` -->
+  <!-- <img alt="" aria-hidden="true" src="{{ data.backgroundImage or '/_resources/images/background.jpg' }}" class="adhere object-cover object-top"> -->
+
+  <div class="c-hero-standard">
+    <div class="c-hero-standard__contain">
+      <div class="c-hero-standard__contain-copy">
+        <h1>{{ data.heading }}</h1>
+      </div>
+    </div>
+  </div>
+  <div class="c-hero__breadcrumbs breadcrumbs">
+    {% for breadcrumb in data.breadcrumbs %}
+      <a href="{{ breadcrumb.link }}">{{ breadcrumb.title }}</a><span></span>
+    {% endfor %}
+  </div>
+</section>

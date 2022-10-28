@@ -1,0 +1,21 @@
+<!-- DEV NOTE: VARIATION: Add modifier class of `link-list--2-up` to show two columns of links -->
+<section class="link-list {{ 'link-list--2-up' if data.mode === '2-up' }} background-white">
+  <div class="container">
+    <div class="w-full w-20/22 md:w-16/22 mx-auto">
+      {% for section in data.sections %}
+        {% if section.links | length %}
+          <div class="border-b-2 border-blue-ash py-8 lg:py-12">
+            <h2 class="text-32 md:text-40 leading-110 font-display font-semibold mb-5 md:mb-10">{{ section.title }}</h2>
+            <ul class="link-list__list font-semibold text-16 leading-140">
+              {% for link in section.links %}
+                <li class="li-square mb-4 sm:mb-0 px-3">
+                  <a href="{{ link.link }}" class="underline text-blue hover:text-blue-navy">{{ link.label }}</a>
+                </li>
+              {% endfor %}
+            </ul>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</section>

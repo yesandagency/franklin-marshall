@@ -1,0 +1,7 @@
+.link-list__list {
+  @apply sm:grid sm:grid-cols-1 sm:gap-4;
+}
+
+.link-list--2-up .link-list__list {
+  @apply sm:grid-cols-2;
+}

@@ -1,0 +1,149 @@
+menuUtility:
+  title: Information For
+  links:
+    - label: Prospective Students
+      href: /
+    - label: Current Students
+      href: /
+    - label: Transfer Students
+      href: /
+    - label: Dual–Credit
+      href: /
+    - label: Continuing Education & Worksforce
+      href: /
+    - label: Corporate Partners
+      href: /
+    - label: Veterans & Military
+      href: /
+menuPrimary:
+  - heading: Academics
+    href: /
+    links:
+      - label: Programs & Courses
+        href: /
+      - label: Academic Advising
+        href: /
+      - label: Academic Calendar
+        href: /
+      - label: Locations
+        href: /
+      - label: Honors Institute
+        href: /
+  - heading: Admissions & Aid
+    href: /
+    links:
+      - label: New Student Orientation
+        href: /
+      - label: Registration
+        href: /
+      - label: Tuition
+        href: /
+      - label: Financial Aid
+        href: /
+      - label: Testing
+        href: /
+  - heading: Student Services
+    href: /
+    links:
+      - label: Bookstore
+        href: /
+      - label: Libraries
+        href: /
+      - label: Club & Activities
+        href: /
+      - label: Graduation
+        href: /
+      - label: Career Center
+        href: /
+      - label: Disability Services
+        href: /
+  - heading: Community & Campus
+    href: /
+    links:
+      - label: Athletics
+        href: /
+      - label: Events
+        href: /
+      - label: Foundation
+        href: /
+      - label: Corporate College
+        href: /
+      - label: For Employers
+        href: /
+  - heading: About Collin
+    href: /
+    links:
+      - label: Faculty & Staff Directory
+        href: /
+      - label: Leadership
+        href: /
+      - label: Board of Trustees
+        href: /
+      - label: Careers
+        href: /
+      - label: Contact Collin
+        href: /
+
+
+menuResource:
+
+  - heading: ''
+    links:
+      - label: Request More Info
+        href: /
+      - label: Apply
+        href: /
+      - label: News
+        href: /
+      - label: Calendar
+        href: /
+search:
+  placeholder: Enter your search terms here
+  url: search.html
+topPages:
+  groups:
+    - links:
+      - label: Apply
+        href: /
+      - label: Registration Information
+        href: /
+      - label: Academic Calendar
+        href: /
+      - label: Tuition
+        href: /
+      - label: B.A. Programs
+        href: /
+      - label: Program Guide
+        href: /
+    - heading: Current Student
+      links:
+        - label: Sample Link One
+          href: /
+        - label: Sample Link Two
+          href: /
+        - label: Sample Link Three
+          href: /
+        - label: Sample Link Four
+          href: /
+    - heading: Future Student
+      links:
+        - label: Apply
+          href: /
+        - label: Registration Information
+          href: /
+        - label: Academic Calendar
+          href: /
+        - label: Tuition
+          href: /
+        - label: B.A. Programs
+          href: /
+        - label: Program Guide
+          href: /
+    - heading: Faculty or Staff Member
+      links:
+        - label: Staff Link One
+          href: /
+        - label: Staff Link Two
+          href: /
+        - label: Staff Link Three
+          href: /

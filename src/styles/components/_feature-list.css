@@ -1,0 +1,7 @@
+.feature-list--left .feature-list__row {
+  @apply md:flex-row-reverse;
+}
+
+.feature-list__content > *:last-child {
+  @apply mb-0;
+}

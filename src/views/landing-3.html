@@ -1,0 +1,104 @@
+---
+layout: main.html
+bodyClass: landing
+components:
+  - name: hero-landing
+    texture: '/_resources/images/hero-landing-texture-1.png'
+    image: '/_resources/images/hero-landing-image-1.png'
+    heading: 'Collin College Locations'
+    description: '
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices malesuada egestas cursus et.</p>
+    '
+    breadcrumbs:
+      - title: Collin College
+        link: '#'
+      - title: Collin College Locations
+        link: '#'
+
+  - name: fifty-fifty
+    blockbg: white
+    copybg: tan
+    image: '/_resources/images/fifty-fifty.png'
+    imageAlign: 'left'
+    heading: Allen
+    copy: '
+    Students at the Technical Campus will benefit from state-of-the-art equipment and instruction as they pursue high-skill, high-demand careers in growing fields like construction, automotive, collision repair, HVAC, health care, manufacturing, welding and more. The facility serves as a comprehensive campus, allowing traditional and dual credit students to attain workforce and transfer degrees.
+    '
+    isLocation: true
+    locations:
+      - title: Technical Campus
+        link: '#'
+        address: '
+        2550 Bending Branch Way<br/>
+        Allex, TX 75013
+        '
+        phone: 972-553-1290
+
+
+  - name: fifty-fifty
+    blockbg: blue
+    copybg: white
+    image: '/_resources/images/fifty-fifty.png'
+    imageAlign: 'right'
+    heading: Celina
+    copy: '
+    Scheduled to open to the public in Fall 2021, the Collin College Celina Campus will provide great access to quality higher education for northwestern Collin County. The first phase of the campus will be 96,000 square feet and will support 2,500 students.<br/>
+    <br/>
+    The campus will offer academic transfer courses as well as business management, computer-aided drafting and design, information technology, and health sciences.
+    '
+    isLocation: true
+    locations:
+      - title: Celina Campus
+        link: '#'
+        address: '
+        2550 Kinship Parkway<br/>
+        Celina, TX 75009
+        '
+        phone: 972-553-1290
+
+  - name: fifty-fifty
+    blockbg: white
+    copybg: tan
+    image: '/_resources/images/fifty-fifty.png'
+    imageAlign: 'left'
+    heading: Farmersville
+    copy: '
+    Scheduled to open to the public in March 2021, the Collin College Farmersville Campus will provide convenient access to higher education facilities for the residents of Farmersville and eastern Collin County. The first building, an approximately 52,000-square-foot facility, is designed to accommodate 1,250 learners.
+    '
+    isLocation: true
+    locations:
+      - title: Farmersville Campus
+        link: '#'
+        address: '
+        2501 S. Collin Parkway<br/>
+        Farmersville, TX 75442
+        '
+        phone: 972-553-1290
+
+  - name: fifty-fifty
+    blockbg: blue
+    copybg: white
+    image: '/_resources/images/fifty-fifty.png'
+    imageAlign: 'right'
+    heading: Frisco
+    copy: '
+    Set along the historic Shawnee Trail, the Frisco Campus is the second largest Collin campus with over 8,500 students. Students can take advantage of unique programs and amenities that foster exploration, collaboration, and critical thinking. The campus houses the award-winning Institute of Hospitality and Culinary Education (IHCE), the National Convergence Technology Center (CTC), an impressive conference center, and a university-style central quad.
+    '
+    isLocation: true
+    locations:
+      - title: Frisco Campus
+        link: '#'
+        address: '
+        2501 S. Collin Parkway<br/>
+        Farmersville, TX 75442
+        '
+        phone: 972-553-1290
+
+
+---
+
+{% from "macros/component.html" import loadComponent %}
+
+{% for component in components %}
+  {{ loadComponent(component) }}
+{% endfor %}

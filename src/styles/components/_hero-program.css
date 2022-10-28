@@ -1,0 +1,243 @@
+.c-hero-program{
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 350px;
+  padding: 0px 4.545454545%;
+}
+
+.c-hero-program__background{
+  height: 100%;
+  width: 100%;
+  display: background;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.c-hero-program__contain{
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.c-hero-program__contain-copy, .c-hero-program__contain-image{
+  width: 50%;
+  position: relative;
+  height: 100%;
+}
+
+.c-hero-program__contain-copy{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding-right: 125px;
+}
+
+.c-hero-program__contain-image{
+  height: calc(100% - 65px);
+  border-radius: 5px;
+}
+
+.c-hero-program__contain-copy h1{
+  font-size: 65px;
+  font-family: Garnett;
+  color: white;
+  font-weight: 600;
+  text-align: left;
+}
+
+.c-hero-program__contain-copy p{
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: left;
+}
+
+.c-hero-program__program-details{
+  display: block;
+  position: absolute;
+  right: 4.545454545%;;
+  bottom: -30px;
+}
+
+.c-hero-program__program-details > div{
+  display: block;
+  background: white;
+  position: relative;
+  padding: 20px 15px;
+  border: 1px solid #0A213C;
+  border-bottom: 5px solid #0A213C;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.c-hero-program__program-details > div p span{
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #0059F3;
+  text-transform: uppercase;
+  display: block;
+  position: relative;
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+.c-hero-program__program-details > div:first-of-type{
+  margin-bottom: 10px;
+}
+
+
+.c-hero-program__intro-block{
+  display: block;
+  position: relative;
+  width: 100%;
+  padding: 45px 4.166666667% 60px;
+}
+
+.c-hero-program__intro-container{
+  display: flex;
+  position: relative;
+  width: 100%;
+}
+
+
+.c-hero-program__intro-block h2{
+  font-family: Domaine;
+  font-size: 50px;
+  color: #004088;
+  margin-bottom: 1rem;
+}
+
+.c-hero-program__intro-block h3{
+  font-size: 12px;
+  letter-spacing: 2px;
+  font-weight: 600;
+  color: #0059F3;
+  position: relative;
+  display: block;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.c-hero-program__intro-block p{
+  color: #363030;
+  line-height: 28px;
+  margin-bottom: 20px;
+}
+
+.c-hero-program__intro-block .button{
+  margin-right: 5px;
+}
+
+.c-hero-program__intro-block .button.white{
+  border: 2px solid #363030;
+  transition: .2s ease-in-out;
+  padding: 10px 2rem;
+}
+
+.c-hero-program__intro-block .button.white:hover{
+  background: #363030;
+  color: white;
+}
+
+.c-hero-program__intro-block .button.white svg path{
+  transition: .2s ease;
+}
+
+.c-hero-program__intro-block .button.white:hover svg path{
+  stroke: white;
+  stroke-width: 2px;
+}
+
+.c-hero-program__intro-body{
+    width: 75%;
+    padding-right: 60px;
+}
+
+.c-hero-program__intro-quicklinks{
+  display: flex;
+  position: relative;
+  width: 100%;
+  flex-wrap: wrap;
+  margin: 1.75rem 0px 0px;
+}
+
+.c-hero-program__intro-quicklinks a{
+  width: calc(50% - 30px);
+  font-size: 22px;
+  color: #004088;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #D0C9C0;
+  padding-bottom: 15px;
+}
+
+.c-hero-program__intro-quicklinks a:nth-of-type(odd){
+  margin-right: 30px;
+}
+
+.c-hero-program__intro-quicklinks a:nth-of-type(even){
+  margin-left: 30px;
+}
+
+.c-hero-program__intro-quicklinks a span{
+  display: block;
+  position: relative;
+  font-size: 16px;
+  margin-top: 5px;
+  color: #25282B;
+}
+
+
+@media screen and (max-width: 980px){
+
+  .c-hero-program__program-details{
+    display: flex;
+    width: calc(100% - 4.545454545% - 4.545454545%);
+    right: initial;
+    justify-content: center;
+  }
+
+  .c-hero-program__contain-copy h1{
+    font-size: 48px;
+  }
+
+  .c-hero-program + .c-hero__breadcrumbs{
+    padding-top: 50px;
+    height: 120px;
+    line-height: 25px;
+  }
+
+  .c-hero-program__program-details > div:first-of-type{
+    margin-bottom: 0px;
+    margin-right: 10px;
+  }
+
+  .c-hero-program__contain-copy{
+    width: 100%;
+  }
+
+  .c-hero-program__intro-container{
+    display: block;
+  }
+
+  .c-hero-program__intro-body{
+    width: 100%;
+    padding-right: 0px;
+    margin-bottom: 45px;
+  }
+
+  .c-cta-group__intro-quicklinks{
+    display: block;
+  }
+
+  .c-cta-group__intro-quicklinks a{
+    width: 100%;
+    display: block;
+    margin: 0 !important;
+    margin-bottom: 20px !important;
+  }
+
+}

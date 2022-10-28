@@ -1,0 +1,20 @@
+---
+layout: main.html
+components:
+  - name: hero-index
+    cmsName: Index Hero
+    backgroundColor: blue-light
+    heading: Notifications
+  - name: rich-text
+    cmsName: WYSIWYG (aka Rich Text)
+    items:
+      - type: wysiwyg
+        cmsName: WYSIWYG
+        content: default
+---
+
+{% from "macros/component.html" import loadComponent %}
+
+{% for component in components %}
+  {{ loadComponent(component) }}
+{% endfor %}

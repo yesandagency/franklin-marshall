@@ -1,0 +1,108 @@
+---
+layout: main.html
+bodyClass: article
+components:
+  - name: hero-article
+    heading: 'The Power of a Handwritten Note: Student Traverses the Path to a New Career'
+    date: January 11, 2022
+    author: Heather Darrow
+
+    breadcrumbs:
+      - title: Collin College
+        link: '#'
+      - title: Collin News
+        link: '#'
+
+  - name: wysiwyg-article-page
+    contentItems:
+      - type: full-width-image
+        image: '/_resources/images/hero-article-page.png'
+        alt: 'hero for article'
+      - type: body-copy
+        copy:
+          - paragraph: '
+            <span class="dropcap">O</span>n the days when she needs inspiration Kristen Ostertag opens her wallet and pulls out a handwritten note. The words she reads are her own. They are the reason she decided to go to college, change careers, and never look back.
+            '
+          - paragraph: '
+            A mother of three teenagers, Kristen enjoyed her job as the director of advocacy and finance manager for a local domestic violence shelter. However, at the beginning of the pandemic she was reminded that there aren’t any guarantees in life. She felt called to become a nurse but decided to earn a medical assisting certificate first.
+            '
+          - paragraph: '
+            During an online Collin College medical assisting program interview, she wrote the words, “I really want this,” and tucked the note in her wallet.
+            '
+          - paragraph: '
+            “It was scary to walk away from a career that was successful,” Kristen said. “It was only because of the support of my husband that I could. Since that moment I’ve been all in. It was a no-brainer to select a program that could give me so many certification options.”
+            '
+          - paragraph: '
+            According to Kimberly Gentry, professor of Medical Assisting Advanced Practice, the college’s Medical Assisting Advanced Practice program offers hands-on training and skills that prepare students to work in physicians’ offices, urgent care facilities, and hospitals. Students can choose to enroll in the 10-month certificate program or the two-year associate of applied science degree.
+            '
+          - paragraph: '
+            “One unique feature of this program is that it is an advanced practice program, allowing students to take multiple credentialing exams and  increase their marketability to employers,” Kimberly said. “In addition to the Registered Medical Assistant (RMA) certification, students may become credentialed as Certified Phlebotomy Technicians (CPT), Electrocardiography (EKG) Technicians, and Medical Scribes.”
+            '
+  - name: testimonial
+    quote: 'This is a student or faculty quote, lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.'
+    author: First and Last Name
+    yearStudy: Graduation Year & Study
+
+  - name: wysiwyg-article-page
+    contentItems:
+      - type: body-copy
+        copy:
+          - paragraph: '
+            As part of the program, Kristen completed an externship in a cardiology office. She took patient histories and vital signs, verified insurance, scheduled appointments, updated medical records, and performed hundreds of EKGs.
+            '
+          - paragraph: '
+            “There wasn’t anything that they could throw at me that I couldn’t perform, and that is because of this program,” Kristen said. “The interaction with the patients gave me confirmation that I was doing what I was called to do. Multiple patients told the providers that they felt heard and that I was kind. It was rewarding to find a balance of being efficient and still giving great patient care, letting patients know they are important.”
+            '
+          - paragraph: '
+            Today, Kristen serves on the program’s advisory board. This spring she plans to work as a medical assistant during the day while she takes a nursing prerequisite class at night.
+            '
+          - paragraph: '
+            “I will apply for Collin’s nursing program this spring,” she said. “I can’t stress enough how much Professor Kimberly Gentry taught all of the students. Most of us didn’t have any medical experience. The amount we learned in an accelerated amount of time was tremendous. I highly recommend this program. It really gives you a chance to get started in the medical field quickly.”
+            '
+
+  - name: two-up-image
+    images:
+      - url: '/_resources/images/hero-landing-image-1.png'
+      - url: '/_resources/images/hero-landing-image-1.png'
+
+  - name: video
+    subtitle: Lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
+    youtube: 'https://www.youtube.com/watch?v=LzUGMXe0tQw&ab_channel=CollinCollege'
+
+  - name: wysiwyg-article-page
+    contentItems:
+      - type: body-copy
+        copy:
+          - paragraph: '
+          For more information, visit www.collin.edu/department/medicalassisting/.
+          '
+          - paragraph: '
+          To apply and register for Collin College classes at the Wylie Campus, visit www.collin.edu/campuses/wylie.
+          '
+
+  - name: article-feed
+    title: 'Related Articles'
+    articles:
+      - image: '/_resources/images/news-1.png'
+        title: '<p>Recreating the Abstract: Professor Honored for Decades of Music Education</p>'
+        link: '#'
+        month: Jan
+        date: 22
+      - image: '/_resources/images/news-2.png'
+        title: '<p>Recreating the Abstract: Professor Honored for Decades of Music Education</p>'
+        link: '#'
+        month: Jan
+        date: 22
+      - image: '/_resources/images/news-3.png'
+        title: '<p>Recreating the Abstract: Professor Honored for Decades of Music Education</p>'
+        link: '#'
+        month: Jan
+        date: 22
+
+---
+
+{% from "macros/component.html" import loadComponent %}
+
+{% for component in components %}
+  {{ loadComponent(component) }}
+{% endfor %}

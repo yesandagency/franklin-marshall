@@ -1,0 +1,76 @@
+.container {
+  @apply w-20/24 md:w-22/24 2xl:max-w-screen-2xl mx-auto;
+}
+
+.container-md {
+  @apply w-full md:w-22/24 2xl:max-w-screen-2xl mx-auto;
+}
+
+.adhere {
+  @apply absolute top-0 left-0 w-full h-full;
+}
+
+.flex-center {
+  @apply justify-center items-center;
+}
+
+.h-content {
+  height: calc(100vh - 6rem);
+
+  @screen md {
+    height: calc(100vh - 6rem);
+  }
+}
+
+.max-h-content {
+  max-height: calc(100vh - 6rem);
+
+  @screen md {
+    max-height: calc(100vh - 6rem);
+  }
+}
+
+.top-24{
+  top: 6rem;
+}
+
+.min-h-content {
+  min-height: calc(100vh - 6rem);
+
+  @screen md {
+    min-height: calc(100vh - 6rem);
+  }
+}
+
+.skip-link {
+  @apply sr-only;
+}
+
+.skip-link:focus {
+  @apply not-sr-only fixed top-0 left-0 z-10 py-3 px-8 text-18 bg-blue text-white underline;
+}
+
+.background-blue {
+  @apply py-10 md:py-12 lg:py-20 2xl:py-24 bg-blue-light;
+}
+
+.background-white {
+  @apply py-10 md:py-12 lg:py-20 2xl:py-24 bg-white;
+}
+
+.background-blue + .background-blue,
+.background-white + .background-white {
+  @apply pt-0;
+}
+
+[v-cloak] {
+  display: none;
+}
+
+.ie-message {
+  min-height: 100vh;
+  padding: 6rem 2rem;
+  background-color: #006BD5;
+  color: #fff;
+  text-align: center;
+}

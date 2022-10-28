@@ -1,0 +1,14 @@
+<div class="c-two-up-image">
+
+  <div class="c-two-up-image__contain">
+
+    {% for image in data.images %}
+
+    <div class="c-two-up-image__image" style="background: url({{ image.url }}) center center no-repeat; background-size: cover;">
+    </div>
+
+    {% endfor %}
+
+  </div>
+
+</div>

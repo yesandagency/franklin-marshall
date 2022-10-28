@@ -1,0 +1,16 @@
+<div class="relative py-3/22">
+  <img src="{{ data.image }}" class="adhere object-cover pointer-events-none" alt="" aria-hidden="true">
+  <div class="relative container">
+    <div class="md:w-20/22 mx-auto text-center">
+      <a href="{{ data.link }}" class="inline-flex md:min-w-600 justify-between items-center p-6 sm:p-10 bg-red text-white text-left">
+        <div class="font-display font-semibold text-32 md:text-56 mb-2 lg:mb-3 leading-110 tracking-slight">{{ data.linkText }}</div>
+        <div class="cta-icon ml-5 w-12 h-12 rounded-full ring-2 ring-white ring-inset overflow-hidden flex-shrink-0">
+          {{ svg('arrow-circle-solid', 'adhere text-white') }}
+          <div class="cta-icon__front adhere bg-white">
+            {{ svg('arrow-circle-solid', 'adhere text-red') }}
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>

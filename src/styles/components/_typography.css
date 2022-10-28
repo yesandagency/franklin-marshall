@@ -1,0 +1,43 @@
+.title-xxl {
+  @apply font-display text-70 lg:text-140 leading-90 font-semibold;
+}
+
+.title-xl {
+  @apply font-display text-50 lg:text-100 leading-90 font-semibold;
+}
+
+.title-lg {
+  @apply font-display text-40 lg:text-80 leading-90 font-semibold;
+}
+
+.title-md {
+  @apply font-display text-32 lg:text-56 leading-110 font-semibold tracking-slight;
+}
+
+.title-sm {
+  @apply font-display text-24 md:text-32 lg:text-40 leading-110 font-semibold tracking-slight;
+}
+
+.title-xs {
+  @apply font-sans text-18 lg:text-24 leading-130 font-semibold;
+}
+
+.subtitle {
+  @apply font-sans text-14 leading-160 font-semibold tracking-wider uppercase;
+}
+
+.body {
+  @apply font-sans text-16 lg:text-18 leading-160 font-light;
+}
+
+.body-lg {
+  @apply font-sans text-16 lg:text-24 leading-140 font-light tracking-slight;
+}
+
+.meta {
+  @apply font-sans text-14 lg:text-16 leading-160 font-light tracking-slight;
+}
+
+.meta-sm {
+  @apply font-sans text-14 leading-160 font-medium tracking-wider uppercase;
+}

@@ -1,0 +1,176 @@
+{
+  "filters": [
+    {
+      "slug": "classType",
+      "title": "Class Type",
+      "placeholder": "All Class Types",
+      "options": [
+        {
+          "slug": "online",
+          "title": "Online"
+        },
+        {
+          "slug": "partially-online",
+          "title": "Partially Online"
+        },
+        {
+          "slug": "in-person",
+          "title": "In Person"
+        }
+      ]
+    },
+    {
+      "slug": "programType",
+      "title": "Program Type",
+      "placeholder": "All Program Types",
+      "options": [
+        {
+          "slug": "associate-of-arts-degree",
+          "title": "Associate of Arts Degree"
+        },
+        {
+          "slug": "as-certificate",
+          "title": "A.S. Certificate"
+        },
+        {
+          "slug": "as-degree",
+          "title": "A.S. Degree"
+        },
+        {
+          "slug": "advanced-technical-certificate",
+          "title": "Advanced Technical Certificate"
+        },
+        {
+          "slug": "applied-technology-diploma",
+          "title": "Applied Technology Diploma"
+        },
+        {
+          "slug": "apprenticeship",
+          "title": "Apprenticeship"
+        },
+        {
+          "slug": "bas-degree",
+          "title": "BAS Degree"
+        },
+        {
+          "slug": "bs-degree",
+          "title": "BS Degree"
+        }
+      ]
+    },
+    {
+      "slug": "college",
+      "title": "College",
+      "placeholder": "All Colleges",
+      "options": [
+        {
+          "slug": "health-public-services",
+          "title": "College of Health & Public Services"
+        },
+        {
+          "slug": "arts-sciences",
+          "title": "College of Arts & Sciences"
+        }
+      ]
+    },
+    {
+      "slug": "department",
+      "title": "Department",
+      "placeholder": "All Departments",
+      "options": [
+        {
+          "slug": "dental-services",
+          "title": "School of Dental Services"
+        },
+        {
+          "slug": "education",
+          "title": "School of Education"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "id": "0",
+      "name": "Accounting",
+      "url": "/programs/accounting",
+      "image": {
+        "src": "https://picsum.photos/id/10/400/400",
+        "alt": "Alt Text"
+      },
+      "classType": [
+        "online"
+      ],
+      "programType": [
+        "as-certificate"
+      ],
+      "college": [
+        "health-public-services"
+      ],
+      "department": []
+    },
+    {
+      "id": "1",
+      "name": "Associate of Arts",
+      "url": "/programs/associate-of-arts",
+      "image": {
+        "src": "https://picsum.photos/id/20/400/400",
+        "alt": "Alt Text"
+      },
+      "classType": [],
+      "programType": [
+        "apprenticeship",
+        "bs-degree"
+      ],
+      "college": [
+        "health-public-services"
+      ],
+      "department": [
+        "dental-services"
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Digital and Interactice Media Production",
+      "url": "/programs/digital-media-production",
+      "image": {
+        "src": "https://picsum.photos/id/30/400/400",
+        "alt": "Alt Text"
+      },
+      "classType": [
+        "partially-online"
+      ],
+      "programType": [
+        "bs-degree"
+      ],
+      "college": [
+        "arts-sciences"
+      ],
+      "department": [
+        "dental-services"
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Photographic Technology",
+      "url": "/programs/photographic-technology",
+      "image": {
+        "src": "https://picsum.photos/id/40/400/400",
+        "alt": "Alt Text"
+      },
+      "classType": [
+        "online",
+        "in-person"
+      ],
+      "programType": [
+        "bas-degree"
+      ],
+      "college": [
+        "arts-sciences"
+      ],
+      "department": [
+        "education"
+      ]
+    }
+  ]
+}

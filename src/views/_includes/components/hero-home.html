@@ -1,0 +1,56 @@
+<section class="relative hero">
+  <!-- DEV NOTE: If background image is not set by user in the CMS, it should use default: `/_resources/images/background.jpg` -->
+  <!-- <img alt="" aria-hidden="true" src="{{ data.backgroundImage or '/_resources/images/background.jpg' }}" class="adhere object-cover object-top"> -->
+  <div class="adhere gradient-hero-bg"></div>
+  <div class="relative flex min-h-screen-75 md:min-h-500 lg:min-h-600 items-center p-1/22 text-white bg-white">
+    {% if data.image %}
+      <!-- DEV NOTE: Begin Image Variation -->
+      <img class="adhere object-cover pointer-events-none " src="{{ data.image }}" alt="Alt text">
+      <div class="adhere gradient-hero"></div>
+      <!-- DEV NOTE: End Image Variation -->
+    {% elif data.video %}
+      <!-- DEV NOTE: Begin Video Variation -->
+        <video-cover video-url="{{ data.video }}">
+          <div class="adhere gradient-hero"></div>
+          <video-cover-button class="absolute w-9 h-9 p-3 bg-blue-navy bg-opacity-50"></video-cover-button>
+        </video-cover>
+      <!-- DEV NOTE: End Video Variation -->
+    {% endif %}
+    <div class="relative mr-6 c-header-home__content">
+      <h1 class="title-lg w-5 mb-6 relative">
+      {{ data.heading | safe }}
+      </h1>
+
+      {{ data.description | safe }}
+
+      <a class="inline-flex items-center mt-4 font-display font-semibold text-16 leading-110 button blue" href="{{ data.link.href }}">
+        {{ data.link.label }}
+        <div class="cta-icon ml-3 lg:ml-3 overflow-hidden flex-shrink-0">
+          {% include '../../../assets/images/icon-diagonal-icon.svg' %}
+          <div class="cta-icon__front adhere">
+            {% include '../../../assets/images/icon-diagonal-icon.svg' %}
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="home-hero__quick-links">
+
+    <div class="home-hero__quick-links-contain">
+
+        {% for quickLink in data.quickLinks %}
+
+        <div class="home-hero__quick-link">
+
+          <p>{{ quickLink.subtitle }}</p>
+
+          <a href="{{ quickLink.link }}">{{ quickLink.title }} {% include '../../../assets/images/arrow-blue-large.svg' %}</a>
+
+        </div>
+
+        {% endfor %}
+
+    </div>
+
+  </div>
+</section>

@@ -1,0 +1,136 @@
+---
+layout: main.html
+components:
+  - name: hero-standard
+    heading: 'Site Map'
+
+    breadcrumbs:
+      - title: Collin College
+        link: '#'
+      - title: Site Map
+        link: '#'
+
+  - name: site-map
+
+    sections:
+      - title: Academics
+        links:
+          - title: Link Page Title
+            url: '#'
+          - title: Link Page Title With Longer Length
+            url: '#'
+          - title: Link Page Title With Longer Length That Wraps To Another Line
+            url: '#'
+          - title: Last Link Page Title
+            url: '#'
+          - title: Link Page Title
+            url: '#'
+          - title: Link Page Title With Longer Length
+            url: '#'
+          - title: Last Link Page Title
+            url: '#'
+          - title: Link Page Title With Longer Length That Wraps To Another Line
+            url: '#'
+
+      - title: Admissions & Aid
+        links:
+          - title: Link Page Title
+            url: '#'
+          - title: Link Page Title With Longer Length
+            url: '#'
+          - title: Link Page Title With Longer Length That Wraps To Another Line
+            url: '#'
+          - title: Last Link Page Title
+            url: '#'
+          - title: Link Page Title
+            url: '#'
+          - title: Link Page Title With Longer Length
+            url: '#'
+          - title: Last Link Page Title
+            url: '#'
+          - title: Link Page Title With Longer Length That Wraps To Another Line
+            url: '#'
+
+      - title: Student Services
+        links:
+          - title: Link Page Title
+            url: '#'
+          - title: Link Page Title With Longer Length
+            url: '#'
+          - title: Link Page Title With Longer Length That Wraps To Another Line
+            url: '#'
+          - title: Last Link Page Title
+            url: '#'
+          - title: Link Page Title
+            url: '#'
+          - title: Link Page Title With Longer Length
+            url: '#'
+          - title: Last Link Page Title
+            url: '#'
+          - title: Link Page Title With Longer Length That Wraps To Another Line
+            url: '#'
+
+      - title: Community
+        links:
+          - title: Link Page Title
+            url: '#'
+          - title: Link Page Title With Longer Length
+            url: '#'
+          - title: Link Page Title With Longer Length That Wraps To Another Line
+            url: '#'
+          - title: Last Link Page Title
+            url: '#'
+          - title: Link Page Title
+            url: '#'
+          - title: Link Page Title With Longer Length
+            url: '#'
+          - title: Last Link Page Title
+            url: '#'
+          - title: Link Page Title With Longer Length That Wraps To Another Line
+            url: '#'
+
+      - title: About Collin
+        links:
+          - title: Link Page Title
+            url: '#'
+          - title: Link Page Title With Longer Length
+            url: '#'
+          - title: Link Page Title With Longer Length That Wraps To Another Line
+            url: '#'
+          - title: Last Link Page Title
+            url: '#'
+          - title: Link Page Title
+            url: '#'
+          - title: Link Page Title With Longer Length
+            url: '#'
+          - title: Last Link Page Title
+            url: '#'
+          - title: Link Page Title With Longer Length That Wraps To Another Line
+            url: '#'
+
+      - title: Policies
+        links:
+          - title: Link Page Title
+            url: '#'
+          - title: Link Page Title With Longer Length
+            url: '#'
+          - title: Link Page Title With Longer Length That Wraps To Another Line
+            url: '#'
+          - title: Last Link Page Title
+            url: '#'
+          - title: Link Page Title
+            url: '#'
+          - title: Link Page Title With Longer Length
+            url: '#'
+          - title: Last Link Page Title
+            url: '#'
+          - title: Link Page Title With Longer Length That Wraps To Another Line
+            url: '#'
+
+---
+
+{% from "macros/component.html" import loadComponent %}
+
+{% for component in components %}
+  {{ loadComponent(component) }}
+{% endfor %}

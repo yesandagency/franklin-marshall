@@ -1,0 +1,35 @@
+<app-accordion tag="div" class="relative hidden md:block mx-auto px-4">
+  <ul class="w-full">
+    {% for item in header.menuPrimary %}
+      {% if not item.excludeDesktop %}
+        <li class="block">
+          {% if item.href %}
+            <a class="menu-desktop__button flex w-full py-4 text-24 lg:text-40 leading-110 font-semibold text-left c-primary-menu-option" href="{{ item.href }}">
+              {{ item.heading }}  {% include '../../../assets/images/arrow-primary-nav.svg' %}
+
+
+
+            </a>
+
+            <ul class="py-3">
+              {% for link in item.links %}
+                <li class="block border-b-2 border-blue-dark overflow-visible">
+                  <a class="flex justify-between items-center py-4 px-3 text-18 font-semibold leading-140 transition-colors" href="{{ link.href }}">
+                    {{ link.label }}
+                  </a>
+                </li>
+              {% endfor %}
+            </ul>
+
+          {% else %}
+            <!-- DEV NOTE: `controls` value on `app-accordion-button` needs to match `id` on corresponding `app-accordion-panel` (concatenating loop index works well) -->
+            <!-- DEV NOTE: `default-expanded` needs to be on first button only -->
+            {{ item.heading }}
+
+          {% endif %}
+
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+</app-accordion>

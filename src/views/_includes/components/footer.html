@@ -1,0 +1,58 @@
+{% from "macros/svg.html" import svg %}
+
+
+<footer class="c-footer">
+  <section class="c-prefooter">
+    <div class="c-prefooter__contain">
+
+      <h2>{{ footer.prefootertitle | safe }}</h2>
+
+      <div class="c-prefooter__links">
+        {% for link in footer.prefooterlinks %}
+          <a class="c-prefooter__link" href="{{ link.href }}"><span>{{ link.title }} {% include '../../../assets/images/arrow-yellow-right.svg' %}</span></a>
+        {% endfor %}
+      </div>
+
+    </div>
+  </section>
+  <div class="c-footer__contain">
+      <div class="c-footer__logo">
+        {% include '../../../assets/images/logo-white.svg' %}
+        <p>{{ footer.desc }}</p>
+      </div>
+      <div class="c-footer__primary">
+        <ul>
+          {% for link in footer.linksPrimary %}
+            <li><a href="{{ link.href }}">{{ link.label }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="c-footer__locations">
+        <h3>Campuses & Centers <span id="c-footer__locations-trigger">{% include '../../../assets/images/icon-footer-arrow.svg' %}</span></h3>
+        <ul id="c-footer__locations-list">
+          {% for campus in footer.campusCenter %}
+            <li>{{ campus.address | safe }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="c-footer__secondary">
+        <div class="c-footer__secondary-contain">
+          <div class="c-footer__secondary-links">
+            <ul>
+              {% for link in footer.linksSecondary %}
+                <li><a href="{{ link.href }}">{{ link.label }}</a></li>
+              {% endfor %}
+            </ul>
+            <p class="c-footer__copyright">© 2022 Collin College. All Rights Reserved.</p>
+          </div>
+          <div class="c-footer__social">
+            <a href="#" class="c-footer-social-link" aria-label="facebook" alt="facebook" title="facebook" taborder=1>{% include '../../../assets/images/icon-fb.svg' %}</a>
+            <a href="#" class="c-footer-social-link" aria-label="twitter" alt="twitter" title="twitter" taborder=1>{% include '../../../assets/images/icon-tw.svg' %}</a>
+            <a href="#" class="c-footer-social-link" aria-label="instagram" alt="instagram" title="instagram" taborder=1>{% include '../../../assets/images/icon-ig.svg' %}</a>
+            <a href="#" class="c-footer-social-link" aria-label="youtube" alt="youtube" title="youtube" taborder=1>{% include '../../../assets/images/icon-yt.svg' %}</a>
+            <a href="#" class="c-footer-social-link" aria-label="linkedin" alt="linkedin" title="linkedin" taborder=1>{% include '../../../assets/images/icon-li.svg' %}</a>
+          </div>
+        </div>
+      </div>
+  </div>
+</footer>

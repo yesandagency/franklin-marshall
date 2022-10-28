@@ -1,0 +1,105 @@
+---
+layout: main.html
+bodyClass: landing
+components:
+  - name: hero-standard
+    heading: 'Contact Us'
+
+    breadcrumbs:
+      - title: Collin College
+        link: '#'
+      - title: Contact Us
+        link: '#'
+
+  - name: cta-group
+    color: white
+    heading: Resources for Prospective Students
+    copy: '
+    Lorem sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    '
+
+    quicklinks:
+      - title: Explore Programs
+        subtitle: ''
+        link: '#'
+      - title: Requesting Information
+        subtitle: ''
+        link: '#'
+      - title: Apply
+        subtitle: ''
+        link: '#'
+      - title: Tuition & Financial Aid
+        subtitle: ''
+        link: '#'
+      - title: Program Finder
+        subtitle: ''
+        link: '#'
+      - title: Our Locations
+        subtitle: ''
+        link: '#'
+
+  - name: directory
+    title: Directory
+    color: blue
+    entries:
+      - heading: Academic Advising
+        large: One Dent Drive
+        small: '
+          <p>E: <a href="mailto:admissions@collin.edu">admissions@collin.edu</a></p>
+          <p>P: <a href="tel:5705773000">(570) 577-3000</a></p>
+          <br/>
+          <p>Monday–Friday: 8:30AM–4:30PM</p>
+          <p>Saturday: Varies</p>
+          <p>Sunday: CLOSED
+        '
+        bottom: '
+          <a href="#">Student and Enrollment Services Offices</a>
+        '
+
+      - heading: Admissions
+        large: One Dent Drive
+        small: '
+          <p>E: <a href="mailto:admissions@collin.edu">admissions@collin.edu</a></p>
+          <p>P: <a href="tel:5705773000">(570) 577-3000</a></p>
+          <br/>
+          <p>Monday–Friday: 8:30AM–4:30PM</p>
+          <p>Saturday: Varies</p>
+          <p>Sunday: CLOSED
+        '
+        bottom: '
+          <a href="#">Student and Enrollment Services Offices</a>
+        '
+
+      - heading: Financial Aid
+        large: One Dent Drive
+        small: '
+          <p>E: <a href="mailto:admissions@collin.edu">admissions@collin.edu</a></p>
+          <p>P: <a href="tel:5705773000">(570) 577-3000</a></p>
+          <br/>
+          <p>Monday–Friday: 8:30AM–4:30PM</p>
+          <p>Saturday: Varies</p>
+          <p>Sunday: CLOSED
+        '
+        bottom: '
+          <a href="#">Student and Enrollment Services Offices</a>
+        '
+  - name: fifty-fifty
+    blockbg: white
+    copybg: tan
+    image: '/_resources/images/fifty-fifty.png'
+    imageAlign: 'left'
+    heading: Why Collin
+    copy: '
+    With over XX areas of study, eleven vibrant campuses and an abundance of student resources, discover why Collin is the place for you to build your momentum.
+    '
+    linktitle: Download Viewbook
+    link: '#'
+
+
+---
+
+{% from "macros/component.html" import loadComponent %}
+
+{% for component in components %}
+  {{ loadComponent(component) }}
+{% endfor %}

@@ -1,0 +1,48 @@
+.top-bar {
+  @apply fixed top-16 left-0 w-full md:top-20 z-20;
+}
+
+.top-bar__content {
+  @apply text-16 md:text-18 leading-140 tracking-slight;
+
+  a {
+    @apply font-semibold underline hover:no-underline;
+    background-image: linear-gradient(to right, rgba(255,255,255,0) 50%, #FFFFFF 50%);
+    background-position: -0% 0;
+    background-size: 200% auto;
+    transition: background-position 350ms ease-in-out;
+
+    &:hover {
+      background-position: -99.99% 0;
+    }
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-display font-semibold text-20 md:text-24 leading-130;
+  }
+
+  strong {
+    @apply font-semibold;
+  }
+
+  * + * {
+    @apply mt-1 md:mt-1.5;
+  }
+}
+
+.top-bar__notification {
+  @apply bg-orange text-blue-navy;
+}
+
+.top-bar__alert {
+  @apply bg-red-dark text-white;
+
+  a {
+    background-image: linear-gradient(to right, rgba(255,255,255,0) 50%, #003073 50%);
+  }
+}

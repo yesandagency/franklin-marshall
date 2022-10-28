@@ -1,0 +1,28 @@
+.accordion-icon {
+  @apply relative block;
+}
+
+.accordion-icon::before {
+  position: absolute;
+  top: calc(50% - 1px);
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: currentColor;
+  content: "";
+}
+
+.accordion-icon::after {
+  @apply transition-transform;
+  position: absolute;
+  top: 0;
+  left: calc(50% - 1px);
+  width: 2px;
+  height: 100%;
+  background-color: currentColor;
+  content: "";
+}
+
+button[aria-expanded="true"] > .accordion-icon::after {
+  transform: scaleY(0);
+}

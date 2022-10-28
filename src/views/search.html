@@ -1,0 +1,57 @@
+---
+layout: main.html
+components:
+  - name: hero-standard
+    heading: 'Search Collin College'
+
+    breadcrumbs:
+      - title: Collin College
+        link: '#'
+      - title: Search Results
+        link: '#'
+
+  - name: filterable
+
+    elements:
+    - type: search
+      width: '100%'
+      caption: Enter Keyword
+
+    - type: submit
+      caption: Find
+
+  - name: search-results
+
+    results:
+    - title: Bachelor of Applied Technology (BAT) in Cybersecurity - Collin ...
+      permalink: "#"
+      url: '
+        www.collin.edu &rsaquo; academics &rsaquo; programs &rsaquo; CYBR_BAT
+      '
+      desc: '
+        Admission to the college does not guarantee admission to the BAT-Cybersecurity Program. Registration into upper division courses is by departmental permission ...
+      '
+    - title: Bachelor of Applied Technology (BAT) in Cybersecurity - Collin ...
+      permalink: "#"
+      url: '
+        www.collin.edu &rsaquo; academics &rsaquo; programs &rsaquo; CYBR_BAT
+      '
+      desc: '
+        Admission to the college does not guarantee admission to the BAT-Cybersecurity Program. Registration into upper division courses is by departmental permission ...
+      '
+    - title: Bachelor of Applied Technology (BAT) in Cybersecurity - Collin ...
+      permalink: "#"
+      url: '
+        www.collin.edu &rsaquo; academics &rsaquo; programs &rsaquo; CYBR_BAT
+      '
+      desc: '
+        Admission to the college does not guarantee admission to the BAT-Cybersecurity Program. Registration into upper division courses is by departmental permission ...
+      '
+
+---
+
+{% from "macros/component.html" import loadComponent %}
+
+{% for component in components %}
+  {{ loadComponent(component) }}
+{% endfor %}

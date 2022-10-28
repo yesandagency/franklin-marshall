@@ -1,0 +1,33 @@
+<div class="c-two-up">
+
+  <h2>{{ data.title }}</h2>
+
+  <div class="c-two-up__contain">
+
+    {% for cta in data.ctas %}
+
+    <div class="c-two-up__cta">
+
+      <div class="c-two-up__cta-contents">
+        <h2>{{ cta.title }}</h2>
+
+        <a class="inline-flex items-center mt-4 font-display font-semibold text-16 leading-110 button white" href="{{ cta.link }}">
+          {{ cta.linkTitle }}
+          <div class="cta-icon ml-3 lg:ml-3 overflow-hidden flex-shrink-0">
+            {% include '../../../assets/images/icon-diagonal-icon.svg' %}
+            <div class="cta-icon__front adhere">
+              {% include '../../../assets/images/icon-diagonal-icon.svg' %}
+            </div>
+          </div>
+        </a>
+      </div><div class="c-two-up__cta-image" style="background: url('{{ cta.image }}') center center; background-repeat: no-repeat; background-size: cover;"></div>
+
+    </div>
+
+    {% endfor %}
+
+    <div class="c-two-up__line"></div>
+
+  </div>
+
+</div>

@@ -1,0 +1,22 @@
+<div class="c-testimonial">
+
+  <div class="c-testimonial__contain {% if data.image %} has-image {% endif %}">
+    {% if data.image %}
+    <div class="c-testimonial__image" style="background: url('{{ data.image }}') center center; background-size: cover; background-repeat: no-repeat">
+
+    </div>{% endif %}<div class="c-testimonial__copy">
+      {% include '../../../assets/images/icon-quote.svg' %}
+
+      <div class="c-testimonial__copy-contents">
+        <h2>{{ data.quote }}</h2>
+        <p>
+          <strong>{{ data.author }}</strong><br/>
+          {{ data.yearStudy }}
+        </p>
+
+      </div>
+    </div>
+
+  </div>
+
+</div>

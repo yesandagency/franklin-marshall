@@ -1,0 +1,172 @@
+---
+layout: main.html
+bodyClass: landing
+components:
+  - name: hero-landing
+    texture: '/_resources/images/hero-landing-texture-1.png'
+    image: '/_resources/images/hero-landing-image-1.png'
+    heading: 'Admissions & Aid'
+    description: '
+      <p>Together, we’ll figure out your best options so your education fits your goals and your life’s realities.</p>
+    '
+    breadcrumbs:
+      - title: Collin College
+        link: '#'
+      - title: Admissions & Aid
+        link: '#'
+
+    introHead: 'Find Your Starting Point'
+    introSubhead: 'Find Your Starting Point'
+    introDesc: '
+      <p>We believe that real-world understanding is key to your academic journey. Hands-on learning is just part of it. The result: whether you’re an undergraduate or graduate student, you’ll be better prepared for success in your career — and in life.</p>
+    '
+    quicklinks:
+      - title: New Student
+        subtitle: 'First time Collin College students'
+        link: '#'
+      - title: Dual Credit
+        subtitle: 'Earn high school and college credits simultaneously at Collin'
+        link: '#'
+      - title: Returning on Transfering
+        subtitle: 'Students with any college credit'
+        link: '#'
+      - title: International
+        subtitle: 'Individuals seeking an F-1 visa'
+        link: '#'
+      - title: Continuing Education
+        subtitle: 'Noncredit workforce and career training'
+        link: '#'
+
+    sidebarlinks:
+      - title: New Student Orientation
+        link: '#'
+      - title: Registration
+        link: '#'
+      - title: Tuition
+        link: '#'
+      - title: Financial Aid
+        link: '#'
+      - title: Testing
+        link: '#'
+
+  - name: four-up
+    heading: 'Lorem ipsum dolor sit amet consectetur'
+    image: '/_resources/images/four-up.png'
+    ctas:
+      - title: How to Apply
+        copy: 'We’ll walk you through the process. Our goal is to navigate all financial opportunities so you benefit in every way possible.'
+        icon: how-apply
+        link: '#'
+        linktitle: Get Started
+      - title: Tuition & Fees
+        copy: 'It is our mission to provide and affordable education and help get you started in your career.'
+        icon: tuition-fees
+        link: '#'
+        linktitle: Find Costs
+      - title: Financial Aid
+        copy: 'Your financial aid counselor will help you take advantage of every grant or scholarship available to you.'
+        icon: financial-aid
+        link: '#'
+        linktitle: Learn How
+      - title: Visit Us
+        copy: 'A great way to decide whether Collin is the school for you is to visit one of our campuses.'
+        icon: visit-us
+        link: '#'
+        linktitle: Get the Experience
+
+  - name: fifty-fifty
+    blockbg: white
+    copybg: tan
+    image: '/_resources/images/fifty-fifty.png'
+    imageAlign: 'left'
+    heading: Why Collin
+    copy: '
+    With over XX areas of study, eleven vibrant campuses and an abundance of student resources, discover why Collin is the place for you to build your momentum.
+    '
+    linktitle: Download Viewbook
+    link: '#'
+
+  - name: stat-block
+    title: Collin by the Numbers
+    stats:
+      - numeral: 63%
+        subhead: of students
+        caption: Recieved Financial Aid of some kind
+      - numeral: 98%
+        subhead: Lorem ipsum dolor
+        caption: Lorem ipsum dolor sit amet, consectetur elit, sed it amet.
+      - numeral: $3,000
+        subhead: Federal Student Loan debt
+        caption: is the average for Collin graduating seniors in the Class of 2021
+
+  - name: feature-story
+    title: Student Spotlight
+    heading: First Last Name
+    subhead: Class of '23
+    body: '
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam non elementum id nibh et est, lorem est vel. Elementum maecenas aenean nulla elit lectus. Platea sit ut in arcu nibh. Eu pretium iaculis neque pellentesque pellentesque id tristique nisl eget. Pharetra eleifend tellus porta sit. Felis feugiat integer a, amet, lacus cursus eget integer. Eget pulvinar eu nunc convallis fermentum. Cras fermentum ornare lectus at feugiat pellentesque scelerisque sed.
+    '
+    link: '#'
+    linktitle: Read More
+    image: '/_resources/images/feature-story.png'
+    imageAlign: right
+
+  - name: cta-large
+    title: 'How to Check Your <i>Application Status</i>'
+    copy: ''
+    link: '#'
+    linktitle: See How
+
+  - name: directory
+    title: Directory
+    color: blue
+    entries:
+      - heading: Academic Advising
+        large: One Dent Drive
+        small: '
+          <p>E: <a href="mailto:admissions@collin.edu">admissions@collin.edu</a></p>
+          <p>P: <a href="tel:5705773000">(570) 577-3000</a></p>
+          <br/>
+          <p>Monday–Friday: 8:30AM–4:30PM</p>
+          <p>Saturday: Varies</p>
+          <p>Sunday: CLOSED
+        '
+        bottom: '
+          <a href="#">Student and Enrollment Services Offices</a>
+        '
+
+      - heading: Admissions
+        large: One Dent Drive
+        small: '
+          <p>E: <a href="mailto:admissions@collin.edu">admissions@collin.edu</a></p>
+          <p>P: <a href="tel:5705773000">(570) 577-3000</a></p>
+          <br/>
+          <p>Monday–Friday: 8:30AM–4:30PM</p>
+          <p>Saturday: Varies</p>
+          <p>Sunday: CLOSED
+        '
+        bottom: '
+          <a href="#">Student and Enrollment Services Offices</a>
+        '
+
+      - heading: Financial Aid
+        large: One Dent Drive
+        small: '
+          <p>E: <a href="mailto:admissions@collin.edu">admissions@collin.edu</a></p>
+          <p>P: <a href="tel:5705773000">(570) 577-3000</a></p>
+          <br/>
+          <p>Monday–Friday: 8:30AM–4:30PM</p>
+          <p>Saturday: Varies</p>
+          <p>Sunday: CLOSED
+        '
+        bottom: '
+          <a href="#">Student and Enrollment Services Offices</a>
+        '
+
+---
+
+{% from "macros/component.html" import loadComponent %}
+
+{% for component in components %}
+  {{ loadComponent(component) }}
+{% endfor %}

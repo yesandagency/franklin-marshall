@@ -1,0 +1,11 @@
+<div class="feature-cta">
+  <div class="c-feature-cta-block">
+    <h2>{{ data.subhead }}</h2>
+    <h3>{{ data.heading | safe }}</h3>
+    <ul>
+      {% for tag in data.tags %}
+      <li><a href="{{ tag.link }}">{{ tag.title }}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>

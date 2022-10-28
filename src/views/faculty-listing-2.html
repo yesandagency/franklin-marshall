@@ -1,0 +1,162 @@
+---
+layout: main.html
+bodyClass: landing
+components:
+  - name: hero-standard
+    heading: 'Faculty & Staff'
+
+    breadcrumbs:
+      - title: Collin College
+        link: '#'
+      - title: Faculty & Staff
+        link: '#'
+
+  - name: filterable
+    elements:
+    - type: search
+      width: '40%'
+      caption: Enter Keyword
+    - type: select
+      width: '15%'
+      options:
+        - title: All Degree Levels
+        - title: Associate's
+        - title: Bachelor of Arts
+        - title: Bachelor of Science
+        - title: Master's
+        - title: PhD
+    - type: select
+      width: '15%'
+      options:
+        - title: Interests
+        - title: Lorem
+        - title: Ipsum
+        - title: Dolor
+    - type: select
+      width: '15%'
+      options:
+        - title: Locations
+        - title:
+        - title: Lorem
+        - title: Ipsum
+        - title: Dolor
+    - type: submit
+      caption: Find
+
+  - name: staff-grid
+    people:
+      - name: First and Last Name
+        titleLocation: 'Cybersecurity Professor, McKinney Campus'
+        phone: '972.548.6847'
+        email: 'firstname@collincollege.edu'
+        tags:
+          - title: 'Full-Time'
+          - title: McKinney Campus
+      - name: First and Last Name
+        titleLocation: 'Cybersecurity Professor, McKinney Campus'
+        phone: '972.548.6847'
+        email: 'firstname@collincollege.edu'
+        tags:
+          - title: 'Full-Time'
+          - title: McKinney Campus
+      - name: First and Last Name
+        titleLocation: 'Cybersecurity Professor, McKinney Campus'
+        phone: '972.548.6847'
+        email: 'firstname@collincollege.edu'
+        tags:
+          - title: 'Full-Time'
+          - title: McKinney Campus
+      - name: First and Last Name
+        titleLocation: 'Cybersecurity Professor, McKinney Campus'
+        phone: '972.548.6847'
+        email: 'firstname@collincollege.edu'
+        tags:
+          - title: 'Full-Time'
+          - title: McKinney Campus
+      - name: First and Last Name
+        titleLocation: 'Cybersecurity Professor, McKinney Campus'
+        phone: '972.548.6847'
+        email: 'firstname@collincollege.edu'
+        tags:
+          - title: 'Full-Time'
+          - title: McKinney Campus
+      - name: First and Last Name
+        titleLocation: 'Cybersecurity Professor, McKinney Campus'
+        phone: '972.548.6847'
+        email: 'firstname@collincollege.edu'
+        tags:
+          - title: 'Full-Time'
+          - title: McKinney Campus
+      - name: First and Last Name
+        titleLocation: 'Cybersecurity Professor, McKinney Campus'
+        phone: '972.548.6847'
+        email: 'firstname@collincollege.edu'
+        tags:
+          - title: 'Full-Time'
+          - title: McKinney Campus
+      - name: First and Last Name
+        titleLocation: 'Cybersecurity Professor, McKinney Campus'
+        phone: '972.548.6847'
+        email: 'firstname@collincollege.edu'
+        tags:
+          - title: 'Full-Time'
+          - title: McKinney Campus
+      - name: First and Last Name
+        titleLocation: 'Cybersecurity Professor, McKinney Campus'
+        phone: '972.548.6847'
+        email: 'firstname@collincollege.edu'
+        tags:
+          - title: 'Full-Time'
+          - title: McKinney Campus
+      - name: First and Last Name
+        titleLocation: 'Cybersecurity Professor, McKinney Campus'
+        phone: '972.548.6847'
+        email: 'firstname@collincollege.edu'
+        tags:
+          - title: 'Full-Time'
+          - title: McKinney Campus
+      - name: First and Last Name
+        titleLocation: 'Cybersecurity Professor, McKinney Campus'
+        phone: '972.548.6847'
+        email: 'firstname@collincollege.edu'
+        tags:
+          - title: 'Full-Time'
+          - title: McKinney Campus
+      - name: First and Last Name
+        titleLocation: 'Cybersecurity Professor, McKinney Campus'
+        phone: '972.548.6847'
+        email: 'firstname@collincollege.edu'
+        tags:
+          - title: 'Full-Time'
+          - title: McKinney Campus
+      - name: First and Last Name
+        titleLocation: 'Cybersecurity Professor, McKinney Campus'
+        phone: '972.548.6847'
+        email: 'firstname@collincollege.edu'
+        tags:
+          - title: 'Full-Time'
+          - title: McKinney Campus
+      - name: First and Last Name
+        titleLocation: 'Cybersecurity Professor, McKinney Campus'
+        phone: '972.548.6847'
+        email: 'firstname@collincollege.edu'
+        tags:
+          - title: 'Full-Time'
+          - title: McKinney Campus
+      - name: First and Last Name
+        titleLocation: 'Cybersecurity Professor, McKinney Campus'
+        phone: '972.548.6847'
+        email: 'firstname@collincollege.edu'
+        tags:
+          - title: 'Full-Time'
+          - title: McKinney Campus
+
+
+
+---
+
+{% from "macros/component.html" import loadComponent %}
+
+{% for component in components %}
+  {{ loadComponent(component) }}
+{% endfor %}

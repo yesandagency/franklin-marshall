@@ -1,0 +1,30 @@
+.c-wysiwyg{
+  display: block;
+  position: relative;
+  width: 100%;
+  padding: 0px 4.545454545%;
+}
+
+.c-wysiwyg img{
+  width: 100%;
+  display: block;
+  position: relative;
+  margin-bottom: 45px;
+}
+
+.c-wysiwyg p{
+  max-width: 1024px;
+  line-height: 32px;
+  margin: 0 auto 20px;
+}
+
+.c-wysiwyg .dropcap{
+  float: left;
+  margin-right: calc(15px / 2);
+  line-height: 50px;
+  font-size: 90px;
+  position: relative;
+  display: inline;
+  font-family: 'Domaine';
+  color: #004088;
+}

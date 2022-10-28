@@ -1,0 +1,19 @@
+.tooltip-panel {
+  bottom: calc(100% + 0.75rem);
+}
+
+.tooltip-panel--center {
+  @apply left-2.5 transform -translate-x-1/2;
+}
+
+.tooltip-panel--right {
+  @apply -right-2;
+}
+
+.tooltip-panel--left {
+  @apply -left-2;
+}
+
+.tooltip-caret {
+  clip-path: polygon(0 0, 100% 0, 50% 80%);
+}

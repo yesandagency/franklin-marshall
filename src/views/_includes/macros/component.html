@@ -1,0 +1,9 @@
+{% macro loadComponent(data) %}
+  {# Importing macros here so components can use them without importing #}
+  {% from "macros/svg.html" import svg %}
+  {% from "macros/cta.html" import ctaIcon %}
+
+  <!-- BEGIN COMPONENT: {{ data.cmsName }} -->
+  {% include "components/" + data.name + ".html" %}
+  <!-- END COMPONENT: {{ data.cmsName }} -->
+{% endmacro %}

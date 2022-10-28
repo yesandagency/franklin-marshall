@@ -1,0 +1,22 @@
+.button{
+  display: inline-block;
+  position: relative;
+  width: auto;
+  padding: .75rem 2rem;
+  border-radius: 5px;
+}
+
+.button.blue{
+  background: #0059F3;
+  color: white;
+  transition: .25s ease-in-out;
+}
+
+.button.blue:hover{
+  background: #0A213C;
+}
+
+.button.blue svg path{
+  stroke: white;
+  stroke-width: 2px;
+}

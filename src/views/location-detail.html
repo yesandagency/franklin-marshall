@@ -1,0 +1,128 @@
+---
+layout: main.html
+bodyClass: landing
+components:
+  - name: hero-locations
+    heading: 'McKinney Campus'
+    breadcrumbs:
+      - title: Collin College
+        link: '#'
+      - title: Collin College Locations
+        link: '#'
+      - title: McKinney Campus
+        link: '#'
+
+    introHead: 'About McKinney Campus'
+    introDesc: '
+      <p>Collin College&rsquo;s original campus, the McKinney Campus was transformed through a major renovation project completed in 2010. The campus features a Jeffersonian-style library, expanded classroom space, science labs and a parking structure as well as an expanded Student & Enrollment Services area. In fall of 2015, the campus welcomed a new 23,500 square foot conference center, and in spring 2016, the McKinney Campus was honored to host a ribbon cutting for its newest state-of-the-art facility, the Cary A. Israel Health Sciences Center.</p>
+    '
+
+    sidebar:
+      - address: '
+        2200 West University Drive<br/>McKinney, Texas 75071
+        '
+        addressLink: '#'
+        phone: '972.548.6790'
+        map: '#'
+        registration: '#'
+
+  - name: two-up-image
+    images:
+      - url: '/_resources/images/hero-landing-image-1.png'
+      - url: '/_resources/images/hero-landing-image-1.png'
+
+  - name: cta-group
+    color: blue
+    heading: Resources for Prospective Students
+    copy: '
+    Lorem sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    '
+
+    quicklinks:
+      - title: Explore Programs
+        subtitle: ''
+        link: '#'
+      - title: Requesting Information
+        subtitle: ''
+        link: '#'
+      - title: Apply
+        subtitle: ''
+        link: '#'
+      - title: Tuition & Financial Aid
+        subtitle: ''
+        link: '#'
+      - title: Program Finder
+        subtitle: ''
+        link: '#'
+      - title: Our Locations
+        subtitle: ''
+        link: '#'
+
+  - name: directory
+    title: Directory
+    color: tan
+    entries:
+      - heading: Academic Advising
+        large: One Dent Drive
+        small: '
+          <p>E: <a href="mailto:admissions@collin.edu">admissions@collin.edu</a></p>
+          <p>P: <a href="tel:5705773000">(570) 577-3000</a></p>
+          <br/>
+          <p>Monday–Friday: 8:30AM–4:30PM</p>
+          <p>Saturday: Varies</p>
+          <p>Sunday: CLOSED
+        '
+        bottom: '
+          <a href="#">Student and Enrollment Services Offices</a>
+        '
+
+      - heading: Admissions
+        large: One Dent Drive
+        small: '
+          <p>E: <a href="mailto:admissions@collin.edu">admissions@collin.edu</a></p>
+          <p>P: <a href="tel:5705773000">(570) 577-3000</a></p>
+          <br/>
+          <p>Monday–Friday: 8:30AM–4:30PM</p>
+          <p>Saturday: Varies</p>
+          <p>Sunday: CLOSED
+        '
+        bottom: '
+          <a href="#">Student and Enrollment Services Offices</a>
+        '
+
+      - heading: Financial Aid
+        large: One Dent Drive
+        small: '
+          <p>E: <a href="mailto:admissions@collin.edu">admissions@collin.edu</a></p>
+          <p>P: <a href="tel:5705773000">(570) 577-3000</a></p>
+          <br/>
+          <p>Monday–Friday: 8:30AM–4:30PM</p>
+          <p>Saturday: Varies</p>
+          <p>Sunday: CLOSED
+        '
+        bottom: '
+          <a href="#">Student and Enrollment Services Offices</a>
+        '
+
+
+  - name: fifty-fifty
+    blockbg: white
+    copybg: blue
+    buttonbg: white
+    image: '/_resources/images/fifty-fifty.png'
+    imageAlign: 'right'
+    heading: Public Safety Training Center at McKinney
+    copy: '
+    <p>The center opened in the fall of 2018 and serves as the home for the Fire Science and Law Enforcement academies at Collin College. The center also provides expanded training and professional development opportunities for local fire departments and law enforcement agencies. Situated on 25 acres near the corner of Bloomdale Road and Redbud Boulevard in McKinney, Texas, the center consists of fire science training grounds, a reality-based simulation village for police training, three separate shooting ranges, nine classrooms and 200 parking spaces.</p>
+    '
+    links:
+      - title: Learn More
+        link: '#'
+
+---
+
+{% from "macros/component.html" import loadComponent %}
+
+{% for component in components %}
+  {{ loadComponent(component) }}
+{% endfor %}

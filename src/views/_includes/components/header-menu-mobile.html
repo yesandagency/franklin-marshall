@@ -1,0 +1,34 @@
+<div class="md:hidden container py-3">
+  <app-accordion>
+    {% for item in header.menuPrimary %}
+      <li class="block">
+        {% if item.href %}
+          <a class="block justify-between items-center w-full py-4 text-24 leading-1 font-semibold" href="{{ item.href }}">
+            {{ item.heading }}  {% include '../../../assets/images/arrow-primary-nav.svg' %}
+          </a>
+
+          <ul class="py-3">
+            {% for link in item.links %}
+              <li class="block border-b-2 border-blue-dark overflow-visible">
+                <a class="flex justify-between py-3 font-semibold" href="{{ link.href }}">
+                  {{ link.label }}
+                  {{ svg('arrow', 'w-5 h-5 ml-3 text-red') }}
+                </a>
+              </li>
+            {% endfor %}
+          </ul>
+
+        {% else %}
+          <!-- DEV NOTE: `controls` value on `app-accordion-button` needs to match `id` on corresponding `app-accordion-panel` (concatenating loop index works well) -->
+          <app-accordion-button controls="menu-mobile-{{ loop.index0 }}" class="flex justify-between items-center w-full py-4 text-24 leading-1 font-semibold">
+            {{ item.heading }}
+            <span class="accordion-icon w-4 h-4 ml-3"></span>
+          </app-accordion-button>
+          <app-accordion-panel id="menu-mobile-{{ loop.index0 }}">
+
+          </app-accordion-panel>
+        {% endif %}
+      </li>
+    {% endfor %}
+  </app-accordion>
+</div>

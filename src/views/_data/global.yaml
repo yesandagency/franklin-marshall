@@ -1,0 +1,4 @@
+notificationBar:
+  message: '<h4>Notification Bar</h4><p>Voluptatem quia <em>voluptas sit aspernatur</em> aut dolores eos qui <a href="#">ratione voluptatem</a> sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum consectetur, adipisci velit.</p>'
+alertBar:
+  message: '<p><strong>Emergency Alert Bar</strong> voluptatem quia <em>voluptas sit aspernatur</em> aut dolores eos qui <a href="#">ratione voluptatem</a> sequi nesciunt.</p>'

@@ -1,0 +1,16 @@
+---
+layout: main.html
+components:
+  - name: hero-index
+    cmsName: Index Hero
+    backgroundColor: blue-light
+    heading: Employee Directory
+  - name: faculty-filter
+    cmsName: Faculty Index
+---
+
+{% from "macros/component.html" import loadComponent %}
+
+{% for component in components %}
+  {{ loadComponent(component) }}
+{% endfor %}
