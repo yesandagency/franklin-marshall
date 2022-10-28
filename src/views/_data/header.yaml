@@ -1,34 +1,4 @@
-menuUtility:
-  title: Information For
-  links:
-    - label: Prospective Students
-      href: /
-    - label: Current Students
-      href: /
-    - label: Transfer Students
-      href: /
-    - label: Dual–Credit
-      href: /
-    - label: Continuing Education & Worksforce
-      href: /
-    - label: Corporate Partners
-      href: /
-    - label: Veterans & Military
-      href: /
 menuPrimary:
-  - heading: Academics
-    href: /
-    links:
-      - label: Programs & Courses
-        href: /
-      - label: Academic Advising
-        href: /
-      - label: Academic Calendar
-        href: /
-      - label: Locations
-        href: /
-      - label: Honors Institute
-        href: /
   - heading: Admissions & Aid
     href: /
     links:
@@ -42,7 +12,20 @@ menuPrimary:
         href: /
       - label: Testing
         href: /
-  - heading: Student Services
+  - heading: Academics
+    href: /
+    links:
+      - label: Programs & Courses
+        href: /
+      - label: Academic Advising
+        href: /
+      - label: Academic Calendar
+        href: /
+      - label: Locations
+        href: /
+      - label: Honors Institute
+        href: /
+  - heading: Student Life
     href: /
     links:
       - label: Bookstore
@@ -57,7 +40,7 @@ menuPrimary:
         href: /
       - label: Disability Services
         href: /
-  - heading: Community & Campus
+  - heading: About F&M
     href: /
     links:
       - label: Athletics
@@ -70,7 +53,7 @@ menuPrimary:
         href: /
       - label: For Employers
         href: /
-  - heading: About Collin
+  - heading: Success Beyond F&M
     href: /
     links:
       - label: Faculty & Staff Directory
@@ -84,10 +67,8 @@ menuPrimary:
       - label: Contact Collin
         href: /
 
-
 menuResource:
-
-  - heading: ''
+  - heading: ""
     links:
       - label: Request More Info
         href: /
@@ -103,18 +84,18 @@ search:
 topPages:
   groups:
     - links:
-      - label: Apply
-        href: /
-      - label: Registration Information
-        href: /
-      - label: Academic Calendar
-        href: /
-      - label: Tuition
-        href: /
-      - label: B.A. Programs
-        href: /
-      - label: Program Guide
-        href: /
+        - label: Apply
+          href: /
+        - label: Registration Information
+          href: /
+        - label: Academic Calendar
+          href: /
+        - label: Tuition
+          href: /
+        - label: B.A. Programs
+          href: /
+        - label: Program Guide
+          href: /
     - heading: Current Student
       links:
         - label: Sample Link One

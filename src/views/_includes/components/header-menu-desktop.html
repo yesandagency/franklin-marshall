@@ -1,35 +1,23 @@
-<app-accordion tag="div" class="relative hidden md:block mx-auto px-4">
-  <ul class="w-full">
-    {% for item in header.menuPrimary %}
-      {% if not item.excludeDesktop %}
-        <li class="block">
-          {% if item.href %}
-            <a class="menu-desktop__button flex w-full py-4 text-24 lg:text-40 leading-110 font-semibold text-left c-primary-menu-option" href="{{ item.href }}">
-              {{ item.heading }}  {% include '../../../assets/images/arrow-primary-nav.svg' %}
+<app-accordion tag="div" class="">
+  <ul class="flex gap-8 justify-end">
+    {% for item in header.menuPrimary %} {% if not item.excludeDesktop %}
+    <li class="text-15 relative item">
+      {% if item.href %}
+      <a class="peer pt-25 pb-25 block" href="{{ item.href }}"> {{ item.heading }} </a>
 
-
-
-            </a>
-
-            <ul class="py-3">
-              {% for link in item.links %}
-                <li class="block border-b-2 border-blue-dark overflow-visible">
-                  <a class="flex justify-between items-center py-4 px-3 text-18 font-semibold leading-140 transition-colors" href="{{ link.href }}">
-                    {{ link.label }}
-                  </a>
-                </li>
-              {% endfor %}
-            </ul>
-
-          {% else %}
-            <!-- DEV NOTE: `controls` value on `app-accordion-button` needs to match `id` on corresponding `app-accordion-panel` (concatenating loop index works well) -->
-            <!-- DEV NOTE: `default-expanded` needs to be on first button only -->
-            {{ item.heading }}
-
-          {% endif %}
-
+      <ul class="absolute top-full left-0 bg-white w-254 p-25 shadow-reg hidden peer-hover:block hover:block">
+        {% for link in item.links %}
+        <li class="text-14">
+          <a class="pt-6 pb-6 block" href="{{ link.href }}"> {{ link.label }} </a>
         </li>
-      {% endif %}
-    {% endfor %}
+        {% endfor %}
+      </ul>
+
+      {% else %}
+      <!-- DEV NOTE: `controls` value on `app-accordion-button` needs to match `id` on corresponding `app-accordion-panel` (concatenating loop index works well) -->
+      <!-- DEV NOTE: `default-expanded` needs to be on first button only -->
+      {{ item.heading }} {% endif %}
+    </li>
+    {% endif %} {% endfor %}
   </ul>
 </app-accordion>

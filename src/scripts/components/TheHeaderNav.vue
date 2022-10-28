@@ -1,51 +1,7 @@
 <template>
   <div @keyup.esc="isExpanded = undefined">
-    <a href="#" class="relative hidden md:block h-full c-header-utility-options"
-      >Apply</a
-    >
-    <a href="#" class="relative hidden md:block h-full c-header-utility-options"
-      >Give</a
-    >
-    <a href="#" class="relative hidden md:block h-full c-header-utility-options"
-      >Visit</a
-    >
-
-    <div class="relative hidden md:block">
-      <button
-        class="the-header__button flex items-center h-full text-16 leading-1 font-semibold text-black information-dropdown"
-        :class="classList('resource')"
-        :aria-expanded="isExpanded === 'resource'"
-        @click="toggleExpanded('resource')"
-      >
-        {{ resourceTitle }}
-        <svg
-          class="w-4 mt-px ml-2.5"
-          :class="{ 'transform rotate-180': isExpanded === 'resource' }"
-          aria-hidden="true"
-          viewBox="0 0 18 11"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M16.9846 0.999999L9.0969 9L1.1499 1"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-miterlimit="10"
-            vector-effect="non-scaling-stroke"
-          />
-        </svg>
-      </button>
-      <transition-fade mode="in">
-        <div
-          v-show="isExpanded === 'resource'"
-          class="absolute top-full right-0 w-96 max-h-content overflow-y-auto c-header-utility-dropdown background-white"
-        >
-          <slot name="resource" />
-        </div>
-      </transition-fade>
-    </div>
-
-    <button
+    <slot name="menu" />
+    <!-- <button
       class="the-header__button md:flex items-center h-full py-4 px-5 lg:px-6 text-16 leading-1 font-semibold c-search-trigger"
       :class="classList('search')"
       :aria-expanded="isExpanded === 'search'"
@@ -85,8 +41,8 @@
       >
         <slot name="search" />
       </div>
-    </transition-fade>
-    <button
+    </transition-fade> -->
+    <!-- <button
       class="the-header__button flex items-center h-full py-4 text-16 leading-1 font-semibold c-primary-menu-trigger"
       :class="classList('menu')"
       :aria-expanded="isExpanded === 'menu'"
@@ -115,7 +71,7 @@
       >
         <slot name="menu" />
       </div>
-    </transition-fade>
+    </transition-fade> -->
   </div>
 </template>
 
@@ -145,9 +101,7 @@ export default {
   },
   methods: {
     classList(id) {
-      return this.isExpanded === id
-        ? "bg-blue-navy text-white"
-        : "hover:bg-blue-navy hover:bg-opacity-10";
+      return this.isExpanded === id ? "bg-blue-navy text-white" : "hover:bg-blue-navy hover:bg-opacity-10";
     },
     toggleExpanded(id) {
       this.isPreviousExpanded = this.isExpanded;

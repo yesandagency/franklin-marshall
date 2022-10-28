@@ -1,0 +1,17 @@
+{
+  "printWidth": 80,
+  "overrides": [
+    {
+      "files": "**/*.html",
+      "options": {
+        "printWidth": 600
+      }
+    },
+    {
+      "files": "**/*.vue",
+      "options": {
+        "printWidth": 600
+      }
+    }
+  ]
+}

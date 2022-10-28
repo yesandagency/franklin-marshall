@@ -1,1 +1,1 @@
-export default Symbol('videoCover');
+export default Symbol("videoCover");

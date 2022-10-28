@@ -5,18 +5,18 @@
 </template>
 
 <script>
-import accordion from '../util/accordion';
+import accordion from "../util/accordion";
 
 export default {
   provide() {
     return {
-      [ accordion ]: this,
+      [accordion]: this,
     };
   },
   props: {
     tag: {
       type: String,
-      default: 'ul',
+      default: "ul",
     },
     allowMultiple: {
       type: Boolean,
@@ -54,7 +54,7 @@ export default {
         this.expandedIds.push(panelId);
         return;
       }
-      const [ expandedId ] = this.expandedIds;
+      const [expandedId] = this.expandedIds;
       if (panelId === expandedId) {
         this.expandedIds = [];
         return;
@@ -62,11 +62,11 @@ export default {
       this.expandedIds = [panelId];
     },
     handleAll(mode) {
-      if (mode === 'collapse') {
+      if (mode === "collapse") {
         this.expandedIds = [];
         return;
       }
-      this.allIds.forEach(id => {
+      this.allIds.forEach((id) => {
         if (this.expandedIds.indexOf(id) === -1) {
           this.expandedIds.push(id);
         }
