@@ -1,10 +1,5 @@
 .c-prefooter{
-  background: #00a2e3; /* Old browsers */
-  background: -moz-linear-gradient(-45deg, #00a2e3 0%, #1f65dd 50%, #69c3ea 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(-45deg, #00a2e3 0%,#1f65dd 50%,#69c3ea 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(135deg, #00a2e3 0%,#1f65dd 50%,#69c3ea 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00a2e3', endColorstr='#69c3ea',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-  display: block;
+   display: block;
   position: relative;
   width: 100%;
   overflow: hidden;
@@ -16,14 +11,6 @@
   padding: 60px 4.545454545% 75px;
 }
 
-.c-prefooter__contain h2{
-  font-family: "Domaine";
-  font-size: 60px;
-  color: white;
-  width: 500px;
-  line-height: 72px;
-  margin-bottom: 60px;
-}
 
 .c-prefooter__contain .c-prefooter__links{
   display: flex;
