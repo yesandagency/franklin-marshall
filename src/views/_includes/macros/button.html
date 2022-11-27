@@ -1,0 +1,7 @@
+{% from "macros/svg.html" import svg %}
+{% macro button(text, classes) %}
+  <button type="submit" class="button primary {{ classes if classes }}"> 
+    {{text}}
+    {{ svg('arrow-right', 'arrow-icon inline-block mb-1 ml-1') }}
+  </button>
+{% endmacro %}

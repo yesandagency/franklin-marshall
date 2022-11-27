@@ -1,0 +1,24 @@
+.button{
+  display: inline-block;
+  position: relative;
+  width: auto;
+  padding: 15px 40px;
+  text-transform: uppercase;
+  opacity: 1;
+  letter-spacing: 0px;
+  font-style: LibreFranklin;
+  font-size: 18px;
+}
+.button.primary{
+  background: #FFC300;
+  color: #262626;
+  border: 1px solid #0C125D;
+  transition: .25s ease-in-out;
+}
+
+.button.primary:hover{
+  background: #0C125D;
+  color: white;
+  border: 1px solid white;
+}
+

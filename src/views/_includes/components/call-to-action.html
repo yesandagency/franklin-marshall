@@ -1,0 +1,11 @@
+{% from "macros/svg.html" import svg %}
+
+<section class="c-cta-wrapper bg-primary-lightgray">
+  <div class="c-cta-container">
+    <img class="w-100 h-100" alt="icon" src="/_resources/images/images/cta-bg.png"/>
+    <div class="c-cta-text bg-primary-gold">
+      {{data.title}}
+      {{ svg('arrow-right', 'arrow-icon arrow-icon-black inline-block mb-1 ml-1') }}
+    </div>
+  </div>
+</section>

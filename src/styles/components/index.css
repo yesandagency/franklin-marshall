@@ -2,5 +2,8 @@
 @import "./_header.css";
 
 @import "./_hero-home.css";
+@import "./_call-to-action.css";
+@import "./_svg.css";
+@import "./_buttons.css";
 
 @import "./_footer.css";

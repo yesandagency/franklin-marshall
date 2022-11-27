@@ -40,6 +40,7 @@ module.exports = {
         blue: "#0B48E4",
         darkblue: "#0C125D",
         gold: "#FFC300",
+        lightgray: "#F9F9F9",
       },
       secondary: {
         white: "#FFF",

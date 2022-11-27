@@ -1,43 +1,74 @@
 {% from "macros/svg.html" import svg %}
-
-
+{% from "macros/button.html" import button %}
+ {{ button('SUBMIT', 'test') }}
 <footer class="c-footer">
-  <section class="c-prefooter background-blue">
-    <div class="c-prefooter__contain">
-
-      <h2>{{ footer.prefootertitle | safe }}</h2>
-
-
-
-    </div>
-  </section>
-  <div class="c-footer__contain">
-      <div class="c-footer__logo">
-     
-        <p>{{ footer.desc }}</p>
-      </div>
-      <div class="c-footer__primary">
-        <ul>
-          {% for link in footer.linksPrimary %}
-            <li><a href="{{ link.href }}">{{ link.label }}</a></li>
-          {% endfor %}
-        </ul>
-      </div>
-      <div class="c-footer__locations">
-       
-      </div>
-      <div class="c-footer__secondary">
-        <div class="c-footer__secondary-contain">
-          <div class="c-footer__secondary-links">
-            <ul>
-              {% for link in footer.linksSecondary %}
-                <li><a href="{{ link.href }}">{{ link.label }}</a></li>
-              {% endfor %}
-            </ul>
-            <p class="c-footer__copyright">© 2022 Collin College. All Rights Reserved.</p>
-          </div>
-
+  <div class="c-footer-top">
+    <img class="w-100 h-100" alt="icon" src="/_resources/images/images/footer-bg.svg"/>
+  </div>
+  <div class="c-footer-bottom">
+    <div class="c-footer-main-nav">
+    {% for aboveFooterLink in footer.aboveFooterLinks %}
+      <div class="c-footer-nav-box">
+        <div class="c-footer-nav-box_icon">
+         <img class="w-100 h-100" alt="icon" src="/_resources/images/images/icon-ampersand.svg"/>
+        </div>
+        <div class="c-footer-nav-box_text">
+          <p class="c-footer-nav-box_title text-primary-gold text-18">{{aboveFooterLink.title}}</p>
+          <p class="c-footer-nav-box_link text-secondary-white">
+            {{aboveFooterLink.linkTitle}}
+            {{ svg('arrow-right', 'arrow-icon arrow-icon-gold inline-block mb-1 ml-1') }}
+          </p>
         </div>
       </div>
+    {% endfor %}
+
+    </div>
+    <div class="c-footer-section">
+      <div class="c-footer-section-left">
+        <div class="c-footer-logo">
+          <img class="w-100 h-100" alt="icon" src="/_resources/images/images/footer-logo.svg"/>
+        </div>
+        <div class="c-footer-content">
+          <div class="c-footer-college-info">
+            <p>{{ footer.desc }}</p>
+          </div>
+          <div class="c-footer-address">
+          <p>{{ footer.copyright }}</p>
+          <p>{{ footer.address }}</p>
+          <p>{{ footer.phone }}</p>
+          </div>
+          <div class="c-footer-social-links mb-3">
+            {% for social in footer.socialLinks %}
+              <a href="{{social.href}}">
+                {{ svg(social.title, 'c-footer-nav-box_social inline-block mb-1') }}
+              </a>
+            {% endfor %}
+          </div>
+          <div class="c-footer-conditions">
+            {% for condition in footer.footerConditionlinks %}
+              <a href="{{condition.href}}">
+                {{condition.title}}
+              </a>
+               <span>|</span>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+      <div class="c-footer-section-devider">
+      </div>
+      <div class="c-footer-section-right">
+        <div class="c-footer-page-links grid gap-4 grid-cols-2">
+            {% for link in footer.linksPrimary %}
+              <a href="{{link.href}}">
+                {{link.label}}
+              </a>
+            {% endfor %}
+        </div>
+      </div>
+    </div>
+    <div class="c-footer-section__bottom"> 
+      <div class="c-footer-bottom-devider">
+      </div>
+    </div>
   </div>
 </footer>

@@ -16,7 +16,14 @@ body {
 @font-face {
   font-family: "ABCArizonaMix";
   src: url(/_resources/images/fonts/ABCArizonaMix-Bold.woff2);
-  font-weight: 700;
+}
+@font-face {
+  font-family: "ABCArizonaMix";
+  src: url(/_resources/images/fonts/ABCArizonaMix-Medium.woff2);
+}
+@font-face {
+  font-family: "ABCArizonaMix";
+  src: url(/_resources/images/fonts/ABCArizonaMix-Regular.woff2);
 }
 
 @font-face {
