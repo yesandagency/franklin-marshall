@@ -3,7 +3,7 @@
   padding: 81px 0;
 }
 .c-cta-container {
-  max-width: 1200px;
+  @apply max-w-7xl;
   margin: auto;
   position: relative;
   text-align: center;
@@ -18,4 +18,13 @@
   font-family: LibreFranklin;
   font-size: 39px;
   border: 2px solid #FFFFFF;
+}
+
+@media screen and (max-width: 768px){
+
+  .c-cta-text{
+    padding: 15px 35px;
+    font-size: 25px;
+  }
+
 }

@@ -17,10 +17,10 @@
 }
 
 .c-footer-main-nav {
+  @apply max-w-7xl;
   margin: auto;
   display: flex;
   width: 100%;
-  max-width: 1200px;
   margin-top: 44px;
   margin-bottom: 44px;
   justify-content: space-between;
@@ -45,8 +45,8 @@
 }
 
 .c-footer-section {
+  @apply max-w-7xl;
   display: flex;
-  max-width: 1200px;
   justify-content: space-between;
   background-color: white;
   margin: auto;
@@ -119,8 +119,8 @@
 }
 
 .c-footer-bottom-devider {
+  @apply max-w-7xl;
   border-bottom: 3px dashed #FFC300;
-  max-width: 1200px;
   margin: auto;
   padding-top: 45px;
 }

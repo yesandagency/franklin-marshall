@@ -1,6 +1,4 @@
 {% from "macros/svg.html" import svg %}
-{% from "macros/button.html" import button %}
- {{ button('SUBMIT', 'test') }}
 <footer class="c-footer">
   <div class="c-footer-top">
     <img class="w-100 h-100" alt="icon" src="/_resources/images/images/footer-bg.svg"/>
@@ -43,6 +41,7 @@
                 {{ svg(social.title, 'c-footer-nav-box_social inline-block mb-1') }}
               </a>
             {% endfor %}
+            
           </div>
           <div class="c-footer-conditions">
             {% for condition in footer.footerConditionlinks %}

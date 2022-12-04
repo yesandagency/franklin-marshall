@@ -1,0 +1,153 @@
+.c-main-hero-wrapper {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: relative;
+  
+}
+.c-main-hero-wrapper::before {
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0.3;
+  position: absolute;
+  background-image: url('/_resources/images/images/hero-bg.png');
+}
+
+.c-main-hero-header {
+  background: rgba(11, 72, 228);
+ /* background: #0B48E4 0% 0% no-repeat padding-box;
+ opacity: 0.45; */
+}
+.c-main-hero-body {
+  background-color: #0C125D;
+}
+
+.c-main-hero-header::after {
+  content: '';
+  position: absolute;
+  left: 0px;
+  width: 49%;
+  border-bottom: 2.5px dashed #FFC300;
+  opacity: 1;
+  z-index: 1;
+}
+.c-main-hero-image {
+  position: relative;
+  z-index: 1;
+}
+.c-main-hero-img {
+  border: 2.5px dashed #FFC300;
+  padding: 8px;
+  position: absolute;
+  margin-top: -125px;
+  top: 0;
+  right: 54px;
+  min-width: 600px;
+  height: auto;
+}
+.c-main-image {
+  object-fit: cover;
+  min-width: 100%;
+}
+.c-main-hero-container {
+  position: relative;
+  opacity: 1;
+}
+.c-main-hero-title {
+  font-family: "ABCArizonaMix";
+  font-size: 45px;
+  color: white
+}
+.c-main-hero-breadcrumb {
+  font-family: "LibreFranklin";
+  font-size: 15px;
+}
+.c-main-hero-section-title {
+  font-family: "LibreFranklin";
+  font-size: 25px;
+  font-weight: bold;
+}
+.c-main-hero-section-content {
+  font-family: "LibreFranklin";
+  font-size: 18px;
+}
+.c-main-hero-icon {
+  position: relative;
+}
+
+.c-main-hero-icon_img {
+  position: absolute;
+  top: -54px;
+  right: 0;
+  z-index: 1;
+}
+
+.c-main-hero-content_links {
+  color: white;
+  position: relative;
+}
+.c-main-hero_links-container {
+  position: relative;
+  z-index: 1;
+  margin: auto;
+  width: fit-content;
+  min-width: 300px;
+  text-align: center;
+  padding: 6px;
+  border: 2.5px dashed #FFC300;
+  margin-top: 200px;
+}
+.c-main-hero_links-header {
+  color: #0C125D;
+  font-family: "ABCArizonaMix";
+  font-weight: bold;
+  font-size: 18px;
+  background-color: #FFC300;
+  text-align: left;
+  padding: 16px 0 16px 30px;
+}
+.c-main-hero_links-page {
+  color: #0C125D;
+  background-color: white;
+  font-family: "ABCArizonaMix";
+  font-weight: normal;
+  font-size: 16px;
+  text-align: left;
+  padding: 10px 0 10px 30px;
+}
+
+/* Heo-two */
+
+.c-main-hero-two-header {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: relative;
+  background: rgba(11, 72, 228);
+  position: relative;
+}
+.c-main-hero-two-header::before {
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0.3;
+  position: absolute;
+  background-image: url('/_resources/images/images/hero-bg.png');
+}
+
+
+@media screen and (max-width: 768px){
+
+  .c-main-hero-img{
+    position: absolute;
+    width: 100%;
+    max-width: 300px;
+    min-width: 300px;
+  }
+
+}
