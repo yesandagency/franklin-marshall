@@ -4,19 +4,19 @@ copyright: © 2022 Franklin & Marshall College
 address: P.O. Box 3003, Lancaster, PA 17604-3003 
 phone: 717-358-3911
 phoneLink: ''
-aboveFooterLinks:
+footerLinks:
   - title: Academics
     linkTitle: Explore Programs
     href: /
-    icon: icon-ampersand.svg
+    icon: ampersant.svg
   - title: Admissions & Aid
     linkTitle: Apply Now
     href: /
-    icon: icon-clock.svg
+    icon: ampersant.svg
   - title: Our Campus
     linkTitle: Plan Your Visit
     href: /
-    icon: icon-tower.svg
+    icon: ampersant.svg
 socialLinks:
   - title: facebook
     href: /

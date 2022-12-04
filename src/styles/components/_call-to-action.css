@@ -18,7 +18,9 @@
   font-family: LibreFranklin;
   font-size: 39px;
   border: 2px solid #FFFFFF;
+  background-color: #FFC300;
 }
+
 
 @media screen and (max-width: 768px){
 

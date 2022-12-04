@@ -3,7 +3,6 @@
   height: 100%;
   display: block;
   position: relative;
-  
 }
 .c-main-hero-wrapper::before {
   content: "";
@@ -18,8 +17,6 @@
 
 .c-main-hero-header {
   background: rgba(11, 72, 228);
- /* background: #0B48E4 0% 0% no-repeat padding-box;
- opacity: 0.45; */
 }
 .c-main-hero-body {
   background-color: #0C125D;
@@ -119,7 +116,7 @@
   padding: 10px 0 10px 30px;
 }
 
-/* Heo-two */
+/* Hero-two */
 
 .c-main-hero-two-header {
   width: 100%;

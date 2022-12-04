@@ -1,25 +1,12 @@
 {% from "macros/svg.html" import svg %}
+{% from "macros/icon-list-link.html" import iconLink %}
 <footer class="c-footer">
   <div class="c-footer-top">
     <img class="w-100 h-100" alt="icon" src="/_resources/images/images/footer-bg.svg"/>
   </div>
   <div class="c-footer-bottom">
     <div class="c-footer-main-nav">
-    {% for aboveFooterLink in footer.aboveFooterLinks %}
-      <div class="c-footer-nav-box">
-        <div class="c-footer-nav-box_icon">
-         <img class="w-100 h-100" alt="icon" src="/_resources/images/images/icon-ampersand.svg"/>
-        </div>
-        <div class="c-footer-nav-box_text">
-          <p class="c-footer-nav-box_title text-primary-gold text-18">{{aboveFooterLink.title}}</p>
-          <p class="c-footer-nav-box_link text-secondary-white">
-            {{aboveFooterLink.linkTitle}}
-            {{ svg('arrow-right', 'arrow-icon arrow-icon-gold inline-block mb-1 ml-1') }}
-          </p>
-        </div>
-      </div>
-    {% endfor %}
-
+    {{ iconLink(footer.footerLinks) }}
     </div>
     <div class="c-footer-section">
       <div class="c-footer-section-left">

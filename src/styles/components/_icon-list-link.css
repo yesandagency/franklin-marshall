@@ -1,0 +1,39 @@
+.c-iconlist-header {
+  font-family: "ABCArizonaMix";
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.c-iconlist-link {
+  font-family: "ABCArizonaMix";
+  font-weight: bold;
+}
+.c-iconlist-icon {
+  width: fit-content;
+}
+
+.c-iconlist-content {
+  display: flex;
+}
+.c-iconlist-content:hover .c-iconlist-icon{
+  background-size: 100% 81px;
+  background-position: right 16px;
+  background-image: linear-gradient(to right, transparent 50%, #0B48E4 50%);
+  background-repeat:no-repeat;
+}
+.c-iconlist-content:hover .c-iconlist-text__inner{
+  background-color: #0B48E4;
+  border-top-right-radius: 80px 80px;
+  border-bottom-right-radius: 80px 80px;
+}
+
+
+.c-iconlist-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.c-iconlist-text__inner {
+  padding: 7px 0;
+  padding-right: 20px;
+}
