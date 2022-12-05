@@ -15,22 +15,11 @@ module.exports = {
       decimal: "decimal",
     },
     colors: {
+      /* To be deleted */
       transparent: "transparent",
       current: "currentColor",
       black: "#000",
       white: "#fff",
-      brand: {
-        primary: "#0C125D",
-        secondary: "#0B48E4",
-        yellow: "#FFC300",
-      },
-      gray: {
-        light: "#F9F9F9",
-        medium: "#DCDBE3",
-        dark: "#262626",
-      },
-
-      // old Collin stuff.... delete
       blue: {
         DEFAULT: "#006BD5",
         light: "#F5F9F9",
@@ -41,15 +30,33 @@ module.exports = {
         gray: "#5F7481",
       },
       red: {
-        DEFAULT: "#FF2110",
-        dark: "#EB1000",
-        error: "#E60F00",
+        DEFAULT: '#FF2110',
+        dark: '#EB1000',
+        error: '#E60F00'
       },
-      orange: "#FFA509",
+      orange: '#FFA509',
+      /* To be deleted */
+      primary: {
+        blue: "#0B48E4",
+        darkblue: "#0C125D",
+        gold: "#FFC300",
+        lightgray: "#F9F9F9",
+      },
+      secondary: {
+        white: "#FFF",
+        black: "#000",
+        lightgray: "#F3F3F5",
+        mediumgray: "#DCDBE3",
+        darkgray: "#262626",
+      },
+      utility: {
+        green: "#2AC769",
+        red: "#E93C3C",
+      },
     },
     fontFamily: {
-      sans: ["Garnett", "sans-serif"],
-      display: ["Garnett", "sans-serif"],
+      sans: ["LibreFranklin", "sans-serif"],
+      display: ["LibreFranklin", "sans-serif"],
     },
     extend: {
       width: {

@@ -9,66 +9,49 @@ html {
 }
 
 body {
-  @apply font-sans text-blue-navy;
+  @apply font-sans;
 }
 
 
 @font-face {
-  font-family: "Domaine";
-  src: url(/_resources/images/fonts/domaine-text-bold.woff2);
-  font-weight: 700;
+  font-family: "ABCArizonaMix";
+  src: url(/_resources/images/fonts/ABCArizonaMix-Bold.woff2);
+}
+@font-face {
+  font-family: "ABCArizonaMix";
+  src: url(/_resources/images/fonts/ABCArizonaMix-Medium.woff2);
+}
+@font-face {
+  font-family: "ABCArizonaMix";
+  src: url(/_resources/images/fonts/ABCArizonaMix-Regular.woff2);
 }
 
 @font-face {
-  font-family: "Domaine";
-  src: url(/_resources/images/fonts/domaine-text-regular.woff2);
+  font-family: "LibreFranklin";
+  src: url(/_resources/images/fonts/LibreFranklin-Light.ttf);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "LibreFranklin";
+  src: url(/_resources/images/fonts/LibreFranklin-Regular.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "LibreFranklin";
+  src: url(/_resources/images/fonts/LibreFranklin-Medium.ttf);
   font-weight: 500;
 }
-
 @font-face {
-  font-family: "Domaine";
-  src: url(/_resources/images/fonts/domaine-text-regular-italic.woff2);
-  font-weight: 500;
-  font-style: italic;
-}
-
-
-@font-face {
-  font-family: "Garnett";
-  src: url(/_resources/images/fonts/Garnett-Regular.woff2);
-  font-weight: 500;
-}
-
-@font-face {
-  font-family: "Garnett";
-  src: url(/_resources/images/fonts/Garnett-RegularItalic.woff2);
-  font-weight: 500;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: "Garnett";
-  src: url(/_resources/images/fonts/Garnett-Semibold.woff2);
+  font-family: "LibreFranklin";
+  src: url(/_resources/images/fonts/LibreFranklin-SemiBold.ttf);
   font-weight: 600;
 }
-
 @font-face {
-  font-family: "Garnett";
-  src: url(/_resources/images/fonts/Garnett-SemiboldItalic.woff2);
-  font-weight: 600;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: "Garnett";
-  src: url(/_resources/images/fonts/Garnett-Bold.woff2);
+  font-family: "LibreFranklin";
+  src: url(/_resources/images/fonts/LibreFranklin-Bold.ttf);
   font-weight: 700;
 }
 
-@font-face {
-  font-family: "Garnett";
-  src: url(/_resources/images/fonts/Garnett-BoldItalic.woff2);
-  font-weight: 700;
-  font-style: italic;
-}
 

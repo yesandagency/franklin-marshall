@@ -25,12 +25,7 @@
 
       <a class="inline-flex items-center mt-4 font-display font-semibold text-16 leading-110 button blue" href="{{ data.link.href }}">
         {{ data.link.label }}
-        <div class="cta-icon ml-3 lg:ml-3 overflow-hidden flex-shrink-0">
-          {% include '../../../assets/images/icon-diagonal-icon.svg' %}
-          <div class="cta-icon__front adhere">
-            {% include '../../../assets/images/icon-diagonal-icon.svg' %}
-          </div>
-        </div>
+ 
       </a>
     </div>
   </div>
@@ -40,13 +35,7 @@
 
         {% for quickLink in data.quickLinks %}
 
-        <div class="home-hero__quick-link">
-
-          <p>{{ quickLink.subtitle }}</p>
-
-          <a href="{{ quickLink.link }}">{{ quickLink.title }} {% include '../../../assets/images/arrow-blue-large.svg' %}</a>
-
-        </div>
+    
 
         {% endfor %}
 

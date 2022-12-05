@@ -2,21 +2,23 @@
   display: inline-block;
   position: relative;
   width: auto;
-  padding: .75rem 2rem;
-  border-radius: 5px;
+  padding: 15px 40px;
+  text-transform: uppercase;
+  opacity: 1;
+  letter-spacing: 0px;
+  font-style: LibreFranklin;
+  font-size: 18px;
 }
-
-.button.blue{
-  background: #0059F3;
-  color: white;
+.button.primary{
+  background: #FFC300;
+  color: #262626;
+  border: 1px solid #0C125D;
   transition: .25s ease-in-out;
 }
 
-.button.blue:hover{
-  background: #0A213C;
+.button.primary:hover{
+  background: #0C125D;
+  color: white;
+  border: 1px solid white;
 }
 
-.button.blue svg path{
-  stroke: white;
-  stroke-width: 2px;
-}

@@ -1,0 +1,31 @@
+ 
+{% from "macros/button.html" import button %}
+{% from "macros/svg.html" import svg %}
+<section>
+  <div class="c-main-hero-two-wrapper max-w-full">
+    <div class="c-main-hero-two-header">
+      <div class="c-main-hero-container py-16 max-w-7xl m-auto">
+          <div class="c-main-hero-title">
+            {{data.title}}
+          </div>
+      </div>
+    </div>
+    <div class="c-main-hero-body bg-secondary-white pb-11">
+      <div class="c-main-hero-icon max-w-7xl m-auto ">
+        <div class="w-28 h-28 ml-auto c-main-hero-icon_img">
+            <img class="" alt="icon" src="/_resources/images/images/eclipse.png"/>
+        </div>
+      </div>
+      <div class="c-main-hero-two-content pt-5 max-w-7xl m-auto">
+        <div class="c-main-hero-breadcrumb pb-5  text-primary-blue pb-2">
+          {{data.currentPage}}
+        </div>
+        {% if data.buttonTitle %}
+          {{ button(data.buttonTitle) }}
+        {% endif %}
+      </div>
+
+    </div>
+  </div>
+</section>
+

@@ -1,0 +1,9 @@
+
+{% macro button(text, href, classes) %}
+{% from "macros/svg.html" import svg %}
+  <a href="{{href}}" class="button primary {{ classes if classes }}">
+    {{text}}
+    {{ svg('arrow-right', 'arrow-icon inline-block mb-1 ml-1') }}
+  </a>
+{% endmacro %}
+

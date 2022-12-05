@@ -1,0 +1,63 @@
+ 
+{% from "macros/button.html" import button %}
+{% from "macros/svg.html" import svg %}
+<section>
+  <div class="c-main-hero-wrapper max-w-full ">
+    <div class="c-main-hero-header">
+      <div class="c-main-hero-container  py-16 max-w-7xl m-auto">
+          <div class="c-main-hero-title ">
+            {{data.title}}
+          </div>
+      </div>
+      {% if data.imageUrl %}
+        <div class="c-main-hero-image max-w-7xl m-auto">
+          <div class="c-main-hero-img ml-auto">
+            <img class="c-main-image w-100 h-100" alt="image" src="/_resources/images/images/{{data.imageUrl}}"/>
+          </div>
+        </div>
+      {% endif %}
+    </div>
+
+    <div class="c-main-hero-body pb-11">
+      <div class="c-main-hero-icon max-w-7xl m-auto ">
+        <div class="w-28 h-28 ml-auto c-main-hero-icon_img">
+            <img class="" alt="icon" src="/_resources/images/images/eclipse.png"/>
+        </div>
+      </div>
+      <div class="c-main-hero-container max-w-7xl m-auto">
+        <div class="c-main-hero-content grid grid-cols-2 grid-flow-col">
+          <div class="c-main-hero-content_details py-11">
+
+              <div class="c-main-hero-breadcrumb text-primary-gold pb-2">
+                {{data.currentPage}}
+              </div>
+              {% if data.buttonTitle %}
+                {{button(data.buttonTitle)}}
+              {% endif %}
+              <p class="c-main-hero-section-title text-secondary-white pt-16">{{data.sectionTitle}}</p>
+              <p class="c-main-hero-section-content pr-20 text-secondary-white">
+                {{data.sectionContent}}
+              </p>
+          </div>
+          {% if data.pageList %}
+            <div class="c-main-hero-content_links">
+              <div class="c-main-hero_links-container">
+                <div class="c-main-hero_links-header">
+                  Page Titles
+                </div>
+                {% for pageList in data.pageList %}
+                <div class="c-main-hero_links-page">
+                  > {{pageList.label}}
+                </div>
+                {% endfor %}
+              </div>
+            </div>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+

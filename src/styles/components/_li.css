@@ -1,8 +1,0 @@
-.li-square {
-  @apply relative;
-}
-
-.li-square::before {
-  @apply absolute top-2.5 left-0 w-1 h-1 bg-blue-navy;
-  content: "";
-}

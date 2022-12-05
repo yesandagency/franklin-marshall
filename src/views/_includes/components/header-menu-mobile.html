@@ -3,9 +3,7 @@
     {% for item in header.menuPrimary %}
       <li class="block">
         {% if item.href %}
-          <a class="block justify-between items-center w-full py-4 text-24 leading-1 font-semibold" href="{{ item.href }}">
-            {{ item.heading }}  {% include '../../../assets/images/arrow-primary-nav.svg' %}
-          </a>
+
 
           <ul class="py-3">
             {% for link in item.links %}

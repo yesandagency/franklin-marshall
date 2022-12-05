@@ -1,0 +1,25 @@
+{% from "macros/svg.html" import svg %}
+{% macro iconLink(data, classes) %}
+  <section>
+    <div class="c-iconlist-wrapper py-11 bg-primary-darkblue max-w-full">
+      <div class="c-iconlist-container grid grid-cols-3 grid-flow-col max-w-7xl m-auto">
+      {% for link in data %}
+          <a href="{{link.href}}" class="c-iconlist-content">
+            <div class="c-iconlist-icon">
+              <img class="c-iconlist-image w-28 h-28" alt="image" src="/_resources/images/images/{{link.icon}}"/>
+            </div>
+            <div class="c-iconlist-text">
+              <div class="c-iconlist-text__inner pl-2.5">
+                <p class="c-iconlist-header text-left text-primary-gold text-18">{{link.title}}</p>
+                <p class="c-iconlist-link text-left text-secondary-white">
+                  {{link.linkTitle}}
+                  {{ svg('arrow-right', 'arrow-icon arrow-icon-gold inline-block mb-1 ml-1') }}
+                </p>
+              </div>
+            </div>
+          </a>
+      {% endfor %}
+      </div>
+    </div>
+  </section>
+{% endmacro %}
