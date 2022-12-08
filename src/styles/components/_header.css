@@ -1,0 +1,27 @@
+.c-the-headernav-wrapper {
+  display: flex;
+}
+/* .the-header__button {
+  margin-left: 45px;
+} */
+.c-header-menu-desktop-cont {
+  width: 300%;
+}
+.c-header-menu-content {
+  position: relative;
+  background-color: #FFFFFF ;
+  box-shadow: 0px 4px 8px #0000001A;
+  width: fit-content;
+}
+.c-header-menu-nav__cont {
+  font-family: ABCArizonaMix;
+}
+.c-header-menu-nav__cont:hover .c-header-menu-nav{
+  border-bottom: 2.5px dashed #FFC300;
+}
+.c-header-menu-nav {
+  border-bottom: 2.5px dashed transparent;
+  padding-bottom: 8.5px;
+}
+
+

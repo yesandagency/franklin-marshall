@@ -23,6 +23,10 @@
   <symbol id="triangle" viewBox="0 0 27 32" fill="none">
     <path d="M27 16L-1.4682e-06 31.5885L-1.05412e-07 0.411542L27 16Z" fill="currentColor"/>
   </symbol> -->
+  <symbol id="search" viewBox="0 0 29 29" fill="none">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.875 23.5C18.743 23.5 23.5 18.743 23.5 12.875C23.5 7.00697 18.743 2.25 12.875 2.25C7.00697 2.25 2.25 7.00697 2.25 12.875C2.25 18.743 7.00697 23.5 12.875 23.5Z" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M27.75 27.7498L20.3833 20.3832" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/>
+  </symbol>
 
   <symbol id="facebook" preserveAspectRatio="xMidYMid meet" viewBox="0 0 20 20">
     <path d="M8.46 18h2.93v-7.3h2.45l.37-2.84h-2.82V6.04c0-.82.23-1.38 1.41-1.38h1.51V2.11c-.26-.03-1.15-.11-2.19-.11c-2.18 0-3.66 1.33-3.66 3.76v2.1H6v2.84h2.46V18z" fill="#0C125D"/>
