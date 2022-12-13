@@ -1,18 +1,18 @@
 <app-accordion tag="div" class="">
-  <ul class="flex gap-8 justify-end">
+  <ul class="flex gap-10 justify-start">
     {% for item in header.menuPrimary %} {% if not item.excludeDesktop %}
-    <li class="text-15 relative item">
+    <li class="text-15 relative item text-primary-darkblue c-header-menu-nav__cont">
       {% if item.href %}
-      <a class="peer pt-25 pb-25 block" href="{{ item.href }}"> {{ item.heading }} </a>
-
-      <ul class="absolute top-full left-0 bg-white w-254 p-25 shadow-reg hidden peer-hover:block hover:block">
-        {% for link in item.links %}
-        <li class="text-14">
-          <a class="pt-6 pb-6 block" href="{{ link.href }}"> {{ link.label }} </a>
-        </li>
-        {% endfor %}
-      </ul>
-
+       <a class="peer pt-25 block c-header-menu-nav" href="{{ item.href }}"> {{ item.heading }} </a>
+      <div class="c-header-menu-desktop-cont absolute top-full left-0 hidden peer-hover:block hover:block ">
+        <ul class="absolute block c-header-menu-content p-25 ">
+          {% for link in item.links %}
+            <li class="text-14">
+              <a class="pt-6 pb-6 block tet" href="{{ link.href }}"> {{ link.label }} </a>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
       {% else %}
       <!-- DEV NOTE: `controls` value on `app-accordion-button` needs to match `id` on corresponding `app-accordion-panel` (concatenating loop index works well) -->
       <!-- DEV NOTE: `default-expanded` needs to be on first button only -->
