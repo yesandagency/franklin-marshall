@@ -3,7 +3,7 @@
     {% for item in header.menuPrimary %} {% if not item.excludeDesktop %}
     <li class="text-15 relative item text-primary-darkblue c-header-menu-nav__cont">
       {% if item.href %}
-       <a class="peer pt-25 block c-header-menu-nav" href="{{ item.href }}"> {{ item.heading }} </a>
+       <a class="peer block c-header-menu-nav" href="{{ item.href }}"> {{ item.heading }} </a>
       <div class="c-header-menu-desktop-cont absolute top-full left-0 hidden peer-hover:block hover:block ">
         <ul class="absolute block c-header-menu-content p-25 ">
           {% for link in item.links %}

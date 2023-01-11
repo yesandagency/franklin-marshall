@@ -1,0 +1,27 @@
+<section class="c-feature-display" style="display: none;">
+  <div class="c-feature-display-wrapper">
+
+    <h2>{{ data.title | safe }}</h2>
+
+    <div class="c-feature-display">
+      <div class="c-feature-display-content">
+
+        {{ data.paragraph | safe }}
+
+        {% for cta in data.ctas %}
+        <a href="{{ cta.link }}">{{ cta.caption }}</a><br/>
+        {% endfor %}
+
+      </div>
+
+      <div class="c-feature-display-image" style="background-image: url({{ data.image }}); background-position: center center background-repeat: no-repeat; background-size: cover;">
+
+        <div class="c-feature-display-image-thumbnail {{ data.align }} " style="background-image: url({{ data.thumb }}); background-position: center center background-repeat: no-repeat; background-size: cover;">
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>

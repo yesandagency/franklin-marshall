@@ -2,30 +2,162 @@
 layout: main.html
 bodyClass: home
 components:
-  - name: hero-home
-    image: '/_resources/images/home-header.gif'
-    heading: 'Connected. Unexpected. Exceptional.'
-    description: '
-      <p class="w-10/22 body-md text-md font-normal antialiased">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ut labore et dolore magna aliqua.</p>
-    '
-    link:
-      label: Learn More
-      href: /
 
+  - name: hero-home
+    video: '/_resources/images/images/home-hero-video.mp4'
+    heading: 'Forward Together...'
+    description: '
+      <p class="w-10/22 body-md text-md font-normal antialiased">Your Journey Starts Here</p>
+    '
     quickLinks:
       - title: Academics
+        image: '/_resources/images/images/ampersant.svg'
         subtitle: Explore Programs
         link: '#'
       - title: Admissions
+        image: '/_resources/images/images/ampersant.svg'
         subtitle: Apply Now
         link: '#'
       - title: Our Campus
+        image: '/_resources/images/images/ampersant.svg'
         subtitle: Plan Your Visit
         link: '#'
-  - name: hero-index
-    cmsName: Index Hero
-    backgroundColor: blue-light
-    heading: List Title A-Z
+
+  - name: quote
+    starts: right
+    quotes:
+      - subhead: 'Student / Alumna'
+        bigQuote: '
+          Entry-level Career Opportunities in Course Title
+        '
+        image: '/_resources/images/images/lancaster-1.png'
+        body: '<p>Class of 0000</p><p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores</p>'
+        linkCaption: 'Read More'
+        linkURL: '#'
+      - subhead: 'Student / Alumna'
+        bigQuote: '
+          Lorem ipsum dolor sit amet consetetur
+        '
+        image: '/_resources/images/images/lancaster-1.png'
+        body: '<p>Class of 0000</p><p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores</p>'
+        linkCaption: 'Read More'
+        linkURL: '#'
+
+  - name: stat-block-home
+    title: 'Main Title'
+    subtitle: 'Secondary Titling'
+    paragraph: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+    '
+    statistics:
+      - numeral: 12
+        caption: Testing the captions out with varying lengths
+      - numeral: 34
+        caption: Testing the captions out once again
+      - numeral: 56
+        caption: Testing a shorter one
+      - numeral: 78
+        caption: Testing out a far longer, verbose, perhaps "superfluous" caption to ensure responsiveness
+
+  - name: three-up-feature
+    title: 'Explore Your Future'
+    kind: 'highlight'
+    background: '/_resources/images/images/three-up-feature-background.svg'
+    cards:
+      - title: 'Innovate'
+        copy: 'Students Gain Hands-On Public Health Experience'
+        image: '/_resources/images/images/three-up-card-image-1.png'
+        link: '#'
+        linkcaption: 'Public Health'
+      - title: 'Compose'
+        copy: 'Have the opportunity to perform with your peers'
+        image: '/_resources/images/images/three-up-card-image-2.png'
+        link: '#'
+        linkcaption: 'Music'
+      - title: 'Connect'
+        copy: 'Empowering through the Connections Curriculum'
+        image: '/_resources/images/images/three-up-card-image-3.png'
+        link: '#'
+        linkcaption: 'Connections Curriculum'
+
+  - name: lancaster-home
+    title: '<strong>Lancaster</strong> is Our Home'
+    carousel:
+      - id: 'first'
+        image: '/_resources/images/images/lancaster-1.png'
+        smallImage: '/_resources/images/images/lancaster-small-1.png'
+        caption: Testing the captions out with varying lengths
+      - id: 'second'
+        image: '/_resources/images/images/lancaster-1.png'
+        smallImage: '/_resources/images/images/lancaster-small-1.png'
+        caption: Testing the captions out once again
+      - id: 'third'
+        image: '/_resources/images/images/lancaster-1.png'
+        smallImage: '/_resources/images/images/lancaster-small-1.png'
+        caption: Testing a shorter one
+
+
+  - name: three-up-feature
+    title: 'Explore, Experience, and Succeed at F&M'
+    kind: 'standard'
+    background: '/_resources/images/images/three-up-feature-background.svg'
+    cards:
+      - title: 'Explore Research Possibilities'
+        copy: 'The cornerstone of the educational experience we offer is students working side-by-side with faculty who want to help them test ideas—not just talk or read about them. These are not experiences you have to wait until graduate school to pursue. It’s a core part of what we do.'
+        image: '/_resources/images/images/three-up-card-image-4.png'
+        link: '#'
+        linkcaption: 'Explore'
+      - title: 'Compose'
+        copy: 'Our focus on global education recognizes that, no matter where life takes students after F&M, they will be working and living with people with vastly different ways of perceiving our world. A global education helps students begin to understand how to negotiate these differences, strengthening abilities to successfully live and work in our increasingly global society.'
+        image: '/_resources/images/images/three-up-card-image-5.png'
+        link: '#'
+        linkcaption: 'Research'
+      - title: 'Connect'
+        copy: 'We’re a partner in your success on Day 1. Explore how we engage with students across all four class years—and discover how that commitment helps you land jobs in leading industries and gain admission to high-demand graduate and professional programs around the world.'
+        image: '/_resources/images/images/three-up-card-image-6.png'
+        link: '#'
+        linkcaption: 'Apply'
+
+
+  - name: call-to-action
+    title: 'Call to Action'
+
+  - name: three-up-feature
+    title: 'F&M Stories'
+    kind: 'news'
+    background: '/_resources/images/images/three-up-feature-background.svg'
+    cards:
+      - title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
+        date: 'January 23, 2023'
+        copy: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+        image: '/_resources/images/images/three-up-card-image-7.png'
+        link: '#'
+        linkcaption: 'Read More'
+      - title:  'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
+        date: 'January 23, 2023'
+        copy: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+        image: '/_resources/images/images/three-up-card-image-8.png'
+        link: '#'
+        linkcaption: 'Read More'
+      - title:  'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
+        date: 'January 23, 2023'
+        copy: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+        image: '/_resources/images/images/three-up-card-image-9.png'
+        link: '#'
+        linkcaption: 'Read More'
+
+  - name: feature-display
+    title: 'Block Title'
+    image: '/_resources/images/images/lancaster-1.png'
+    thumb: '/_resources/images/images/lancaster-small-1.png'
+    paragraph: '<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>'
+    align: 'right'
+    ctas:
+      - link: '#'
+        caption: 'Call to Action'
+      - link: '#'
+        caption: 'Call to Action'
+
+
 ---
 
 {% from "macros/component.html" import loadComponent %}

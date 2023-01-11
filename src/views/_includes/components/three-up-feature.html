@@ -1,0 +1,45 @@
+<section class="c-three-up-feature {{ data.kind }}">
+
+  <div class="c-three-up-feature-wrapper">
+    {% if data.background %}
+    <div class="c-three-up-feature-background" style="background: url({{ data.background }}) top center no-repeat; background-size: cover;"></div>
+    {% endif %}
+
+    <div class="c-three-up-feature-title">
+      <h2>{{ data.title }}</h2>
+    </div>
+
+    <div class="c-three-up-feature-cards">
+    {% for card in data.cards %}
+
+      <div class="c-three-up-feature-card">
+
+        <div class="c-three-up-feature-card-highlight"></div>
+
+        <div class="c-three-up-feature-card-contain">
+          <div class="c-three-up-feature-card-content">
+            {% if card.date %}
+            <p class="c-three-up-feature-card-date">{{ card.date }}</p>
+            {% endif %}
+            <h3>{{ card.title }}</h3>
+            <span></span>
+            <p>{{ card.copy }}</p>
+          </div>
+
+          <div class="c-three-up-feature-card-image" style="background-image: url({{ card.image }}); background-position: center center background-repeat: no-repeat; background-size: cover;">
+          </div>
+
+          <div class="c-three-up-feature-card-cta">
+            <a href="{{ card.link }}">{{ card.linkcaption }} &raquo;</a>
+          </div>
+
+        </div>
+
+      </div>
+
+    {% endfor %}
+    </div>
+    <div class="c-three-up-feature-read-more"><a href="#">View More Stories &raquo;</a></div>
+
+  </div>
+</section>

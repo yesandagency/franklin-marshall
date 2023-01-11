@@ -1,0 +1,136 @@
+.c-quote{
+  padding: 0px 30px;
+  display: block;
+  position: relative;
+  width: 100%;
+
+  &-wrapper{
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1080px;
+  }
+
+  &-block{
+    width: 100%;
+    display: flex;
+    position: relative;
+    margin: 0px auto;
+    flex-wrap: nowrap;
+    transform: translateY(-2px);
+    padding: 0px 60px;
+
+    &-image, &-content{
+      width: 50%;
+    }
+
+    &-content{
+      padding: 90px 0px;
+
+      h2{
+        font-size: 16px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: #0B48E4;
+        margin-bottom: 15px;
+      }
+
+      span{
+        height: 0px;
+        width: 30px;
+        border: 1px dashed #0C125D;
+        display: block;
+        position: relative;
+        margin-bottom: 15px;
+      }
+
+      h3{
+        font-size: 35px;
+        font-weight: 700;
+        color: #0C125D;
+        line-height: 45px;
+        margin-bottom: 20px;
+      }
+
+      p{
+        margin-bottom: 15px;
+      }
+
+      a{
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-size: 14px;
+        color: #0B48E4;
+      }
+
+      a:hover{
+        color: #0C125D;
+      }
+
+    }
+
+    &-image{
+      padding: 15px;
+      border: 2px dashed #FFC300;
+      position: relative;
+      display: flex;
+
+      > div{
+        border-radius: 5px;
+        height: 100%;
+        width: 100%;
+      }
+
+    }
+
+  }
+
+  &-block::after{
+    background: #E9E9E9;
+    height: calc(100% - 120px);
+    width: 100%;
+    display: block;
+    position: absolute;
+    content: "";
+    z-index: -1;
+    left: 0px;
+    top: 60px;
+  }
+
+  &-line{
+    position: relative;
+    display: block;
+    height: 75px;
+    width: 1px;
+    margin: 0 auto;
+    border-left: 2px dashed #FFC300;
+  }
+
+}
+
+.c-quote-block:nth-of-type(2){
+  transform: translateY(0px);
+}
+
+.c-quote.right .c-quote-block:nth-of-type(even) .c-quote-block-image{
+  order: 2;
+  border-left: 0px;
+  padding-left: 30px;
+}
+
+.c-quote.right .c-quote-block:nth-of-type(even) .c-quote-block-content{
+  order: 1;
+}
+
+.c-quote.right .c-quote-block:nth-of-type(odd) .c-quote-block-image{
+  order: 1;
+  border-right: 0px;
+  padding-right: 30px;
+}
+
+.c-quote.right .c-quote-block:nth-of-type(odd) .c-quote-block-content{
+  order: 2;
+}
+
+

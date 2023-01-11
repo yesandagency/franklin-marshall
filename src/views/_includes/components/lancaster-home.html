@@ -1,0 +1,23 @@
+<section class="c-lancaster-home">
+  <div class="c-lancaster-home-wrapper">
+    <h2>{{ data.title | safe }}</h2>
+
+    <div class="c-lancaster-home-carousel">
+      {% for slide in data.carousel %}
+      <div class="c-lancaster-home-carousel-slide"  id="slide-{{ slide.id }}">
+        <div class="c-lancaster-home-carousel-slide-large-image" style="background: url('{{ slide.image }}') center center no-repeat; background-size: cover;"></div>
+        <div class="c-lancaster-home-carousel-slide-small">
+          <div class="c-lancaster-home-carousel-slide-small-image">
+            <div style="background: url('{{ slide.smallImage }}') center center no-repeat; background-size: cover;"></div>
+          </div>
+          <div class="c-lancaster-home-carousel-slide-small-caption"><p>{{ slide.caption }}</p></div>
+        </div>
+      </div>
+      {% endfor %}
+      <div class="c-lancaster-home-carousel-controls">
+        <a href="#" class="c-lancaster-home-carousel-slide-small-prev" id="lancaster-prev">Previous &raquo;</a>
+        <a href="#" class="c-lancaster-home-carousel-slide-small-next" id="lancaster-next">Next &raquo;</a>
+      </div>
+    </div>
+  </div>
+</section>

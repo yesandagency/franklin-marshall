@@ -1,3 +1,14 @@
+.the-header{
+  height: 5rem;
+  z-index: 2000 !important;
+  padding: 0px 30px;
+
+  > div{
+    height: 100%;
+  }
+
+}
+
 .c-the-headernav-wrapper {
   display: flex;
 }
@@ -21,7 +32,7 @@
 }
 .c-header-menu-nav {
   border-bottom: 2.5px dashed transparent;
-  padding-bottom: 8.5px;
+  padding-top: 12.5px;
 }
 
 

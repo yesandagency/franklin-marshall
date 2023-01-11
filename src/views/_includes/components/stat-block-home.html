@@ -1,0 +1,32 @@
+<section class="c-stat-block-home">
+  <div class="c-stat-block-home-wrapper">
+    <div class="c-stat-block-home-content">
+      {% if data.title %}
+      <h2>{{ data.title }}</h2>
+      {% endif %}
+      {% if data.subtitle %}
+      <h3>{{ data.subtitle }}</h3>
+      {% endif %}
+
+      {% if data.paragraph %}
+      <p>{{ data.paragraph | safe }}</p>
+      {% endif %}
+    </div>
+
+    <div class="c-stat-block-home-statistics">
+    {% for statistic in data.statistics %}
+      <div class="c-stat-block-home-stat">
+
+        {% if statistic.numeral %}
+        <p><strong>{{ statistic.numeral }}</strong></p>
+        {% endif %}
+
+        {% if statistic.caption %}
+        <p>{{ statistic.caption }}</p>
+        {% endif %}
+
+      </div>
+    {% endfor %}
+    </div>
+  </div>
+</section>

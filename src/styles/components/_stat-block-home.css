@@ -1,0 +1,76 @@
+.c-stat-block-home{
+  margin: 0 auto 60px;
+  width: 100%;
+  padding: 60px 30px;
+  position: relative;
+  display: block;
+  background: #0C125D url('/_resources/images/images/stat-block-home.svg') left center no-repeat;
+  background-size: 33% auto;
+}
+
+.c-stat-block-home-wrapper{
+  margin: 0 auto;
+  max-width: 80rem;
+  width: 100%;
+  position: relative;
+  display: block;
+}
+
+.c-stat-block-home-content{
+  display: block;
+  position: relative;
+  width: 75%;
+  margin-left: 25%;
+  margin-bottom: 60px;
+
+  h2{
+    color: #FFC300;
+    font-size: 45px;
+    font-weight: 700;
+  }
+
+  h3{
+    color: #FFC300;
+    font-size: 35px;
+    font-weight: 300;
+    margin-bottom: 20px;
+  }
+
+  p{
+    color: white;
+    line-height: 30px;
+  }
+
+}
+
+.c-stat-block-home-statistics{
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+
+  .c-stat-block-home-stat{
+    width: 100%;
+    margin-right: 30px;
+    background: white;
+    padding: 45px 30px;
+
+    p{
+      text-align: center;
+      color: #262626;
+      font-size: 18px;
+
+      strong{
+        font-size: 65px;
+        margin-bottom: 20px;
+        color: #0C125D;
+        border-bottom: 2px dashed #0C125D;
+        position: relative;
+        display: inline-block;
+      }
+
+    }
+
+  }
+
+}

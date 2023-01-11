@@ -1,4 +1,4 @@
-<section class="relative hero">
+<section class="relative hero c-hero-home">
   <!-- DEV NOTE: If background image is not set by user in the CMS, it should use default: `/_resources/images/background.jpg` -->
   <!-- <img alt="" aria-hidden="true" src="{{ data.backgroundImage or '/_resources/images/background.jpg' }}" class="adhere object-cover object-top"> -->
   <div class="adhere gradient-hero-bg"></div>
@@ -25,19 +25,29 @@
 
       <a class="inline-flex items-center mt-4 font-display font-semibold text-16 leading-110 button blue" href="{{ data.link.href }}">
         {{ data.link.label }}
- 
+
       </a>
     </div>
   </div>
   <div class="home-hero__quick-links">
 
-    <div class="home-hero__quick-links-contain">
+    <div class="c-iconlist-container grid grid-cols-3 grid-flow-col max-w-7xl m-auto">
 
-        {% for quickLink in data.quickLinks %}
-
-    
-
-        {% endfor %}
+      {% for quickLink in data.quickLinks %}
+      <a href="{{ quickLink.link }}" class="c-iconlist-content">
+        <div class="c-iconlist-icon">
+          <img alt="image" src="{{ quickLink.image }}" class="c-iconlist-image w-28 h-28">
+        </div>
+        <div class="c-iconlist-text">
+          <div class="c-iconlist-text__inner pl-2.5">
+            <p class="c-iconlist-header text-left text-primary-gold text-18">{{ quickLink.title }}</p>
+            <p class="c-iconlist-link text-left text-secondary-white"> {{ quickLink.subtitle }}
+              <svg aria-hidden="true" alt="arrow-right" xmlns="http://www.w3.org/2000/svg" class="arrow-icon arrow-icon-gold inline-block mb-1 ml-1"><use xlink:href="/_resources/images/images/symbol.svg#arrow-right"></use></svg>
+            </p>
+          </div>
+        </div>
+      </a>
+      {% endfor %}
 
     </div>
 

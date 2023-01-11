@@ -1,0 +1,31 @@
+<section class="c-quote  {{ data.starts }}">
+  <div class="c-quote-wrapper">
+    <div class="c-quote-line"></div>
+    {% for quote in data.quotes %}
+      <div class="c-quote-block">
+        <div class="c-quote-block-image">
+          <div style="background: url('{{ quote.image }}') center center no-repeat; background-size: cover;"></div>
+        </div>
+        <div class="c-quote-block-content">
+          {% if quote.subhead %}
+          <h2>{{ quote.subhead | safe }}</h2>
+          <span></span>
+          {% endif %}
+
+          {% if quote.bigQuote %}
+          <h3>{{ quote.bigQuote }}</h3>
+          {% endif %}
+
+          {% if quote.body %}
+          {{ quote.body | safe }}
+          {% endif %}
+
+          {% if quote.linkURL %}
+          <a href="{{ quote.linkURL }}">{{ quote.linkCaption }} &raquo;</a>
+          {% endif %}
+        </div>
+      </div>
+    {% endfor %}
+    <div class="c-quote-line"></div>
+  </div>
+</section>
