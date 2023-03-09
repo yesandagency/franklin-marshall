@@ -1,22 +1,25 @@
 title: Collin College
 desc: Founded in 1787, Franklin & Marshall College is a residential college dedicated to excellence in undergraduate liberal education.
 copyright: © 2022 Franklin & Marshall College
-address: P.O. Box 3003, Lancaster, PA 17604-3003 
+address: P.O. Box 3003, Lancaster, PA 17604-3003
 phone: 717-358-3911
 phoneLink: ''
 footerLinks:
   - title: Academics
     linkTitle: Explore Programs
     href: /
-    icon: ampersant.svg
+    icon: icon_Ampersand_default.svg
+    hover: icon_Ampersand_hover.svg
   - title: Admissions & Aid
     linkTitle: Apply Now
     href: /
-    icon: ampersant.svg
+    icon: icon_Clock_default.svg
+    hover: icon_Clock_hover.svg
   - title: Our Campus
     linkTitle: Plan Your Visit
     href: /
-    icon: ampersant.svg
+    icon: icon_BellTower_default.svg
+    hover: icon_BellTower_hover.svg
 socialLinks:
   - title: facebook
     href: /

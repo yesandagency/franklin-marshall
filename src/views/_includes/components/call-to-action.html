@@ -1,9 +1,8 @@
 {% from "macros/svg.html" import svg %}
 
 <section class="c-cta-wrapper bg-primary-lightgray">
-  <div class="c-cta-container m-auto max-w-7xl">
-    <img class="w-100 h-100 object-cover" alt="icon" src="/_resources/images/images/cta-bg.png"/>
-    <a href="/" class="c-cta-text bg-primary-gold">
+  <div class="c-cta-container m-auto max-w-7xl" style="background: url({{ data.image }}) center center no-repeat;  background-size: cover;">
+    <a href="{{ data.link }}" class="c-cta-text bg-primary-gold">
       {{data.title}}
       {{ svg('arrow-right', 'arrow-icon arrow-icon-black inline-block mb-1 ml-1') }}
     </a>

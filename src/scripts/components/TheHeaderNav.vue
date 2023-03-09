@@ -1,6 +1,6 @@
 <template>
   <div @keyup.esc="isExpanded = undefined">
-    <div class="c-the-headernav-wrapper flex gap-10">
+    <div class="c-the-headernav-wrapper flex gap-10 relative">
       <slot name="menu" />
       <div>
       <button
@@ -50,20 +50,14 @@
         </span>
       </button>
     </div>
-      <transition-fade :mode="disableFade ? 'none' : 'in'">
-        <div
-          v-show="isExpanded === 'search'"
-          class="absolute top-16 md:top-20 left-0 w-full h-auto overflow-y-auto c-search-panel"
-        >
-          <slot name="search" />
-        </div>
-      </transition-fade>
+
       <transition-fade :mode="disableFade ? 'none' : 'in'">
         <div
           v-show="isExpanded === 'menu'"
-          class="absolute top-16 md:top-20 h-content overflow-y-auto bg-blue-navy c-primary-menu-dropdown"
+          class="absolute top-16 h-content overflow-y-auto bg-blue-navy c-primary-menu-dropdown right-0"
         >
-          <slot name="menu" />
+
+          <slot name="hamburgermenu" />
         </div>
       </transition-fade>
     </div>
@@ -96,7 +90,7 @@ export default {
   },
   methods: {
     classList(id) {
-      return this.isExpanded === id ? "bg-blue-navy text-white" : "hover:bg-blue-navy hover:bg-opacity-10";
+      return this.isExpanded === id ? "" : "";
     },
     toggleExpanded(id) {
       this.isPreviousExpanded = this.isExpanded;

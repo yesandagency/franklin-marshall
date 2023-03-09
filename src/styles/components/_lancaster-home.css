@@ -4,7 +4,7 @@
   padding: 0px 30px;
   position: relative;
   display: block;
-  background: url('/_resources/images/images/lancaster-home-bg.svg') top center no-repeat;
+  background: url('/_resources/images/images/bkg-FullWithTopCurves.svg') top center no-repeat;
   background-size: cover;
 
   &-wrapper{
@@ -20,9 +20,11 @@
       color: #FFC300;
       font-size: 35px;
       margin-bottom: 30px;
+      font-family: "LibreFranklin";
 
       strong{
         font-size: 45px;
+        font-family: "ABCArizonaMix";
         font-weight: 700;
       }
 
@@ -34,6 +36,20 @@
     display: block;
     position: relative;
     width: 100%;
+    z-index: 20;
+
+    &::after{
+      content: "";
+      background: url('/_resources/images/images//bg_Illus_BellTower-Top-black.svg') center right no-repeat;
+      background-size: contain;
+      height: calc(100% + 250px);
+      width: calc(50% + ((100vw - 80rem) / 2));
+      display: block;
+      left: 50%;
+      z-index: -1;
+      top: -188px;
+      position: absolute;
+    }
 
     &-slide{
       height: 500px;
@@ -114,5 +130,116 @@
     }
 
   }
+
+}
+
+
+@media screen and (max-width: 1360px){
+
+  .c-lancaster-home-carousel-slide-small-image{
+    width: 100%;
+    min-width: 0;
+    height: 18.25vw;
+  }
+
+
+  .c-lancaster-home-carousel-controls a{
+    margin-bottom: 10px;
+  }
+
+}
+
+@media screen and (max-width: 1280px){
+
+  .c-lancaster-home{
+
+    &-carousel{
+
+      &::after{
+        right: -30px;
+        top: initial;
+        bottom: -75px;
+        left: initial;
+        width: 33%;
+        background-size: cover;
+      }
+
+    }
+
+  }
+
+}
+
+@media screen and (max-width: 1140px){
+
+  .c-lancaster-home-carousel-slide-small,
+  .c-lancaster-home-carousel-controls{
+    padding-left: 30px;
+  }
+
+  .c-lancaster-home-carousel-slide-small-image {
+    height: 21vw;
+  }
+
+}
+
+@media screen and (max-width: 980px){
+
+  .c-lancaster-home{
+    background: #0C125D;
+  }
+
+  .c-lancaster-home-wrapper{
+    padding-top: 60px;
+  }
+
+  .c-lancaster-home-wrapper h2 strong{
+    font-size: 25px;
+  }
+
+  .c-lancaster-home-wrapper h2{
+    font-size: 20px;
+  }
+
+  .c-lancaster-home-carousel-slide{
+    height: auto;
+  }
+
+  .c-lancaster-home-carousel-slide.active{
+    display: block;
+  }
+
+  .c-lancaster-home-carousel-slide-large-image{
+    width: 100%;
+    height: 50vw;
+    border-radius: 5px;
+  }
+
+  .c-lancaster-home-carousel-slide-small{
+    display: flex;
+    width: 100%;
+    padding-top: 30px;
+    padding-left: 0px;
+  }
+
+  .c-lancaster-home-carousel-slide-small-image{
+    order: 2;
+    width: 125px;
+    height: 125px;
+    margin-bottom: 0px;
+  }
+
+  .c-lancaster-home-carousel-slide-small-caption{
+    order: 1;
+    width: calc(100% - 125px);
+  }
+
+  .c-lancaster-home-carousel-controls{
+    position: relative;
+    display: block;
+    width: 100%;
+    padding-left: 0px;
+  }
+
 
 }

@@ -1,0 +1,126 @@
+.c-quick-links{
+  background: #0C125D;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  &__contain{
+    max-width: 80rem;
+    width: 100%;
+    display: block;
+    position: relative;
+    margin: 0 auto;
+  }
+
+  .c-quick-links-title{
+    display: block;
+    position: relative;
+    text-align: center;
+
+    h2{
+      color: #ffc300;
+      font-family: "ABCArizonaMix";
+      font-size: 45px;
+      line-height: 56px;
+      margin-bottom: 30px;
+    }
+  }
+
+  .c-quick-links-description{
+    display: block;
+    position: relative;
+    text-align: center;
+    padding: 0px 120px;
+    margin-bottom: 30px;
+
+    p{
+      color: white;
+    }
+
+  }
+
+  .c-quick-links__list{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+    position: relative;
+    padding: 0px 30px;
+    margin: 30px auto 0px;
+
+    li{
+      color: white;
+      border-left: 2px dashed #FFC300;
+      padding: 10px 0px;
+      padding-left: 20px;
+      width: calc(50% - 30px);
+      margin-top: 2px;
+      margin-right: 30px;
+
+      a{
+        font-weight: 700;
+      }
+    }
+
+  }
+
+
+
+}
+
+
+.c-quick-links.bg-light{
+  background: #F9F9F9;
+
+  .c-quick-links-title h2{
+    color: #0C125D;
+  }
+
+  .c-quick-links-description p{
+    color: #0c125d;
+  }
+
+  .c-quick-links__list li a{
+    color: #0c125d;
+  }
+
+}
+
+@media screen and (max-width: 890px){
+
+  .c-quick-links .c-quick-links-title h2{
+    font-size: 25px;
+    line-height: 32px;
+  }
+
+  .c-quick-links .c-quick-links__list li{
+    width: 100%;
+  }
+
+  .c-quick-links .c-quick-links__list{
+    max-width: 680px;
+    margin: 0 auto;
+  }
+
+}
+
+@media screen and (max-width: 680px){
+
+  .c-quick-links .c-quick-links-title h2{
+    padding: 0px 30px;
+    text-align: left;
+  }
+
+  .c-quick-links .c-quick-links-title h2 br{
+    display: none;
+  }
+
+  .c-quick-links .c-quick-links-description{
+    text-align: left;
+    max-width: 100%;
+    padding: 0px 30px;
+  }
+
+  .c-quick-links .c-quick-links-description p{
+    text-align: left;
+  }
+
+}

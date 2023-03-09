@@ -1,0 +1,80 @@
+---
+layout: main.html
+bodyClass: landing
+components:
+
+  - name: hero-landing
+    image: '/_resources/images/images/lancaster-1.png'
+    heading: 'People Search Directory'
+    breadcrumbs:
+      - title: Home
+        link: '#'
+    subheading: 'More than 60 fields of study'
+    paragraph: 'For frequently requested office numbers and information about mailing addresses, please visit our <strong>Contact Us</strong> page. For a complete list of academic departments and administrative offices of the College, visit <strong>Departments and Offices of the College A-Z.</strong>
+    '
+
+  - name: filterable
+    elements:
+
+    - type: search
+      id: search
+      width: 'calc(100% - 110px)'
+      caption: Enter Keyword
+
+    - type: submit
+      id: submit
+      caption: 'Find »'
+
+    - type: checkbox
+      id: checkbox
+      boxes:
+      - label: 'Test 1'
+        value: test1
+        id: test1
+      - label: 'Test 2'
+        value: test2
+        id: test2
+      - label: 'Test 3'
+        value: test3
+        id: test3
+
+  - name: people
+    persons:
+    - name: 'Tim Bechtel'
+      title: 'Director of F&M Science Outreach & Senior Teaching Professor of Geosciences'
+      subject: 'Earth & Environment'
+      linkTitle: 'Contact'
+      linkURL: '#'
+    - name: 'Melissa W Betrone'
+      title: 'Academic Department Coordinator'
+      subject: 'EARTH AND ENVIRONMENT, BUSINESS, ORGANIZATIONS AND SOCIETY, SCIENCE, TECHNOLOGY AND SOCIETY'
+      linkTitle: 'Contact'
+      linkURL: '#'
+    - name: 'Eve Bratman'
+      title: 'Assistant Professor of Environmental Studies'
+      subject: 'Earth & Environment'
+      linkTitle: 'Contact'
+      linkURL: '#'
+    - name: 'Sarah S. Dawson'
+      title: 'Director, Center for Sustainable Environment'
+      subject: 'THE CENTER FOR THE SUSTAINABLE ENVIRONMENT, EARTH AND ENVIRONMENT'
+      linkTitle: 'Contact'
+      linkURL: '#'
+    - name: 'Elizabeth M. De Santo'
+      title: 'Associate Professor of Environmental Studies, Program Chair of Environmental Studies'
+      subject: 'Earth & Environment'
+      linkTitle: 'Contact'
+      linkURL: '#'
+    - name: 'Annalisa Crannell'
+      title: 'Associate Dean of the Faculty, Professor of Mathematics'
+      subject: 'Mathematics'
+      linkTitle: 'Contact'
+      linkURL: '#'
+
+---
+
+{% from "macros/component.html" import loadComponent %}
+
+{% for component in components %}
+  {{ loadComponent(component) }}
+{% endfor %}

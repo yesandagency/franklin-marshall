@@ -1,0 +1,23 @@
+<section class="c-carousel-block">
+  <div class="c-carousel-block-wrapper">
+    <h2>{{ data.title | safe }}</h2>
+
+    <div class="c-carousel">
+      {% for slide in data.carousel %}
+      <div class="c-carousel-slide"  id="slide-{{ slide.id }}">
+        <div class="c-carousel-slide-large-image" style="background: url('{{ slide.image }}') center center no-repeat; background-size: cover;"></div>
+        <div class="c-carousel-slide-small">
+          <div class="c-carousel-slide-small-image">
+            <div style="background: url('{{ slide.smallImage }}') center center no-repeat; background-size: cover;"></div>
+          </div>
+          <div class="c-carousel-slide-small-caption"><p>{{ slide.caption }}</p></div>
+        </div>
+      </div>
+      {% endfor %}
+      <div class="c-carousel-controls">
+        <a href="#" class="c-carousel-slide-small-prev" id="carousel-prev">Previous &raquo;</a>
+        <a href="#" class="c-carousel-slide-small-next" id="carousel-next">Next &raquo;</a>
+      </div>
+    </div>
+  </div>
+</section>

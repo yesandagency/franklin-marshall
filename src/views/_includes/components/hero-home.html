@@ -2,7 +2,7 @@
   <!-- DEV NOTE: If background image is not set by user in the CMS, it should use default: `/_resources/images/background.jpg` -->
   <!-- <img alt="" aria-hidden="true" src="{{ data.backgroundImage or '/_resources/images/background.jpg' }}" class="adhere object-cover object-top"> -->
   <div class="adhere gradient-hero-bg"></div>
-  <div class="relative flex min-h-screen-75 md:min-h-500 lg:min-h-600 items-center p-1/22 text-white bg-white">
+  <div class="relative flex min-h-screen-75 md:min-h-500 lg:min-h-600 items-center p-1/22 text-white bg-white c-hero-home-hero">
     {% if data.image %}
       <!-- DEV NOTE: Begin Image Variation -->
       <img class="adhere object-cover pointer-events-none " src="{{ data.image }}" alt="Alt text">
@@ -36,13 +36,33 @@
       {% for quickLink in data.quickLinks %}
       <a href="{{ quickLink.link }}" class="c-iconlist-content">
         <div class="c-iconlist-icon">
-          <img alt="image" src="{{ quickLink.image }}" class="c-iconlist-image w-28 h-28">
+          <img alt="image" src="{{ quickLink.image }}" class="c-iconlist-image c-iconlist-default w-28 h-28">
+          <img alt="image" src="{{ quickLink.hover }}" class="c-iconlist-image c-iconlist-hover w-28 h-28">
         </div>
         <div class="c-iconlist-text">
           <div class="c-iconlist-text__inner pl-2.5">
             <p class="c-iconlist-header text-left text-primary-gold text-18">{{ quickLink.title }}</p>
             <p class="c-iconlist-link text-left text-secondary-white"> {{ quickLink.subtitle }}
-              <svg aria-hidden="true" alt="arrow-right" xmlns="http://www.w3.org/2000/svg" class="arrow-icon arrow-icon-gold inline-block mb-1 ml-1"><use xlink:href="/_resources/images/images/symbol.svg#arrow-right"></use></svg>
+              <svg version="1.1" id="Group_3530" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" class="arrow-icon arrow-icon-gold inline-block mb-1 ml-1"
+                 viewBox="0 0 11.3 11.1" style="enable-background:new 0 0 11.3 11.1;" xml:space="preserve">
+              <style type="text/css">
+                .st0{clip-path:url(#SVGID_00000054982468494270840730000002984187357216778658_);}
+                .st1{fill:#FFC300;}
+                .st2{font-family:'Arial-BoldMT';}
+                .st3{font-size:25px;}
+              </style>
+              <g>
+                <defs>
+                  <rect id="SVGID_1_" x="-1.3" y="-9.2" width="16" height="27.8"/>
+                </defs>
+                <clipPath id="SVGID_00000174594742156998729620000012236153330753817521_">
+                  <use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+                </clipPath>
+                <g id="Group_1363" style="clip-path:url(#SVGID_00000174594742156998729620000012236153330753817521_);">
+                  <text transform="matrix(1 0 0 1 -1.2749 12)" class="st1 st2 st3">»</text>
+                </g>
+              </g>
+              </svg>
             </p>
           </div>
         </div>

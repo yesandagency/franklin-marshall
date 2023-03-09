@@ -1,0 +1,34 @@
+<section class="c-quick-links {% if data.background %} bg-{{ data.background }} {% endif %}">
+  <div class="c-quick-links__contain">
+
+      {% if data.title %}
+
+      <div class="c-quick-links-title">
+        <h2>{{ data.title | safe }}</h2>
+      </div>
+
+      {% endif %}
+
+      {% if data.description %}
+
+      <div class="c-quick-links-description">
+        <p>{{ data.description | safe }}</p>
+      </div>
+
+      {% endif %}
+
+
+      <ul class="c-quick-links__list">
+
+        {% for links in data.list %}
+
+        <li><a href="{{ links.url }}">{{ links.caption }} &raquo;</a></li>
+
+        {% endfor %}
+
+      </ul>
+
+
+
+  </div>
+</section>

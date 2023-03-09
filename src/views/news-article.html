@@ -1,0 +1,111 @@
+---
+layout: main.html
+bodyClass: single
+components:
+
+  - name: hero-slim
+    heading: 'F&M Stories'
+    breadcrumbs:
+      - title: Home
+        link: '#'
+
+  - name: news-heading
+    title: 'Class of 2022 Grads Urged to Find Their Voices'
+    date: '5/17/2022'
+    author: 'Kim O’Brien'
+    caption: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.'
+    image: '/_resources/images/images/bg-article-image.png'
+
+  - name: wysiwyg-article-page
+    contentItems:
+    - type: body-copy
+      copy:
+        - paragraph: 'It is not enough to be a voice for the voiceless.'
+
+        - paragraph: '“Instead, your challenge and mine is to listen for unheard voices and to abolish the conditions of voicelessness,” said author Viet Thanh Nguyen at Franklin & Marshall College’s May 14 Commencement.'
+
+        - paragraph: 'Addressing the Class of 2022’s 560 grads honored at the Alumni Sports & Fitness Center, Nguyen shared the story of finding his voice with both solemnity and levity.'
+
+        - paragraph: '“Being a refugee was quite traumatic. But it wasn’t all bad. Being a refugee left me with the requisite emotional damage necessary to become a writer,” joked Nguyen, author of “The Sympathizer,” the 2016 Pulitzer Prize for Fiction winner.'
+
+        - paragraph: '“Being a refugee also leaves me with an opinion that not all of you may agree with, which is that I think refugees—and immigrants—make America great,” he said.'
+
+        - paragraph: 'A palpable energy filled the ASFC—one part jubilation, one part collective exhalation after a pandemic-disrupted academic journey.'
+
+        - paragraph: '“Four years both short and endless. Four times through the academic cycle, each year different from the others, each painful and victorious in their own ways,” said F&M President Barbara Altmann, who arrived on campus in 2018 when most of the graduates began their F&M studies.'
+
+  - name: quote
+    starts: right
+    quotes:
+      - subhead: 'Guest Speaker'
+        bigQuote: '
+          Instead, your challenge and mine is to listen for unheard voices and to abolish the conditions of voicelessness.
+        '
+        image: '/_resources/images/images/bg-actor.png'
+        body: '<p><strong>Viet Thanh Nguyen</strong></p><p><strong>Author</strong></p>'
+
+  - name: wysiwyg-article-page
+    contentItems:
+    - type: body-copy
+      copy:
+        - paragraph: 'The sea of colorful cords, stoles and decorated caps reflected the diversity, hardships and successes of the Class of 2022.'
+
+        - paragraph: 'Williamson medalist Hailan Yu has been unable to visit her home country of China or see her family in person for over 850 days.'
+
+        - paragraph: '“Forced to change my plans, I used that time to take classes, to do research, to browse through graduate school programs to figure out my true interests,” Yu said.'
+
+        - paragraph: '“We adapted when the world paused and drove us to be flexible,” said class president Trinity Nguyen, a first-generation college student and Vietnamese immigrant who nominated this year’s Commencement speaker.'
+
+        - paragraph: 'Altmann likened the outgoing class’s experience to a meditation labyrinth near campus—“not the kind with dead-ends and blind alleys, but the kind with only one path that curls and twists from an entry point along a circuitous route,” she said.'
+
+        - paragraph: '“You’ve been engaged in that kind of labyrinth,” Altmann said. “You can revisit old haunts to unwind from somewhere you’ve been stuck in the past, or you can follow a spiral that passes familiar places on your way to a higher vantage point.”'
+
+        - paragraph: 'Highlights of the ceremony included faculty award winners and honorary degree recipients Nadia Chaudhri ’99 (posthumous), Peter Feigin ’92 and Allison O’Toole ’93.'
+
+        - paragraph: 'With the traditional passing of the torch, applause filled the ASFC once more as graduates triumphantly raised diplomas and tossed mortarboards.'
+
+        - paragraph: '“Class of 2022, it’s all over, and yet it’s all just beginning. I hope we hear your voices in the future, and I hope we hear your voices now,” Viet Thanh Ngyuen said.'
+
+  - name: fifty-fifty-image
+    image1: '/_resources/images/images/three-up-feature-background.svg'
+    image2: '/_resources/images/images/three-up-feature-background.svg'
+    caption: '<p>For downloadable images of Saturday’s event and all of the events leading up to Commencement, <a href="#">see our full photo gallery.</a></p>'
+
+  - name: video
+    title: 'Lorem Ipsum Dolor Sit Amet'
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+    subtitle: Happy seniors applaud their classmates during the degree-conferring portion of the program at Commencement 2022.
+    youtube: 'https://www.youtube.com/watch?v=qWHm-ZqkHB4'
+
+
+
+  - name: three-up-feature
+    title: 'Related Articles'
+    kind: 'news'
+    cards:
+      - title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
+        date: 'January 23, 2023'
+        copy: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+        image: '/_resources/images/images/three-up-card-image-7.png'
+        link: '#'
+        linkcaption: 'Read More'
+      - title:  'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
+        date: 'January 23, 2023'
+        copy: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+        image: '/_resources/images/images/three-up-card-image-8.png'
+        link: '#'
+        linkcaption: 'Read More'
+      - title:  'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
+        date: 'January 23, 2023'
+        copy: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+        image: '/_resources/images/images/three-up-card-image-9.png'
+        link: '#'
+        linkcaption: 'Read More'
+
+---
+
+{% from "macros/component.html" import loadComponent %}
+
+{% for component in components %}
+  {{ loadComponent(component) }}
+{% endfor %}

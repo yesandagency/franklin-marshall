@@ -1,0 +1,227 @@
+.c-fifty-fifty{
+  display: block;
+  position: relative;
+  padding: 90px 30px;
+  width: 100%;
+  margin: 50px 0px;
+
+  &-wrapper{
+    max-width: 80rem;
+    width: 100%;
+    display: block;
+    position: relative;
+    margin: 0 auto;
+  }
+
+  &-title{
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    justify-content: center;
+    background: url('/_resources/images/images/three-up-feature-ring.svg') center center no-repeat;
+    min-height: 110px;
+    margin-bottom: 45px;
+
+    h2{
+      font-size: 45px;
+      text-align: center;
+      font-weight: 700;
+      color: #0C125D;
+      font-family: "ABCArizonaMix";
+    }
+  }
+
+  &-container{
+    display: flex;
+    position: relative;
+    width: 100%;
+
+    .fifty-fifty-type-image{
+      position: relative;
+      min-height: 400px;
+      div{
+        height: 100%;
+        width: 100%;
+        top: 0px;
+        left: 0px;
+        display: block;
+        position: absolute;
+      }
+    }
+
+    .fifty-fifty-type-html{
+      position: relative;
+      padding: 30px 0px;
+    }
+
+    > div{
+      width: 50%;
+      &:first-of-type{
+        margin-right: 30px;
+      }
+      &:last-of-type{
+        margin-left: 30px;
+      }
+
+      p{
+        margin-bottom: 20px;
+        font-size: 18px;
+      }
+
+      a{
+        color: #0B48E4;
+        font-weight: 600;
+        &::hover{
+          text-decoration: underline;
+        }
+      }
+
+      h2{
+        font-size: 45px;
+        font-family: "ABCArizonaMix";
+        color: #0C125D;
+        margin-bottom: 30px;
+      }
+
+      h3{
+        font-size: 25px;
+        font-weight: 700;
+        color: #0C125D;
+        margin-bottom: 30px;
+      }
+
+      .application-table{
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        margin: 0px 0px 30px;
+
+        div{
+          position: relative;
+          min-height: 45px;
+          border-bottom: 2px dashed #FFC300;
+          font-size: 18px;
+          padding-top: 10px;
+          padding-bottom: 10px;
+        }
+
+        div:nth-of-type(odd){
+          width: 50%;
+        }
+        div:nth-of-type(even){
+          width: 50%;
+        }
+
+      }
+
+      .button{
+        height: 40px;
+        width: auto;
+        display: inline-block;
+        padding: 0px 20px;
+        border: 1px solid #0C125D;
+        background: #FFC300;
+        color: #0C125D;
+        line-height: 40px;
+        text-transform: uppercase;
+        text-align: center;
+        margin-top: 20px;
+
+        &:hover{
+          color: white;
+          background: #0C125D;
+          border: 1px solid white;
+        }
+      }
+
+    }
+
+  }
+
+}
+
+
+.c-fifty-fifty.bg-dark{
+
+  background: #0C125D;
+
+  h2{
+    color: #FFC300;
+  }
+
+  p{
+    color: white !important;
+  }
+
+  .c-fifty-fifty-title{
+    background: none;
+  }
+
+}
+
+.c-fifty-fifty.special-split{
+
+  .c-fifty-fifty-container > div:first-of-type{
+    width: 66%;
+  }
+  .c-fifty-fifty-container > div:last-of-type{
+    width: 33%;
+  }
+
+}
+
+@media screen and (max-width: 890px){
+
+  .c-fifty-fifty{
+    padding: 45px 30px;
+  }
+
+  .c-fifty-fifty-container{
+    display: block;
+  }
+
+  .c-fifty-fifty-container .fifty-fifty-type-image{
+    display: none;
+  }
+
+  .c-fifty-fifty-title{
+    display: block;
+    text-align: left;
+    min-height: 0px;
+    background: none;
+    margin-bottom: 0px;
+
+    h2{
+      font-size: 25px;
+      text-align: left;
+    }
+  }
+
+  .c-fifty-fifty-container .fifty-fifty-type-html{
+    width: 100% !important;
+
+    h2{
+      font-size: 25px;
+    }
+
+    h3{
+      font-size: 20px
+    }
+
+    p{
+      font-size: 16px;
+    }
+
+  }
+
+  .c-fifty-fifty-container .fifty-fifty-type-video{
+    width: 100%;
+  }
+
+  .c-fifty-fifty-container > div:first-of-type,
+  .c-fifty-fifty-container > div:last-of-type{
+    margin: 0px;
+  }
+
+}

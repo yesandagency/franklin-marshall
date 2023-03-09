@@ -13,7 +13,9 @@
           {% endif %}
 
           {% if quote.bigQuote %}
-          <h3>{{ quote.bigQuote }}</h3>
+          <h3>{{ quote.bigQuote }}
+          {% if quote.subhead %}{% else %}<span></span>{% endif %}
+          </h3>
           {% endif %}
 
           {% if quote.body %}

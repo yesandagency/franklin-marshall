@@ -1,0 +1,65 @@
+<div class="c-filterable">
+
+  <div class="c-filterable-contain">
+    {% if data.intro %}
+    <div class="c-filterable-contain__intro">{{ data.intro }}</div>
+    {% endif %}
+  </div>
+
+  <div class="c-filterable-elements">
+    <div class="c-filterable-elements__contain">
+
+      <form>
+      {% for element in data.elements %}
+
+        {% if element.type === 'search' %}
+        <label for="{{ element.id }}" class="label-search">Search</label>
+        <input aria-label="search" class="c-form-element__search" id="{{ element.id }}" type='{{ element.type }}' placeholder="{{ element.caption }}" style="width: {{ element.width }};">
+
+        {% endif %}
+
+        {% if element.type === 'select' %}
+
+        <div class="c-form-element__select" style="width: {{ element.width }};">
+        <label for="{{ element.id }}">{{ element.id }}</label>
+        <select aria-label="select" title="{{ element.id }}" id="{{ element.id }}">
+
+          {% for option in element.options %}
+
+          <option aria-label="option" value="{{ option.value }}">{{ option.caption }}</option>
+
+          {% endfor %}
+
+        </select>
+        </div>
+
+        {% endif %}
+
+        {% if element.type === 'submit' %}
+
+        <input aria-label="submit" class="c-form-element__submit" type="submit" value="{{ element.caption }}" id="{{ element.id }}">
+
+        {% endif %}
+
+        {% if element.type === 'checkbox' %}
+
+        <div class="c-form-element__checkboxes" id="{{ element.id }}">
+
+          {% for box in element.boxes %}
+
+            <input type="checkbox" id="{{ box.id }}" name="{{ box.label }}" value="{{ box.value }}">
+            <label for="{{ box.id }}">{{ box.label }}</label>
+
+          {% endfor %}
+
+        </div>
+
+        {% endif %}
+
+      {% endfor %}
+      </form>
+
+    </div>
+  </div>
+
+</div>

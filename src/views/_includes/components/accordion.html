@@ -1,0 +1,67 @@
+<div class="c-accordion-block {{ data.color }}">
+
+  <div class="c-accordion-block-wrapper">
+
+    <div class="c-accordion-block-title">
+      <h2>{{ data.title }}</h2>
+    </div>
+
+    <div class="c-accordion__contents">
+    {% for content in data.contents %}
+
+      <div class="c-accordion__contents-copy {{ content.type }}">
+        <div class="c-accordion__heading">
+          <h3>{{ content.heading }}
+
+            <span class="c-accordion__expand">
+              {% include '../../../assets/images/images/icon-accordion-plus.svg' %}
+              <span class="c-accordion__contract">
+                {% include '../../../assets/images/images/icon-accordion-minus.svg' %}
+              </span>
+            </span>
+
+          </h3>
+          <div class="c-accordion__description">
+
+            <div class="c-accordion__description-contents">{{ content.description | safe }}</div>
+
+            {% if content.people %}
+            <div class="c-accordion__people-grid">
+              {% for person in content.people %}
+              <div>
+                <p><strong>{{ person.name }}</strong></p>
+                <p>{{ person.title }}</p>
+                <p>{{ person.subject }}</p>
+                <a href="{{ person.linkURL }}">{{ person.linkTitle }} &raquo;</a>
+              </div>
+              {% endfor %}
+            </div>
+
+            <div class="c-pagination-links">
+              <a href="#" aria-label="prev page" title="prev page" class="inactive">{% include '../../../assets/images/images/pagination-arrow-left.svg' %} PREVIOUS</a><span class="c-pagination-link-active">1</span><a href="#"  class="c-pagination-link">2</a><a href="#" class="c-pagination-link">3</a><span>...</span><a href="#"  class="c-pagination-link">5</a><a href="#" aria-label="next page" title="next page">NEXT {% include '../../../assets/images/images/pagination-arrow-right.svg' %}</a>
+            </div>
+            {% endif %}
+
+            {% if content.buttons %}
+
+            <div class="c-accordion-buttons-block">
+              {% for button in content.buttons %}
+                <a class="c-accordion-button" href="{{ button.link }}">{{ button.title }} &raquo;</a>
+              {% endfor %}
+            </div>
+
+            {% endif %}
+
+          </div>
+
+        </div>
+      </div>
+
+
+
+    {% endfor %}
+    </div>
+
+  </div>
+
+</div>

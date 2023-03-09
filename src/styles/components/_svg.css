@@ -1,11 +1,22 @@
 .arrow-icon {
   width: 25px;
-  height: 41px;
-  margin-top: -5px;
+  height: 20px;
+  margin-top: -4px;
 }
 .arrow-icon-gold {
-  color: #FFC300
+  width: 12px;
+  height: 18px;
+  margin-top: 0px;
+  fill: #FFC300
 }
 .arrow-icon-black {
   color: #000000
+}
+
+svg{
+
+  .dashed-ring{
+    display: none !important;
+  }
+
 }

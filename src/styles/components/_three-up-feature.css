@@ -1,8 +1,15 @@
+.c-three-up-feature + .c-three-up-feature{
+  background: #F9F9F9;
+}
+
+
 .c-three-up-feature{
   display: block;
   position: relative;
   padding: 45px 60px;
   width: 100%;
+
+
 
   &-wrapper{
     max-width: 80rem;
@@ -27,6 +34,7 @@
         text-align: center;
         font-weight: 700;
         color: #0C125D;
+        font-family: "ABCArizonaMix";
       }
 
 
@@ -81,6 +89,11 @@
     }
 
   }
+
+  .c-three-up-feature-card:nth-of-type(3n){
+    margin-right: 0px;
+  }
+
 
 
 }
@@ -278,6 +291,16 @@
         font-size: 14px;
         text-transform: uppercase;
       }
+
+      a::before{
+        width: 30px;
+        height: 0px;
+        border-top: 2px dashed #FFC300;
+        position: relative;
+        display: block;
+        margin-bottom: 10px;
+        content: "";
+      }
     }
 
   }
@@ -302,11 +325,78 @@
       text-align: center;
     }
 
+
     a:hover{
       color: white;
       background: #0C125D;
     }
 
+  }
+
+}
+
+
+
+@media screen and (max-width: 1200px){
+
+  .c-three-up-feature-wrapper .c-three-up-feature-title{
+    margin-bottom: 45px;
+  }
+
+
+}
+
+@media screen and (max-width: 1024px){
+
+  .c-three-up-feature{
+    padding: 45px 30px;
+  }
+
+}
+
+@media screen and (max-width: 890px){
+
+  .c-three-up-feature-cards{
+    display: block;
+  }
+
+  .c-three-up-feature-background{
+    display: none;
+  }
+
+  .c-three-up-feature-wrapper .c-three-up-feature-title{
+    margin-bottom: 30px;
+  }
+
+  .c-three-up-feature-wrapper .c-three-up-feature-title h2{
+    font-size: 25px;
+  }
+
+  .highlight .c-three-up-feature-card h3{
+    font-size: 20px;
+  }
+
+  .c-three-up-feature-card{
+    max-width: 768px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .highlight .c-three-up-feature-card-image, .standard .c-three-up-feature-card-image, .news .c-three-up-feature-card-image {
+    height: 50vw;
+  }
+
+  .news .c-three-up-feature-card{
+    margin-bottom: 30px;
+  }
+
+
+}
+
+@media screen and (max-width: 600px){
+
+  .highlight .c-three-up-feature-card-image {
+    display: none;
   }
 
 }

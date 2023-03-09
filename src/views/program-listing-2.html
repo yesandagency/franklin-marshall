@@ -1,0 +1,104 @@
+---
+layout: main.html
+bodyClass: landing
+components:
+
+  - name: hero-landing
+    image: '/_resources/images/images/lancaster-1.png'
+    heading: 'Applying to F&M'
+    breadcrumbs:
+      - title: Home
+        link: '#'
+      - title: Admissions & Aid
+        link: '#'
+    paragraph: 'Do you think F&M is the right fit for you? If the answer is ‘yes,’ learn how to take the next step and apply.'
+
+  - name: fifty-fifty
+    title: Start Your Application
+    type1: 'fifty-fifty-type-html'
+    html1: '
+    <p>F&M accepts applications from one of two sources: the Common Application or the Coalition Application. These platforms allow you to streamline your application process and apply to multiple colleges at once.</p>
+    <a href="#" class="button">Begin Your Common Application &raquo;</a>
+    <a href="#" class="button">Begin Your Coalition Application &raquo;</a>
+    '
+    type2: 'fifty-fifty-type-html'
+    html2: '
+    <h3>Application Dates to Remember</h3>
+    <div class="application-table">
+      <div>Early Decision I</div>
+      <div>November 15 (Notified by Dec 15)</div>
+      <div>Early Decision II</div>
+      <div>January 15 (Notified by Feb 15)</div>
+      <div>Regular decision</div>
+      <div>January 15 (Notified by April 1)</div>
+      <div>Transfer (Fall)</div>
+      <div>April 15* (Notified by June 1)</div>
+      <div>Transfer (Spring)</div>
+      <div>November 15 (Notified by Dec 15)</div>
+    </div>
+    <p>*Applications received after the priority deadline are considered on a space-available basis until the class is full. You are encouraged to complete your application as soon as possible.</p>
+    '
+
+  - name: accordion
+    title: 'Application Options'
+    contents:
+      - heading: 'Applying Early Decision'
+        type: 'one-col'
+        description: '
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        '
+      - heading: 'Applying Regular Decision'
+        type: 'one-col'
+        description: '
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        '
+      - heading: 'Applying as a Transfer'
+        type: 'one-col'
+        description: '
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        '
+      - heading: 'Applying as an International Student'
+        type: 'one-col'
+        description: '
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        '
+      - heading: 'Standardized Testing Options'
+        type: 'one-col'
+        description: '
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        '
+      - heading: 'Special Application Opportunities'
+        type: 'one-col'
+        description: '
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        '
+
+
+  - name: feature-display
+    title: 'Keep Track of What You Need with an Application Checklist'
+    image: '/_resources/images/images/lancaster-1.png'
+    thumb: '/_resources/images/images/lancaster-small-1.png'
+    paragraph: '<p>We understand that this is a lot to remember and track! To help, we put together a step-by-step guide to completing the application process as a first-year applicant. You’ll find valuable information about each of our application requirements.</p>'
+    align: 'top'
+    ctas:
+      - link: '#'
+        caption: 'Check Out the Application Checklist'
+
+  - name: fifty-fifty
+    type1: 'fifty-fifty-type-image'
+    image1: '/_resources/images/images/lancaster-1.png'
+    type2: 'fifty-fifty-type-html'
+    html2: '
+    <h2>Financial Aid</h2>
+    <p>We are committed to making an F&M education affordable for all deserving students. We are one of a select group of colleges and universities that exclusively offers need-based financial aid.</p>
+    <p><a href="#">Learn more about financial aid at F&M,</a> including what financial aid we offer and how we determine financial need.</p>
+    '
+
+
+---
+
+{% from "macros/component.html" import loadComponent %}
+
+{% for component in components %}
+  {{ loadComponent(component) }}
+{% endfor %}

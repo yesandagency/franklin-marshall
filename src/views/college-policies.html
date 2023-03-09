@@ -1,0 +1,106 @@
+---
+layout: main.html
+bodyClass: news-listing
+components:
+
+  - name: hero-slim
+    heading: 'College Policies'
+    breadcrumbs:
+      - title: Home
+        link: '#'
+
+  - name: filterable
+    elements:
+    - type: search
+      id: search
+      width: '100%'
+      caption: Search policies by keyword or phrase
+
+
+
+    - type: select
+      id: Type of Policy
+      width: '50%'
+      options:
+      - value: Test
+        caption: Test
+      - value: Test2
+        caption: Test2
+      - value: Test3
+        caption: Test3
+
+    - type: submit
+      id: submit
+      caption: 'Find »'
+
+
+  - name: policy-list
+    cards:
+    - title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
+      category: 'Employee Relations Policies'
+      copy: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+      link: '#'
+      linkcaption: 'Read More'
+    - title:  'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
+      category: 'Health & Wellness Policies'
+      copy: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+      link: '#'
+      linkcaption: 'Read More'
+    - title:  'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
+      category: 'Academic Policies'
+      copy: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+      link: '#'
+      linkcaption: 'Read More'
+    - title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
+      category: 'Employee Relations Policies'
+      copy: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+      link: '#'
+      linkcaption: 'Read More'
+    - title:  'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
+      category: 'Health & Wellness Policies'
+      copy: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+      link: '#'
+      linkcaption: 'Read More'
+    - title:  'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
+      category: 'Academic Policies'
+      copy: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+      link: '#'
+      linkcaption: 'Read More'
+    - title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
+      category: 'Employee Relations Policies'
+      copy: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+      link: '#'
+      linkcaption: 'Read More'
+    - title:  'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
+      category: 'Health & Wellness Policies'
+      copy: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+      link: '#'
+      linkcaption: 'Read More'
+    - title:  'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
+      category: 'Academic Policies'
+      copy: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+      link: '#'
+      linkcaption: 'Read More'
+    - title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
+      category: 'Employee Relations Policies'
+      copy: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+      link: '#'
+      linkcaption: 'Read More'
+    - title:  'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
+      category: 'Health & Wellness Policies'
+      copy: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+      link: '#'
+      linkcaption: 'Read More'
+    - title:  'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
+      category: 'Academic Policies'
+      copy: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+      link: '#'
+      linkcaption: 'Read More'
+
+---
+
+{% from "macros/component.html" import loadComponent %}
+
+{% for component in components %}
+  {{ loadComponent(component) }}
+{% endfor %}

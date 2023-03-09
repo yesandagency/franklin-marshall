@@ -1,0 +1,48 @@
+<section class="relative hero c-hero-landing">
+  <!-- DEV NOTE: If background image is not set by user in the CMS, it should use default: `/_resources/images/background.jpg` -->
+  <!-- <img alt="" aria-hidden="true" src="{{ data.backgroundImage or '/_resources/images/background.jpg' }}" class="adhere object-cover object-top"> -->
+  <div class="c-hero-landing-pattern"></div>
+  <div class="c-hero-landing--container {% if data.quicklinks %} has-quicklinks {% endif %}">
+    <div class="c-hero-landing--content">
+
+      <h1 {% if data.jobtitle %}class="has-job-title"{% endif %}><span>{{ data.heading }}</span>
+      {% if data.jobtitle %}
+        <strong>{{ data.jobtitle }}</strong>
+      {% endif %}
+      </h1>
+
+      <div class="c-hero-landing--mobile-image-background" >
+        <div style="background: url('{{ data.image }}') center center no-repeat; background-size: cover;"></div>
+      </div>
+      <div class="c-hero-landing--breadcrumb-description">
+        <div class="breadcrumbs">
+          {% for breadcrumb in data.breadcrumbs %}
+            <a href="{{ breadcrumb.link }}">{{ breadcrumb.title }}</a> <span>/</span>
+          {% endfor %}
+            <p>{{ data.heading }}</p>
+        </div>
+        {% if data.backlink %}
+        <a href="{{ data.backlink }}" class="button">&laquo; {{ data.backcaption }}</a>
+        {% endif %}
+        <h2>{{ data.subheading }}</h2>
+        <p>{{ data.paragraph | safe }}</p>
+      </div>
+
+    </div><div class="c-hero-landing--image ">
+      <div class="c-hero-landing--image-background" style="background: url('{{ data.image }}') center center no-repeat; background-size: cover;"></div>
+      {% if data.quicklinks %}
+      <div class="c-hero-landing--image-menu">
+        <div class="c-hero-landing--image-menu-content">
+          <h3>{{ data.quicktitle }}</h3>
+          <ul>
+            {% for link in data.quicklinks %}
+            <li>{% include '../../../assets/images/images/arrow-hero-menu.svg' %}<a href="{{ link.link }}">{{ link.title }}</a></li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+      {% endif %}
+    </div>
+  </div>
+
+</section>

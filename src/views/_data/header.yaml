@@ -1,5 +1,34 @@
+
+hamburgerMenu:
+- title: Information For
+  links:
+  - label: Alumni
+    href: /
+  - label: Current Students
+    href: /
+  - label: Prospective Students
+    href: /
+  - label: Faculty & Staff
+    href: /
+  - label: Surrounding Community
+    href: /
+  - label: Prospective Employees
+    href: /
+  - label: Parents & Family
+    href: /
+- title: Helpful Links
+  links:
+  - label: Search Campus
+    href: /
+  - label: Campus Map
+    href: /
+  - label: Emergency
+    href: /
+  - label: Information
+    href: /
+
 menuPrimary:
-  - heading: Admissions & Aids
+  - heading: Admission & Aid
     href: /
     links:
       - label: New Student Orientation
@@ -66,17 +95,17 @@ menuPrimary:
         href: /
       - label: Contact Collin
         href: /
+  - heading: Give
+    href: /
 
-menuResource:
+utilityMenu:
   - heading: ""
     links:
-      - label: Request More Info
-        href: /
       - label: Apply
         href: /
-      - label: News
+      - label: Give
         href: /
-      - label: Calendar
+      - label: Request Info
         href: /
 search:
   placeholder: Enter your search terms here
@@ -128,3 +157,5 @@ topPages:
           href: /
         - label: Staff Link Three
           href: /
+
+

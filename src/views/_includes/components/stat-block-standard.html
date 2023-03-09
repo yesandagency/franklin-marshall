@@ -1,0 +1,36 @@
+<section class="c-stat-block-standard {% if data.border %} border-{{ data.border }} {% endif %} {% if data.background %} bg-{{ data.background }} {% endif %}">
+  <div class="c-stat-block-standard-wrapper">
+    <div class="c-stat-block-standard-content">
+
+      <div class="c-stat-block-standard-content-title">
+        <h2>{{ data.title }}</h2>
+      </div>
+
+      {% if data.paragraph %}
+      <p>{{ data.paragraph | safe }}</p>
+      {% endif %}
+    </div>
+
+    <div class="c-stat-block-standard-statistics">
+    {% for statistic in data.statistics %}
+      <div class="c-stat-block-standard-stat">
+
+        {% if statistic.numeral %}
+        <p><strong>{{ statistic.numeral }}</strong></p>
+        {% endif %}
+
+        {% if statistic.caption %}
+        <p>{{ statistic.caption }}</p>
+        {% endif %}
+
+      </div>
+    {% endfor %}
+    </div>
+
+    {% if data.link %}
+    <div class="c-stat-block-standard-link">
+      <a href="{{ data.link }}">{{ data.linktitle }} &raquo;</a>
+    </div>
+    {% endif %}
+  </div>
+</section>

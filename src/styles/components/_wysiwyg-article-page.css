@@ -1,0 +1,78 @@
+.c-wysiwyg{
+  display: block;
+  position: relative;
+  width: 100%;
+  padding: 0px 30px;
+
+  &-title{
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    justify-content: center;
+    background: url('/_resources/images/images/three-up-feature-ring.svg') center center no-repeat;
+    min-height: 110px;
+    margin-bottom: 45px;
+    margin-top: 45px;
+
+
+    h2{
+      font-size: 45px;
+      text-align: center;
+      font-weight: 700;
+      color: #0C125D;
+      font-family: "ABCArizonaMix";
+    }
+  }
+}
+
+.c-news-heading + .c-wysiwyg{
+  margin-top: 45px;
+}
+
+.c-wysiwyg img{
+  width: 100%;
+  display: block;
+  position: relative;
+  margin-bottom: 45px;
+}
+
+.c-wysiwyg p{
+  max-width: 80rem;
+  width: 100%;
+  font-size: 18px;
+  line-height: 28px;
+  margin: 0 auto 20px;
+}
+
+@media screen and (max-width: 890px){
+
+  .c-wysiwyg img{
+    margin-bottom: 30px;
+  }
+
+  .c-wysiwyg p{
+    font-size: 16px;
+  }
+
+}
+
+.c-wysiwyg.bg-dark{
+
+  background: #0C125D;
+  padding: 45px 30px;
+
+  h2{
+    color: #FFC300;
+  }
+
+  p{
+    color: white;
+  }
+
+  .c-wysiwyg-title{
+    background: none;
+  }
+
+
+}

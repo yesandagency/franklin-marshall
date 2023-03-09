@@ -1,0 +1,43 @@
+<section class="c-article-list">
+  <div class="c-article-list-wrapper">
+
+
+    <div class="c-article-list-cards">
+    {% for card in data.cards %}
+
+      <div class="c-article-list-card">
+
+        <div class="c-article-list-card-highlight"></div>
+
+        <div class="c-article-list-card-contain">
+          <div class="c-article-list-card-content">
+            {% if card.date %}
+            <p class="c-article-list-card-date">{{ card.date }}</p>
+            {% endif %}
+            <h3>{{ card.title }}</h3>
+            <span></span>
+            <p>{{ card.copy }}</p>
+          </div>
+
+          <div class="c-article-list-card-image" style="background-image: url({{ card.image }}); background-position: center center background-repeat: no-repeat; background-size: cover;">
+          </div>
+
+          <div class="c-article-list-card-cta">
+            <a href="{{ card.link }}">{{ card.linkcaption }} &raquo;</a>
+          </div>
+
+        </div>
+
+      </div>
+
+    {% endfor %}
+    </div>
+
+
+  </div>
+
+  <div class="c-pagination-links">
+    <a href="#" aria-label="prev page" title="prev page" class="inactive">{% include '../../../assets/images/images/pagination-arrow-left.svg' %} PREVIOUS</a><span class="c-pagination-link-active">1</span><a href="#"  class="c-pagination-link">2</a><a href="#" class="c-pagination-link">3</a><span>...</span><a href="#"  class="c-pagination-link">5</a><a href="#" aria-label="next page" title="next page">NEXT {% include '../../../assets/images/images/pagination-arrow-right.svg' %}</a>
+  </div>
+
+</section>

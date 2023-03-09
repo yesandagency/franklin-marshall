@@ -1,0 +1,24 @@
+<div class="c-people-block">
+
+  <div class="c-people-block-wrapper">
+
+    {% if data.persons %}
+    <div class="c-people-grid">
+      {% for person in data.persons %}
+      <div>
+        <p><strong>{{ person.name }}</strong></p>
+        <p>{{ person.title }}</p>
+        <p>{{ person.subject }}</p>
+        <a href="{{ person.linkURL }}">{{ person.linkTitle }} &raquo;</a>
+      </div>
+      {% endfor %}
+    </div>
+
+    <div class="c-pagination-links">
+      <a href="#" aria-label="prev page" title="prev page" class="inactive">{% include '../../../assets/images/images/pagination-arrow-left.svg' %} PREVIOUS</a><span class="c-pagination-link-active">1</span><a href="#"  class="c-pagination-link">2</a><a href="#" class="c-pagination-link">3</a><span>...</span><a href="#"  class="c-pagination-link">5</a><a href="#" aria-label="next page" title="next page">NEXT {% include '../../../assets/images/images/pagination-arrow-right.svg' %}</a>
+    </div>
+    {% endif %}
+
+  </div>
+
+</div>

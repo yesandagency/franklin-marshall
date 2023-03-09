@@ -1,0 +1,147 @@
+.c-filterable{
+  display: block;
+  position: relative;
+  width: 100%;
+  padding: 0px 30px;
+  margin: 30px 0px;
+}
+
+.c-filterable-contain{
+  max-width: 80rem;
+  width: 100%;
+  display: block;
+  position: relative;
+  margin: 0 auto;
+}
+
+.c-filterable-elements{
+  display: block;
+  position: relative;
+  width: 100%;
+
+  &__contain{
+    display: block;
+    position: relative;
+    width: 100%;
+    max-width: 80rem;
+    margin: 0 auto;
+    background: #0C125D;
+    padding: 60px;
+
+    form{
+      display: flex;
+      width: 100%;
+      position: relative;
+      flex-wrap: wrap;
+
+      .label-search{
+        font-size: 0px;
+      }
+
+      .c-form-element__search{
+        background: #ffffff url('/_resources/images/images/icon-search.svg') calc(100% - 15px) center no-repeat;
+        background-size: auto;
+        margin-bottom: 30px;
+        padding: 0px 20px;
+        height: 50px;
+        line-height: 50px;
+      }
+
+      .c-form-element__search + .c-form-element__submit{
+        margin-left: 15px;
+        margin-top: 0px;
+      }
+
+      label{
+        display: block;
+        position: relative;
+        color: #FFC300;
+        font-size: 18px;
+        margin-bottom: 5px;
+      }
+
+      .c-form-element__select{
+
+          select{
+            width: 100%;
+            height: 50px;
+          }
+
+          padding-right: 30px;
+
+      }
+
+      .c-form-element__submit{
+        height: 50px;
+        line-height: 50px;
+        text-transform: uppercase;
+        background: #FFC300;
+        color: #262626;
+        margin-top: 32px;
+        padding: 0px 20px;
+        border: 1px solid #FFC300;
+        cursor: pointer;
+      }
+
+      .c-form-element__submit:hover{
+        background: #0C125D;
+        border: 1px solid white;
+        color: white;
+      }
+
+      .c-form-element__checkboxes{
+        display: flex;
+        width: 100%;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+
+        input{
+          margin-right: 10px;
+          outline: none !important;
+          --tw-ring-offset-width: 0px !important;
+        }
+
+        label{
+          margin-right: 30px;
+          font-size: 18px;
+          margin-bottom: 0px;
+
+          &:last-of-type{
+            margin-right: 0px;
+          }
+
+        }
+
+      }
+
+
+    }
+
+  }
+
+}
+
+
+@media screen and (max-width: 890px){
+
+  .c-filterable-elements__contain{
+    padding: 30px;
+  }
+
+  .c-filterable-elements__contain form .c-form-element__select{
+    width: 100% !important;
+    padding-right: 0px !important;
+  }
+
+  .c-filterable-elements__contain form .c-form-element__submit{
+    width: 100% !important;
+    margin-left: 0px !important;
+    margin-bottom: 20px;
+  }
+
+  .c-filterable-elements__contain form .c-form-element__search{
+    width: 100% !important;
+  }
+
+}

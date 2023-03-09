@@ -4,6 +4,7 @@
     <li class="text-15 relative item text-primary-darkblue c-header-menu-nav__cont">
       {% if item.href %}
        <a class="peer block c-header-menu-nav" href="{{ item.href }}"> {{ item.heading }} </a>
+       {% if item.links %}
       <div class="c-header-menu-desktop-cont absolute top-full left-0 hidden peer-hover:block hover:block ">
         <ul class="absolute block c-header-menu-content p-25 ">
           {% for link in item.links %}
@@ -13,6 +14,7 @@
           {% endfor %}
         </ul>
       </div>
+      {% endif %}
       {% else %}
       <!-- DEV NOTE: `controls` value on `app-accordion-button` needs to match `id` on corresponding `app-accordion-panel` (concatenating loop index works well) -->
       <!-- DEV NOTE: `default-expanded` needs to be on first button only -->

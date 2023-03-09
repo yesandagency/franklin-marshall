@@ -1,0 +1,117 @@
+.c-hero-slim{
+  min-height: 200px;
+  display: block;
+  position: relative;
+  background:#0C2A9A;
+  padding: 0px 30px;
+  margin-bottom: 60px;
+
+  &-pattern{
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    display: block;
+    z-index: 0;
+    mix-blend-mode: color-burn;
+    opacity: .1;
+    background: url('/_resources/images/images/illus_WindowPanes.svg') top left repeat;
+  }
+
+  &--container{
+    display: flex;
+    width: 100%;
+    flex-wrap: nowrap;
+    position: relative;
+    margin: 0 auto;
+    max-width: 80rem;
+    padding: 65px 0px;
+    z-index: 1;
+  }
+
+  &--container::before{
+    content: "";
+    background: url('/_resources/images/images/hero-landing-circle.svg') center center no-repeat;
+    background-size: cover;
+    position: absolute;
+    z-index: 3;
+    right: 0px;
+    bottom: -65px;
+    display: block;
+    height: 115px;
+    width: 115px;
+  }
+
+  &--content{
+    position: relative;
+    width: 50%;
+    color: white;
+    padding-right: 80px;
+
+    h1{
+      font-family: "ABCArizonaMix";
+      font-size: 45px;
+      color: white;
+      position: relative;
+
+      span{
+        position: relative;
+        display: block;
+        z-index: 1;
+      }
+
+    }
+
+  }
+
+
+  &-breadcrumbs{
+    max-width: calc(80rem + 60px);
+    width: 100%;
+    margin: 0 auto;
+    height: 50px;
+    padding: 0px 30px;
+
+    a{
+      color: #0B48E4;
+      line-height: 50px;
+    }
+
+    p{
+      display: inline;
+      color: #0B48E4;
+      line-height: 50px;
+    }
+
+  }
+
+}
+
+
+@media screen and (max-width: 768px){
+
+  .c-hero-slim{
+    min-height: auto;
+    margin-bottom: 10px;
+  }
+
+  .c-hero-slim--container{
+    padding: 20px 0px;
+  }
+
+  .c-hero-slim--content h1{
+    font-size: 20px;
+  }
+
+  .c-hero-slim--container::before{
+    height: 65px;
+    width: 65px;
+    bottom: -32.5px;
+  }
+
+  .c-hero-slim-breadcrumbs a, .c-hero-slim-breadcrumbs p{
+    font-size: 12px;
+  }
+
+}

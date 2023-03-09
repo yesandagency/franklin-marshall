@@ -6,7 +6,8 @@
       {% for link in data %}
           <a href="{{link.href}}" class="c-iconlist-content">
             <div class="c-iconlist-icon">
-              <img class="c-iconlist-image w-28 h-28" alt="image" src="/_resources/images/images/{{link.icon}}"/>
+              <img alt="image" src="/_resources/images/images/{{link.icon}}" class="c-iconlist-image c-iconlist-default w-28 h-28">
+              <img alt="image" src="/_resources/images/images/{{link.hover}}" class="c-iconlist-image c-iconlist-hover w-28 h-28">
             </div>
             <div class="c-iconlist-text">
               <div class="c-iconlist-text__inner pl-2.5">

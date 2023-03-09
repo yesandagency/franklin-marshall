@@ -1,24 +1,22 @@
 .c-cta-wrapper {
   width: 100%;
-  padding: 81px 0;
+  padding: 80px 30px;
 }
 .c-cta-container {
   @apply max-w-7xl;
+  max-width: 80rem;
   margin: auto;
+  display: block;
   position: relative;
   text-align: center;
-}
-.c-cta-container img{
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
+  padding: 60px 0px;
+  border-radius: 10px;
+  overflow: hidden;
 }
 .c-cta-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  position: relative;
+  margin: 0 auto;
+  display: inline-block;
   padding: 25px 65px;
   text-transform: uppercase;
   font-family: LibreFranklin;
@@ -33,6 +31,10 @@
   .c-cta-text{
     padding: 15px 35px;
     font-size: 25px;
+  }
+
+  .c-cta-container {
+    padding: 30px 0px;
   }
 
 }

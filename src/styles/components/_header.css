@@ -2,6 +2,8 @@
   height: 5rem;
   z-index: 2000 !important;
   padding: 0px 30px;
+  background: rgba(255, 255, 255, 0.9) !important;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
 
   > div{
     height: 100%;
@@ -20,9 +22,10 @@
 }
 .c-header-menu-content {
   position: relative;
-  background-color: #FFFFFF ;
+  background-color: rgba(255, 255, 255, 0.9) ;
   box-shadow: 0px 4px 8px #0000001A;
   width: fit-content;
+  z-index: 200;
 }
 .c-header-menu-nav__cont {
   font-family: ABCArizonaMix;
@@ -35,4 +38,197 @@
   padding-top: 12.5px;
 }
 
+.c-primary-menu-dropdown{
+  background: #0B48E4 !important;
+  width: 100%;
+  height: auto !important;
+  padding: 40px 50px 50px;
 
+  .utility-menu{
+    display: flex;
+    margin-top: 30px;
+    padding-top: 50px;
+    width: 100%;
+    border-top: 2px dashed #ffc300;
+
+    a{
+      margin-right: 30px;
+      background: #ffc300;
+      color: #0C125D;
+      position: relative;
+      text-transform: uppercase;
+      height: 40px;
+      line-height: 40px;
+      padding: 0px 15px;
+      font-size: 14px;
+      border: 1px solid #0C125D;
+      display: inline-block;
+
+      &:hover{
+        color: white;
+        background: #0C125D;
+      }
+    }
+
+  }
+
+  .c-search-contain{
+    display: block;
+    position: relative;
+
+    label{
+      font-size: 0px;
+      height: 0px !important;
+
+    }
+
+    input{
+      background: white;
+      position: relative;
+      display: block;
+      height: 60px;
+      color: black;
+      margin-bottom: 50px;
+    }
+
+    svg{
+      position: absolute;
+      top: calc(50% - 12px);
+      transform: translateY(-50%);
+      right: 15px;
+      width: 20px;
+      height: 20px;
+    }
+
+  }
+
+  .c-hamburger-primary-menu{
+    display: block;
+    position: relative;
+    width: 100%;
+
+
+    h3{
+      font-family: LibreFranklin;
+      font-size: 14px;
+      color: #FFC300;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+
+    ul{
+
+
+      li{
+        margin-bottom: 10px;
+
+        a{
+          color: white;
+          font-size: 16px;
+          font-family: LibreFranklin;
+        }
+
+      }
+
+    }
+
+    &:first-of-type{
+
+      margin-bottom: 50px;
+
+      ul{
+        -moz-column-count: 2;
+        column-count: 2;
+        -moz-column-gap: 20px;
+        column-gap: 20px;
+
+        li{
+
+          a{
+            font-size: 20px;
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+}
+
+
+@media screen and (max-width: 1100px){
+
+
+  #menu-primary ul{
+    gap: 20px;
+  }
+
+
+}
+
+
+@media screen and (max-width: 1024px){
+
+
+  #menu-primary ul{
+    gap: 10px;
+  }
+
+  .the-header > div img{
+    width: 10rem;
+  }
+
+
+}
+
+
+@media screen and (max-width: 890px){
+
+  #menu-primary{
+    display: none;
+  }
+
+  .c-the-headernav-wrapper{
+    position: initial !important;
+  }
+
+  .c-primary-menu-dropdown{
+    top: 5rem !important;
+  }
+
+  .c-primary-menu-dropdown{
+    padding: 20px 30px 30px;
+
+    .c-search-contain{
+
+      input{
+        margin-bottom: 30px;
+      }
+
+    }
+
+    .c-hamburger-primary-menu:first-of-type{
+      margin-bottom: 30px;
+
+      ul{
+
+        li{
+          margin-bottom: 10px;
+
+          a{
+            font-size: 16px !important;
+          }
+        }
+
+      }
+
+
+    }
+
+  }
+
+
+}

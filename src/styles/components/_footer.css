@@ -49,8 +49,19 @@
   display: flex;
   width: 50%;
 }
+
+
+.c-footer-section-right {
+  width: 50%;
+  padding-left: 20px;
+}
+
 .c-footer-logo {
-  width: 30%;
+  width: 120px;
+
+  img, svg{
+    width: 120px;
+  }
 }
 .c-footer-logo_icon {
   width: 120px;
@@ -59,6 +70,7 @@
 
 .c-footer-content {
   padding-left: 25px;
+  width: calc(100% - 120px);
   padding-right: 30px;
 }
 .c-footer-college-info,
@@ -143,11 +155,149 @@
 
 }
 
+
+@media screen and (max-width: 1140px){
+
+  .c-footer-logo{
+    width: 75px;
+  }
+
+  .c-footer-content{
+
+    width: calc(100% - 75px);
+    padding-right: 20px;
+
+    .c-footer-conditions{
+
+      a{
+        /* width: 50%; */
+        white-space: nowrap;
+        margin-right: calc(15px / 2);
+        padding-right: calc(15px / 2);
+        border-right: 1px solid blue;
+
+        &:last-of-type{
+          border-right: 0px;
+        }
+      }
+
+      span{
+        display: none;
+      }
+
+    }
+
+  }
+
+
+}
+
+
+@media screen and (max-width: 1080px){
+
+  .c-footer-conditions{
+    flex-wrap: wrap;
+
+    a{
+      width: calc(50% - calc(15px / 2));
+      padding-bottom: calc(15px / 2);
+
+      &:nth-of-type(even){
+        border-right: 0px;
+      }
+
+      &:nth-of-type(3), &:nth-of-type(4){
+        padding-bottom: 0px;
+      }
+
+    }
+
+  }
+
+
+}
+
+
 @media screen and (max-width: 900px){
 
   .c-prefooter__contain{
     padding-bottom: 60px;
   }
 
+  .c-iconlist-wrapper{
+    padding: 0px 30px !important;
+  }
+
+
+
+
+}
+
+
+@media screen and (max-width: 890px){
+
+  .c-footer-section{
+    display: block;
+    width: calc(100% - 60px);
+  }
+
+  .c-footer-section-left{
+    width: 100%;
+    display: block;
+  }
+
+  .c-footer-content{
+    padding: 0px;
+  }
+
+  .c-footer-section-devider{
+    display: none;
+  }
+
+  .c-footer-section-right{
+    width: 100%;
+    padding-left: 0px;
+    padding-top: 20px;
+    border-top: 2px dashed #ffc300;
+  }
+
+  .c-footer-logo{
+    margin-bottom: 30px;
+  }
+
+  .c-footer-content{
+    margin-bottom: 20px;
+    display: block;
+    position: relative;
+    width: 100%;
+  }
+
+  .c-footer-conditions{
+    display: block;
+
+    a{
+      display: inline-block;
+      width: auto;
+      border-right: 0px !important;
+    }
+
+  }
+
+
+}
+
+
+@media screen and (max-width: 768px){
+
+  .c-footer-page-links{
+    display: block !important;
+    position: relative;
+    grid-template-columns: none;
+
+    a{
+      display: block;
+      position: relative;
+    }
+  }
 
 }

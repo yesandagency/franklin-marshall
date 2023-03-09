@@ -1,11 +1,11 @@
 .c-stat-block-home{
-  margin: 0 auto 60px;
-  width: 100%;
-  padding: 60px 30px;
-  position: relative;
-  display: block;
-  background: #0C125D url('/_resources/images/images/stat-block-home.svg') left center no-repeat;
-  background-size: 33% auto;
+    margin: 0 auto 60px;
+    width: 100%;
+    padding: 60px 30px;
+    position: relative;
+    display: block;
+    background: #0C125D url(/_resources/images/images/bg_illus_CherryTree-yellow.svg) -30% center no-repeat;
+    background-size: 50% auto;
 }
 
 .c-stat-block-home-wrapper{
@@ -20,11 +20,12 @@
   display: block;
   position: relative;
   width: 75%;
-  margin-left: 25%;
+  margin-left: calc(25% + (15px / 2));
   margin-bottom: 60px;
 
   h2{
     color: #FFC300;
+    font-family: "ABCArizonaMix";
     font-size: 45px;
     font-weight: 700;
   }
@@ -63,6 +64,7 @@
       strong{
         font-size: 65px;
         margin-bottom: 20px;
+        font-family: "ABCArizonaMix";
         color: #0C125D;
         border-bottom: 2px dashed #0C125D;
         position: relative;
@@ -71,6 +73,68 @@
 
     }
 
+  }
+
+  .c-stat-block-home-stat:nth-of-type(4){
+    margin-right: 0px;
+  }
+
+}
+
+
+@media screen and (max-width: 980px){
+
+  .c-stat-block-home{
+    background-image: none;
+  }
+
+  .c-stat-block-home-content{
+    margin-left: 0px;
+    margin-bottom: 45px;
+    width: 100%;
+  }
+
+  .c-stat-block-home-statistics .c-stat-block-home-stat p strong{
+    font-size: 45px;
+  }
+
+  .c-stat-block-home-statistics .c-stat-block-home-stat p{
+    font-size: 14px;
+  }
+
+}
+
+
+@media screen and (max-width: 890px){
+
+  .c-stat-block-home{
+    background: #0C125D;
+  }
+
+  .c-stat-block-home-statistics{
+    flex-wrap: wrap;
+  }
+
+  .c-stat-block-home-statistics .c-stat-block-home-stat{
+    width: calc(50% - 15px);
+    margin-bottom: 30px;
+    height: 44vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 20px 20px;
+  }
+
+  .c-stat-block-home-stat:nth-of-type(2n){
+    margin-right: 0px;
+  }
+
+  .c-stat-block-home-content h2{
+    font-size: 25px;
+  }
+
+  .c-stat-block-home-content h3{
+    font-size: 20px;
   }
 
 }

@@ -1,0 +1,24 @@
+---
+layout: main.html
+links:
+
+  - title: Kitchen Sink
+    href: /kitchen-sink.html
+
+---
+
+<div class="background-blue">
+  <div class="container">
+    <div class="p-10 md:pt-6 md:px-20 bg-white shadow-blue">
+      {% for item in links %}
+      <div class="py-5 border-b-2 border-blue-ash">
+        <a
+          class="text-24 font-regular text-blue hover:underline"
+          href="{{ item.href }}"
+          >{{ item.title }}</a
+        >
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>

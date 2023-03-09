@@ -1,0 +1,22 @@
+.c-fifty-fifty-image{
+  display: none;
+  position: relative;
+  padding: 0px 30px;
+  width: 100%;
+  margin: 45px 0px;
+}
+
+.c-fifty-fifty-image .c-fifty-fifty-wrapper{
+  display: flex;
+  position: relative;
+  max-width: 80rem;
+  width: 100%;
+  margin: 0 auto;
+
+  > div{
+    width: 50%;
+    height: 200px;
+    margin-right: 10px;
+  }
+
+}

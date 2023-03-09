@@ -1,0 +1,21 @@
+<div class="c-fields-of-study">
+
+  <div class="c-fields-of-study--contain">
+    {% for field in data.listings %}
+
+    <div class="c-fields-of-study--field">
+
+      <h2>{{ field.firstLetter }}</h2>
+
+      {% for studies in field.links %}
+
+      <a href="{{ studies.link }}">{{ studies.title }}</a><br/>
+
+      {% endfor %}
+
+    </div>
+
+    {% endfor %}
+  </div>
+
+</div>

@@ -1,0 +1,126 @@
+---
+layout: main.html
+bodyClass: news-listing
+components:
+
+  - name: hero-slim
+    heading: 'F&M Stories'
+    breadcrumbs:
+      - title: Home
+        link: '#'
+
+  - name: filterable
+    elements:
+    - type: search
+      id: search
+      width: '100%'
+      caption: Enter Keyword
+
+
+
+    - type: select
+      id: Categories
+      width: 'calc(99% - 80px)'
+      options:
+      - value: Arts
+        caption: Arts
+      - value: Sciences
+        caption: Sciences
+      - value: Education
+        caption: Education
+
+    - type: submit
+      id: submit
+      caption: 'Find »'
+
+  - name: news-feature
+    title: 'Class of 2022 Grads Urged to Find Their Voices'
+    image: '/_resources/images/images/bg-article-image.png'
+    paragraph: 'It is not enough to be a voice for the voiceless.
+      “Instead, your challenge and mine is to listen for unheard voices and to abolish the conditions of voicelessness,” said author Viet Thanh Nguyen at Franklin & Marshall College’s May 14 Commencement.
+      '
+    link: 'news-article.html'
+    linktitle: 'Read More'
+
+  - name: article-list
+    cards:
+    - title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
+      date: 'January 23, 2023'
+      copy: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+      image: '/_resources/images/images/three-up-card-image-7.png'
+      link: '#'
+      linkcaption: 'Read More'
+    - title:  'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
+      date: 'January 23, 2023'
+      copy: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+      image: '/_resources/images/images/three-up-card-image-8.png'
+      link: '#'
+      linkcaption: 'Read More'
+    - title:  'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
+      date: 'January 23, 2023'
+      copy: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+      image: '/_resources/images/images/three-up-card-image-9.png'
+      link: '#'
+      linkcaption: 'Read More'
+    - title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
+      date: 'January 23, 2023'
+      copy: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+      image: '/_resources/images/images/three-up-card-image-7.png'
+      link: '#'
+      linkcaption: 'Read More'
+    - title:  'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
+      date: 'January 23, 2023'
+      copy: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+      image: '/_resources/images/images/three-up-card-image-8.png'
+      link: '#'
+      linkcaption: 'Read More'
+    - title:  'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
+      date: 'January 23, 2023'
+      copy: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+      image: '/_resources/images/images/three-up-card-image-9.png'
+      link: '#'
+      linkcaption: 'Read More'
+    - title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
+      date: 'January 23, 2023'
+      copy: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+      image: '/_resources/images/images/three-up-card-image-7.png'
+      link: '#'
+      linkcaption: 'Read More'
+    - title:  'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
+      date: 'January 23, 2023'
+      copy: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+      image: '/_resources/images/images/three-up-card-image-8.png'
+      link: '#'
+      linkcaption: 'Read More'
+    - title:  'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
+      date: 'January 23, 2023'
+      copy: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+      image: '/_resources/images/images/three-up-card-image-9.png'
+      link: '#'
+      linkcaption: 'Read More'
+    - title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
+      date: 'January 23, 2023'
+      copy: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+      image: '/_resources/images/images/three-up-card-image-7.png'
+      link: '#'
+      linkcaption: 'Read More'
+    - title:  'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
+      date: 'January 23, 2023'
+      copy: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+      image: '/_resources/images/images/three-up-card-image-8.png'
+      link: '#'
+      linkcaption: 'Read More'
+    - title:  'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
+      date: 'January 23, 2023'
+      copy: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+      image: '/_resources/images/images/three-up-card-image-9.png'
+      link: '#'
+      linkcaption: 'Read More'
+
+---
+
+{% from "macros/component.html" import loadComponent %}
+
+{% for component in components %}
+  {{ loadComponent(component) }}
+{% endfor %}

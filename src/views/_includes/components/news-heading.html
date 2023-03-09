@@ -1,0 +1,21 @@
+<section class="c-news-heading">
+  <div class="c-news-heading-wrapper">
+    <a href="news-listing.html">&laquo; F&amp;M Stories Listing</a>
+
+    <h2>{{ data.title }}</h2>
+    <p class="c-news-heading--article-meta">
+      {{ data.date }}<br/>
+      by {{ data.author }}
+    </p>
+
+    <div class="c-news-heading--social-links">
+      <a href="#">{% include '../../../assets/images/images/icon-facebook.svg' %}</a><a href="#">{% include '../../../assets/images/images/icon-linked.svg' %}</a><a href="#">{% include '../../../assets/images/images/icon-twitter.svg' %}</a><a href="#">{% include '../../../assets/images/images/icon-mail.svg' %}</a>
+    </div>
+
+    <div class="c-news-heading--image">
+      <img src="{{ data.image }}">
+    </div>
+    <div class="c-news-heading--image-caption"><p>{{ data.caption }}</p></div>
+
+  </div>
+</section>

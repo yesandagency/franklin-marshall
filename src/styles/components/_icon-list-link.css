@@ -1,5 +1,6 @@
 .c-iconlist-header {
-  font-family: "ABCArizonaMix";
+  font-size: 16px !important;
+  font-family: "LibreFranklin";
   font-weight: 300;
   text-transform: uppercase;
 }
@@ -7,17 +8,43 @@
 .c-iconlist-link {
   font-family: "ABCArizonaMix";
   font-weight: bold;
+  font-size: 20px !important;
 }
 .c-iconlist-icon {
   width: fit-content;
+
+  .c-iconlist-default{
+    display: block;
+  }
+
+  .c-iconlist-hover{
+    display: none;
+  }
+
+}
+
+a:hover{
+
+  .c-iconlist-icon{
+
+    .c-iconlist-default{
+      display: none;
+    }
+
+    .c-iconlist-hover{
+      display: block;
+    }
+
+  }
+
 }
 
 .c-iconlist-content {
   display: flex;
 }
 .c-iconlist-content:hover .c-iconlist-icon{
-  background-size: 100% 81px;
-  background-position: right 16px;
+  background-size: 100% 84px;
+  background-position: right 14px;
   background-image: linear-gradient(to right, transparent 50%, #0B48E4 50%);
   background-repeat:no-repeat;
 }
@@ -34,6 +61,14 @@
   justify-content: center;
 }
 .c-iconlist-text__inner {
-  padding: 7px 0;
+  padding: 15px 0;
   padding-right: 20px;
+}
+
+@media screen and (max-width: 1280px){
+
+  .c-iconlist-wrapper{
+    padding: 0px 30px;
+  }
+
 }

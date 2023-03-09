@@ -1,0 +1,232 @@
+.c-stat-block-standard{
+  margin: 0 auto 60px;
+  width: 100%;
+  padding: 120px 30px 90px;
+  position: relative;
+  display: block;
+  background: #F9F9F9;
+}
+
+.c-stat-block-standard-wrapper{
+  margin: 0 auto;
+  max-width: 80rem;
+  width: 100%;
+  position: relative;
+  display: block;
+  background-size: contain;
+}
+
+.c-stat-block-standard-content{
+  display: block;
+  position: relative;
+  width: 100%;
+  margin-bottom: 60px;
+
+  .c-stat-block-standard-content-title{
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    justify-content: center;
+    background: url('/_resources/images/images/three-up-feature-ring.svg') center center no-repeat;
+    min-height: 110px;
+    margin-bottom: 45px;
+
+
+    h2{
+      font-size: 45px;
+      font-family: "ABCArizonaMix";
+      text-align: center;
+      font-weight: 700;
+      color: #0C125D;
+    }
+
+  }
+
+  p{
+    line-height: 32px;
+    text-align: center;
+    font-size: 20px;
+  }
+
+}
+
+.c-stat-block-standard-statistics{
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+
+  .c-stat-block-standard-stat{
+    width: 100%;
+    margin-right: 30px;
+    background: #0C125D;
+    padding: 45px 30px;
+
+    p{
+      text-align: center;
+      color: white;
+      font-size: 18px;
+
+      strong{
+        font-size: 65px;
+        margin-bottom: 20px;
+        color: white;
+        font-family: "ABCArizonaMix";
+        border-bottom: 2px dashed #FFC300;
+        position: relative;
+        display: inline-block;
+      }
+
+    }
+
+  }
+
+}
+
+.c-stat-block-standard-link{
+  display: block;
+  position: relative;
+  width: 100%;
+  text-align: center;
+  margin-top: 45px;
+
+  a{
+    height: 40px;
+    width: auto;
+    display: inline-block;
+    padding: 0px 20px;
+    border: 1px solid #0C125D;
+    background: #FFC300;
+    color: #0C125D;
+    line-height: 40px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  a:hover{
+      color: white;
+      background: #0C125D;
+  }
+}
+
+
+.c-stat-block-standard.border-yellow{
+  border-top: 2px dashed #FFC300;
+}
+
+
+.c-stat-block-standard.bg-dark{
+  background: #0c125d;
+
+  .c-stat-block-standard-wrapper{
+
+    .c-stat-block-standard-content{
+
+      &-title{
+
+        background: none;
+
+        h2{
+          color: #FFC300;
+        }
+
+      }
+
+    }
+
+  }
+
+  p{
+    color: white;
+  }
+
+  .c-stat-block-standard-stat{
+    background: white;
+    color: #0c125d;
+
+    p{
+
+      color: #0c125d;
+
+      strong{
+        color: #0c125d;
+      }
+
+    }
+
+  }
+
+}
+
+
+@media screen and (max-width: 980px){
+
+  .c-stat-block-standard-content{
+    margin-left: 0px;
+    margin-bottom: 45px;
+    width: 100%;
+  }
+
+  .c-stat-block-standard-content p{
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .c-stat-block-standard-statistics .c-stat-block-standard-stat p strong{
+    font-size: 45px;
+  }
+
+  .c-stat-block-standard-statistics .c-stat-block-standard-stat p{
+    font-size: 14px;
+  }
+
+}
+
+
+@media screen and (max-width: 890px){
+
+  .c-stat-block-standard{
+    padding: 60px 30px;
+  }
+
+
+  .c-stat-block-standard-content p{
+    text-align: left;
+  }
+
+  .c-stat-block-standard-content .c-stat-block-standard-content-title{
+    display: block;
+    text-align: left;
+    min-height: 0px;
+    background: none;
+    margin-bottom: 30px;
+  }
+
+
+  .c-stat-block-standard-content .c-stat-block-standard-content-title h2{
+    font-size: 25px;
+    text-align: left;
+  }
+
+  .c-stat-block-standard-statistics{
+    flex-wrap: wrap;
+  }
+
+  .c-stat-block-standard-statistics .c-stat-block-standard-stat{
+    width: calc(50% - 15px);
+    margin-bottom: 30px;
+    height: 44vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 20px 20px;
+  }
+
+  .c-stat-block-standard-stat:nth-of-type(2n){
+    margin-right: 0px;
+  }
+
+
+
+}
