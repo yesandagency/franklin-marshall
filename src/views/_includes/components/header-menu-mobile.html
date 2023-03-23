@@ -20,7 +20,7 @@
           <!-- DEV NOTE: `controls` value on `app-accordion-button` needs to match `id` on corresponding `app-accordion-panel` (concatenating loop index works well) -->
           <app-accordion-button controls="menu-mobile-{{ loop.index0 }}" class="flex justify-between items-center w-full py-4 text-24 leading-1 font-semibold">
             {{ item.heading }}
-            <span class="accordion-icon w-4 h-4 ml-3"></span>
+            <span class="accordion-icon w-4 h-4 ml-3">Test</span>
           </app-accordion-button>
           <app-accordion-panel id="menu-mobile-{{ loop.index0 }}">
 

@@ -211,6 +211,13 @@
   .c-pagination-links{
     margin-bottom: 0px;
     padding-bottom: 0px;
+
+    a{
+      span{
+        font-size: 0px;
+      }
+    }
+
   }
 
 }

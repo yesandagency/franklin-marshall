@@ -24,11 +24,11 @@
           </div>
           <div class="c-footer-social-links mb-3">
             {% for social in footer.socialLinks %}
-              <a href="{{social.href}}">
+              <a href="{{social.href}}">{{ social.title }}
                 {{ svg(social.title, 'c-footer-nav-box_social inline-block mb-1') }}
               </a>
             {% endfor %}
-            
+
           </div>
           <div class="c-footer-conditions">
             {% for condition in footer.footerConditionlinks %}
@@ -52,7 +52,7 @@
         </div>
       </div>
     </div>
-    <div class="c-footer-section__bottom"> 
+    <div class="c-footer-section__bottom">
       <div class="c-footer-bottom-devider">
       </div>
     </div>

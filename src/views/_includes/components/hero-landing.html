@@ -21,11 +21,13 @@
           {% endfor %}
             <p>{{ data.heading }}</p>
         </div>
-        {% if data.backlink %}
+        {% if data.backcaption %}
         <a href="{{ data.backlink }}" class="button">&laquo; {{ data.backcaption }}</a>
         {% endif %}
-        <h2>{{ data.subheading }}</h2>
-        <p>{{ data.paragraph | safe }}</p>
+        {% if data.subheading %}
+        <h2>{{ data.subheading }}</h2>{% endif %}
+        {% if data.paragraph %}
+        <p>{{ data.paragraph | safe }}</p>{% endif %}
       </div>
 
     </div><div class="c-hero-landing--image ">

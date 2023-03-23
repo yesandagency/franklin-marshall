@@ -11,6 +11,15 @@
 
 }
 
+.the-header__button{
+  font-size: 0px !important;
+
+  span{
+    font-size: 0px !important;
+  }
+}
+
+
 .c-the-headernav-wrapper {
   display: flex;
 }
@@ -71,6 +80,7 @@
     }
 
   }
+
 
   .c-search-contain{
     display: block;

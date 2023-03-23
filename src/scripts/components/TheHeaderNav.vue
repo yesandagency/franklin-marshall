@@ -8,7 +8,7 @@
         :class="classList('menu')"
         :aria-expanded="isExpanded === 'menu'"
         @click="toggleExpanded('menu')"
-      >
+      ><span>Test</span>
         <svg
           class="w-3.5 mt-px ml-2 mr-2.5"
           viewBox="0 0 14 14"
