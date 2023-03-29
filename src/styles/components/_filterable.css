@@ -77,10 +77,14 @@
         text-transform: uppercase;
         background: #FFC300;
         color: #262626;
-        margin-top: 32px;
+        margin-top: 5px;
         padding: 0px 20px;
         border: 1px solid #FFC300;
         cursor: pointer;
+      }
+
+      .c-form-element__select.has-title ~ .c-form-element__submit{
+        margin-top: 32px;
       }
 
       .c-form-element__submit:hover{

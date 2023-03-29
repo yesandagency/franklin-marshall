@@ -178,7 +178,7 @@
         height: auto !important;
         background: white;
 
-        h3{
+        h2{
           background: #ffc300;
           height: 40px;
           line-height: 40px;
@@ -361,7 +361,7 @@
     right: initial;
   }
 
-  .c-hero-landing--image-menu-content h3{
+  .c-hero-landing--image-menu-content h2{
     font-size: 18px;
   }
 

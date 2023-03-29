@@ -121,7 +121,8 @@
     h3{
       font-family: LibreFranklin;
       font-size: 14px;
-      color: #FFC300;
+      color: #ffcc24;
+      font-weight: 600;
       text-transform: uppercase;
       margin-bottom: 20px;
     }

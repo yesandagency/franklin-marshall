@@ -20,9 +20,9 @@
 
         {% if element.type === 'select' %}
 
-        <div class="c-form-element__select" style="width: {{ element.width }};">
-        <label for="{{ element.id }}">{{ element.id }}</label>
-        <select aria-label="select" title="{{ element.id }}" id="{{ element.id }}">
+        <div class="c-form-element__select {% if element.title %} has-title {% endif %}" style="width: {{ element.width }};">
+        <label for="{{ element.id }}">{{ element.title }}</label>
+        <select aria-label="select" title="{{ element.title }}" id="{{ element.id }}">
 
           {% for option in element.options %}
 

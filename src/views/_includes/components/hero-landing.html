@@ -35,7 +35,7 @@
       {% if data.quicklinks %}
       <div class="c-hero-landing--image-menu">
         <div class="c-hero-landing--image-menu-content">
-          <h3>{{ data.quicktitle }}</h3>
+          <h2>{{ data.quicktitle }}</h2>
           <ul>
             {% for link in data.quicklinks %}
             <li>{% include '../../../assets/images/images/arrow-hero-menu.svg' %}<a href="{{ link.link }}">{{ link.title }}</a></li>

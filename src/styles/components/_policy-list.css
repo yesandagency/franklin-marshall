@@ -8,6 +8,11 @@
     display: block;
     position: relative;
     margin: 0 auto;
+
+    h2{
+      font-size: 0px;
+    }
+
   }
 
 }
