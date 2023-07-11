@@ -274,6 +274,9 @@
   .c-hero-landing--content h1:after{
     top: -30px;
     height: 125px;
+    width: calc(100% + 60px);
+    left: -30px;
+    right: initial;
   }
 
   .c-hero-landing--content a.button{
@@ -324,6 +327,7 @@
 
   .c-hero-landing--breadcrumb-description{
     padding-top: 15px;
+    display: none;
   }
 
   .c-hero-landing--content .breadcrumbs{
