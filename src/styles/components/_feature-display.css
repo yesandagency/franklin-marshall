@@ -23,7 +23,7 @@
     flex-wrap: nowrap;
 
     h2{
-      font-family: "ABCArizonaMix";
+      font-family: "ABCArizonaMix", "Noto Sans HK";
       font-size: 45px;
       line-height: 56px;
       color: #FFC300;
@@ -82,6 +82,7 @@
       border-radius: 100%;
       padding: 2px;
       height: 240px;
+      border-radius: 150px;
       width: 240px;
       display: inline-block;
       position: relative;
@@ -89,6 +90,7 @@
       div{
         position: absolute;
         top: 5px;
+        border-radius: 150px;
         left: 5px;
         width: calc(100% - 10px);
         height: calc(100% - 10px);

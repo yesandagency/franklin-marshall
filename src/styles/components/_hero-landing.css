@@ -41,7 +41,7 @@
     padding-right: 80px;
 
     h1{
-      font-family: "ABCArizonaMix";
+      font-family: "ABCArizonaMix", "Noto Sans HK";
       font-size: 45px;
       color: white;
       padding-bottom: 85px;
@@ -54,7 +54,7 @@
       }
 
       strong{
-        font-family: "LibreFranklin";
+        font-family: "LibreFranklin", "Noto Sans HK";
         color: white;
         z-index: 200;
         display: block;

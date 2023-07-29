@@ -21,11 +21,11 @@
       color: #FFCC24;
       font-size: 35px;
       margin-bottom: 30px;
-      font-family: "LibreFranklin";
+      font-family: "LibreFranklin", "Noto Sans HK";
 
       strong{
         font-size: 45px;
-        font-family: "ABCArizonaMix";
+        font-family: "ABCArizonaMix", "Noto Sans HK";
         font-weight: 700;
       }
 
@@ -200,6 +200,10 @@
 
   .c-lancaster-home-wrapper h2{
     font-size: 20px;
+  }
+
+  .c-lancaster-home-carousel::after{
+    display: none;
   }
 
   .c-lancaster-home-carousel-slide{

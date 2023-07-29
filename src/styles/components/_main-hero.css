@@ -54,21 +54,21 @@
   opacity: 1;
 }
 .c-main-hero-title {
-  font-family: "ABCArizonaMix";
+  font-family: "ABCArizonaMix", "Noto Sans HK";
   font-size: 45px;
   color: white
 }
 .c-main-hero-breadcrumb {
-  font-family: "LibreFranklin";
+  font-family: "LibreFranklin", "Noto Sans HK";
   font-size: 15px;
 }
 .c-main-hero-section-title {
-  font-family: "LibreFranklin";
+  font-family: "LibreFranklin", "Noto Sans HK";
   font-size: 25px;
   font-weight: bold;
 }
 .c-main-hero-section-content {
-  font-family: "LibreFranklin";
+  font-family: "LibreFranklin", "Noto Sans HK";
   font-size: 18px;
 }
 .c-main-hero-icon {
@@ -99,7 +99,7 @@
 }
 .c-main-hero_links-header {
   color: #0C125D;
-  font-family: "ABCArizonaMix";
+  font-family: "ABCArizonaMix", "Noto Sans HK";
   font-weight: bold;
   font-size: 18px;
   background-color: #FFC300;
@@ -109,7 +109,7 @@
 .c-main-hero_links-page {
   color: #0C125D;
   background-color: white;
-  font-family: "ABCArizonaMix";
+  font-family: "ABCArizonaMix", "Noto Sans HK";
   font-weight: normal;
   font-size: 16px;
   text-align: left;

@@ -10,8 +10,10 @@
       {% for copy in contentItem.copy %}
         <p>{{ copy.paragraph | safe }}</p>
       {% endfor %}
-    {% elif contentItem.type === 'full-width-image' %}
+    {% elif contentItem.type === 'image' %}
       <img src="{{ contentItem.image }}" alt="{{ contentItem.alt }}">
+    {% elif contentItem.type === 'full-width-image' %}
+      <img src="{{ contentItem.image }}" class="full-width-image" alt="{{ contentItem.alt }}">
     {% endif %}
   {% endfor %}
   </div>

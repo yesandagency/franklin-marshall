@@ -25,12 +25,12 @@
 }
 
 .c-footer-nav-box_title {
-  font-family: "ABCArizonaMix";
+  font-family: "ABCArizonaMix", "Noto Sans HK";
   font-weight: 300;
   text-transform: uppercase;
 }
 .c-footer-nav-box_link {
-  font-family: "ABCArizonaMix";
+  font-family: "ABCArizonaMix", "Noto Sans HK";
   font-weight: bold;
 }
 
@@ -75,7 +75,7 @@
 }
 .c-footer-college-info,
 .c-footer-address {
-  font-style: LibreFranklin;
+  font-style: LibreFranklin, "Noto Sans HK";
   font-size: 15px;
   color: #262626;
   padding-bottom: 15px;
@@ -97,7 +97,7 @@
 .c-footer-conditions {
   display: flex;
   justify-content: space-between;
-  font-style: LibreFranklin;
+  font-style: LibreFranklin, "Noto Sans HK";
   font-size: 12px;
   color: #0B48E4;
   text-decoration: underline;

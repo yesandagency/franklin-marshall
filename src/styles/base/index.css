@@ -13,6 +13,14 @@ body {
   overflow-x: hidden;
 }
 
+ol, ul{
+  list-style-type: initial;
+}
+
+ol{
+  list-style-type: decimal;
+}
+
 
 @font-face {
   font-family: "ABCArizonaMix";
@@ -55,4 +63,39 @@ body {
   font-weight: 700;
 }
 
+
+
+@font-face {
+  font-family: "Noto Sans HK";
+  src: url(/_resources/images/fonts/NotoSansHK-Thin.otf);
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: "Noto Sans HK";
+  src: url(/_resources/images/fonts/NotoSansHK-Light.otf);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Noto Sans HK";
+  src: url(/_resources/images/fonts/NotoSansHK-Regular.otf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Noto Sans HK";
+  src: url(/_resources/images/fonts/NotoSansHK-Medium.otf);
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Noto Sans HK";
+  src: url(/_resources/images/fonts/NotoSansHK-Bold.otf);
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Noto Sans HK";
+  src: url(/_resources/images/fonts/NotoSansHK-Black.otf);
+  font-weight: 900;
+}
 

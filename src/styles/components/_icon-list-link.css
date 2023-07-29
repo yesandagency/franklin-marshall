@@ -1,6 +1,6 @@
 .c-iconlist-header {
   font-size: 16px !important;
-  font-family: "LibreFranklin";
+  font-family: "LibreFranklin", "Noto Sans HK";
   font-weight: 300;
   color: #F0D066;
   font-weight: 600;
@@ -8,7 +8,7 @@
 }
 
 .c-iconlist-link {
-  font-family: "ABCArizonaMix";
+  font-family: "ABCArizonaMix", "Noto Sans HK";
   font-weight: bold;
   font-size: 20px !important;
 }

@@ -25,7 +25,7 @@
 
   h2{
     color: #FFC300;
-    font-family: "ABCArizonaMix";
+    font-family: "ABCArizonaMix", "Noto Sans HK";
     font-size: 45px;
     font-weight: 700;
   }
@@ -64,11 +64,12 @@
       strong{
         font-size: 65px;
         margin-bottom: 20px;
-        font-family: "ABCArizonaMix";
+        font-family: "ABCArizonaMix", "Noto Sans HK";
         color: #0C125D;
         border-bottom: 2px dashed #0C125D;
         position: relative;
         display: inline-block;
+        line-height: 100px;
       }
 
     }
@@ -118,7 +119,7 @@
   .c-stat-block-home-statistics .c-stat-block-home-stat{
     width: calc(50% - 15px);
     margin-bottom: 30px;
-    height: 44vw;
+    height: 50vw;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;

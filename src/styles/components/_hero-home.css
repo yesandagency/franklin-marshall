@@ -30,7 +30,7 @@
 
   .c-iconlist-header{
     font-size: 16px;
-    font-family: "LibreFranklin";
+    font-family: "LibreFranklin", "Noto Sans HK";
   }
 
   .c-iconlist-link{
@@ -122,7 +122,7 @@
     line-height: 85px;
     font-weight: 700;
     margin-bottom: 30px;
-    font-family: "ABCArizonaMix";
+    font-family: "ABCArizonaMix", "Noto Sans HK";
   }
 
   p{

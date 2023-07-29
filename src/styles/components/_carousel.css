@@ -20,11 +20,11 @@
       color: #FFC300;
       font-size: 35px;
       margin-bottom: 30px;
-      font-family: "LibreFranklin";
+      font-family: "LibreFranklin", "Noto Sans HK";
 
       strong{
         font-size: 45px;
-        font-family: "ABCArizonaMix";
+        font-family: "ABCArizonaMix", "Noto Sans HK";
         font-weight: 700;
       }
 
@@ -36,6 +36,7 @@
     display: block;
     position: relative;
     width: 100%;
+    z-index: 1;
 
     &-slide{
       height: 500px;
@@ -115,6 +116,18 @@
 
     }
 
+    &__after{
+
+      height: 100%;
+      width: calc(50% + ((100vw - 80rem) / 2));
+      display: block;
+      left: 50%;
+      z-index: 0;
+      top: 0px;
+      position: absolute;
+
+    }
+
   }
 
 }
@@ -133,6 +146,16 @@
     .c-carousel-controls a{
       margin-bottom: 10px;
     }
+  }
+}
+
+@media screen and (max-width: 1280px){
+
+  .c-carousel-block .c-carousel__after{
+    right: -30px;
+    left: initial;
+    width: 33%;
+    background-size: cover !important;
   }
 
 }
@@ -156,6 +179,10 @@
 
   .c-carousel-block{
     background: #0C125D;
+
+    .c-carousel__after{
+      display: none;
+    }
 
     .c-carousel-slide{
       height: auto;

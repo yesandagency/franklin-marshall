@@ -55,8 +55,8 @@ module.exports = {
       },
     },
     fontFamily: {
-      sans: ["LibreFranklin", "sans-serif"],
-      display: ["LibreFranklin", "sans-serif"],
+      sans: ["LibreFranklin", "Noto Sans HK", "sans-serif"],
+      display: ["LibreFranklin", "Noto Sans HK", "sans-serif"],
     },
     extend: {
       width: {

@@ -37,7 +37,7 @@
   z-index: 200;
 }
 .c-header-menu-nav__cont {
-  font-family: ABCArizonaMix;
+  font-family: ABCArizonaMix, "Noto Sans HK";
 }
 .c-header-menu-nav__cont:hover .c-header-menu-nav{
   border-bottom: 2.5px dashed #FFC300;
@@ -45,6 +45,14 @@
 .c-header-menu-nav {
   border-bottom: 2.5px dashed transparent;
   padding-top: 12.5px;
+}
+
+#menu-primary{
+
+  ul, ul li{
+    list-style: none !important;
+  }
+
 }
 
 .c-primary-menu-dropdown{
@@ -57,8 +65,13 @@
     display: flex;
     margin-top: 30px;
     padding-top: 50px;
+    list-style: none !important;
     width: 100%;
     border-top: 2px dashed #ffc300;
+
+    li{
+      list-style: none !important;
+    }
 
     a{
       margin-right: 30px;
@@ -119,7 +132,7 @@
 
 
     h3{
-      font-family: LibreFranklin;
+      font-family: LibreFranklin, "Noto Sans HK";
       font-size: 14px;
       color: #ffcc24;
       font-weight: 600;
@@ -129,14 +142,18 @@
 
     ul{
 
+      list-style: none !important;
+
 
       li{
         margin-bottom: 10px;
 
+        list-style: none !important;
+
         a{
           color: white;
           font-size: 16px;
-          font-family: LibreFranklin;
+          font-family: LibreFranklin, "Noto Sans HK";
         }
 
       }
