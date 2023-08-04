@@ -14,6 +14,12 @@
       <img src="{{ contentItem.image }}" alt="{{ contentItem.alt }}">
     {% elif contentItem.type === 'full-width-image' %}
       <img src="{{ contentItem.image }}" class="full-width-image" alt="{{ contentItem.alt }}">
+    {% elif contentItem.type === 'embed' %}
+      {% for link in contentItem.links %}
+        <div class="c-wysiwyg-video-embed {{ link.align }}">
+          {{ link.code | safe }}
+        </div>
+      {% endfor %}
     {% endif %}
   {% endfor %}
   </div>

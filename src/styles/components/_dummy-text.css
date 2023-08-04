@@ -1,13 +1,16 @@
 .c-dummy-text{
   display: block;
   position: relative;
-  max-width: calc(80rem + 60px);
-  width: 100%;
-  margin: 0 auto;
-  padding: 60px 30px 30px;
 }
 
 .c-dummy-text{
+
+  h1, h2, h3, h4, h5, h6, ul, ol, p{
+    max-width: calc(80rem + 60px);
+    width: 100%;
+    margin: 0 auto;
+    padding: 15px 30px 0px;
+  }
 
   h1{
     font-family: "ABCArizonaMix", "Noto Sans HK";
@@ -72,8 +75,63 @@
     margin-bottom: 15px;
   }
 
+  a{
+    color: #0B48E4;
+    text-decoration: underline;
+  }
+
+  a:hover{
+    text-decoration: none;
+  }
+
 }
 
 @media screen and (max-width: 890px){
+
+  .c-dummy-text{
+
+    h1, h2, h3, h4, h5, h6, ul, ol, p{
+      padding-top: 5px;
+    }
+
+    h1{
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+
+    h2{
+      font-size: 25px;
+      margin-bottom: 5px;
+    }
+
+    h3{
+      font-size: 20px;
+      margin-bottom: 5px;
+    }
+
+    h4{
+      font-size: 20px;
+      margin-bottom: 5px;
+    }
+
+    h5{
+      font-size: 18px;
+      margin-bottom: 5px;
+    }
+
+    h6{
+      font-size: 16px;
+      margin-bottom: 5px;
+    }
+
+    ul, ol{
+      margin-bottom: 5px;
+    }
+
+    p{
+      margin-bottom: 5px;
+    }
+
+  }
 
 }

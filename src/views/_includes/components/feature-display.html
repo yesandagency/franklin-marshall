@@ -13,7 +13,7 @@
         {{ data.paragraph | safe }}
 
         {% for cta in data.ctas %}
-        <a href="{{ cta.link }}">{{ cta.caption }}  &raquo;</a><br/>
+        <a class="button" href="{{ cta.link }}">{{ cta.caption }}  &raquo;</a><br/>
         {% endfor %}
 
       </div>

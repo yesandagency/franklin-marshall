@@ -39,21 +39,30 @@
     }
 
     a{
+      color: #FFC300;
+      text-decoration: underline;
+      &:hover{
+        text-decoration: none;
+      }
+    }
+
+    .button{
       height: 40px;
       width: auto;
       display: inline-block;
       padding: 0px 20px;
       border: 1px solid #0C125D;
       background: #FFC300;
-      color: #0C125D;
+      color: #0C125D !important;
       line-height: 40px;
       text-transform: uppercase;
       text-align: center;
       margin-bottom: 5px;
+      text-decoration: none;
     }
 
-    a:hover{
-        color: white;
+    .button:hover{
+        color: white !important;
         background: #0C125D;
         border: 1px solid white;
     }
