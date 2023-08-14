@@ -1,9 +1,8 @@
-.c-quick-links{
+.c-quick-links.c-wysiwyg{
   background: #0C125D;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding: 60px 0px;
 
-  &__contain{
+  .c-quick-links__contain{
     max-width: 80rem;
     width: 100%;
     display: block;
@@ -33,6 +32,7 @@
     margin-bottom: 30px;
 
     p{
+      padding: 0px;
       color: white;
     }
 
@@ -48,7 +48,7 @@
     margin: 30px auto 0px;
 
     li{
-      color: white;
+      color: white !important;
       border-left: 2px dashed #FFC300;
       padding: 10px 0px;
       padding-left: 20px;
@@ -59,6 +59,12 @@
 
       a{
         font-weight: 700;
+        text-decoration: none;
+        color: white;
+
+        &:hover{
+          text-decoration: underline;
+        }
       }
     }
 
@@ -88,41 +94,49 @@
 
 @media screen and (max-width: 890px){
 
-  .c-quick-links .c-quick-links-title h2{
-    font-size: 25px;
-    line-height: 32px;
-  }
+  .c-quick-links.c-wysiwyg{
 
-  .c-quick-links .c-quick-links__list li{
-    width: 100%;
-  }
+    .c-quick-links-title h2{
+      font-size: 25px;
+      line-height: 32px;
+    }
 
-  .c-quick-links .c-quick-links__list{
-    max-width: 680px;
-    margin: 0 auto;
+    .c-quick-links__list li{
+      width: 100%;
+    }
+
+    .c-quick-links__list{
+      max-width: 680px;
+      margin: 0 auto;
+    }
+
   }
 
 }
 
 @media screen and (max-width: 680px){
 
-  .c-quick-links .c-quick-links-title h2{
-    padding: 0px 30px;
-    text-align: left;
-  }
+  .c-quick-links.c-wysiwyg{
 
-  .c-quick-links .c-quick-links-title h2 br{
-    display: none;
-  }
+    .c-quick-links-title h2{
+      padding: 0px 30px;
+      text-align: left;
+    }
 
-  .c-quick-links .c-quick-links-description{
-    text-align: left;
-    max-width: 100%;
-    padding: 0px 30px;
-  }
+    .c-quick-links-title h2 br{
+      display: none;
+    }
 
-  .c-quick-links .c-quick-links-description p{
-    text-align: left;
+    .c-quick-links-description{
+      text-align: left;
+      max-width: 100%;
+      padding: 0px 30px;
+    }
+
+    .c-quick-links-description p{
+      text-align: left;
+    }
+
   }
 
 }

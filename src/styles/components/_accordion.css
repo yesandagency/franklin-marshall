@@ -1,4 +1,4 @@
-.c-accordion-block{
+.c-accordion-block.c-wysiwyg{
   display: block;
   position: relative;
   height: auto;
@@ -7,7 +7,7 @@
   background: #F9F9F9;
   border-top: 2px dashed #FFC300;
 
-  &-wrapper{
+  .c-accordion-block-wrapper{
     max-width: 80rem;
     width: 100%;
     display: block;
@@ -15,7 +15,7 @@
     margin: 0 auto;
   }
 
-  &-title{
+  .c-accordion-block-title{
     display: flex;
     align-items: center;
     position: relative;
@@ -91,12 +91,12 @@
     margin-bottom: 20px;
     position: relative;
     font-size: 18px;
+    padding: 0px;
   }
 
   strong{
     font-weight: 700;
     position: relative;
-    margin-bottom: 20px;
     display: block;
   }
 
@@ -188,6 +188,7 @@
 
     p{
       font-size: 18px;
+      padding: 0px;
 
       strong{
         font-weight: 700;
@@ -245,15 +246,15 @@
     padding: 0px 20px;
     border: 1px solid #0C125D;
     background: #FFC300;
-    color: #0C125D;
+    color: #0C125D !important;
     line-height: 40px;
     font-size: 16px;
-    text-decoration: none;
+    text-decoration: none !important;
     text-transform: uppercase;
     text-align: center;
 
     &:hover{
-      color: white;
+      color: white !important;
       background: #0C125D;
     }
 
@@ -360,34 +361,36 @@
 
 @media screen and (max-width: 890px){
 
-  .c-accordion-block{
+  .c-accordion-block.c-wysiwyg{
     padding: 45px 30px;
+
+    .c-accordion__contents{
+      padding: 30px 0px;
+    }
+
+    .c-accordion-block-title h2{
+      font-size: 25px;
+    }
+
+    .c-accordion__contents{
+      padding: 25px 0px;
+    }
+
+    .c-accordion__heading h3{
+      font-size: 16px;
+      padding-bottom: 10px;
+    }
+
+    .c-accordion__description-contents{
+      font-size: 16px;
+    }
+
+    .c-accordion__description.is-open{
+      padding: 30px 0px;
+    }
   }
 
-  .c-accordion-block .c-accordion__contents{
-    padding: 30px 0px;
-  }
 
-  .c-accordion-block-title h2{
-    font-size: 25px;
-  }
-
-  .c-accordion__contents{
-    padding: 25px 0px;
-  }
-
-  .c-accordion__heading h3{
-    font-size: 16px;
-    padding-bottom: 10px;
-  }
-
-  .c-accordion__description-contents{
-    font-size: 16px;
-  }
-
-  .c-accordion__description.is-open{
-    padding: 30px 0px;
-  }
 
   .two-col .c-accordion__description-contents{
     column-count: 1;
@@ -432,9 +435,10 @@
 
 @media screen and (max-width: 768px){
 
-
-  .c-accordion__heading h3{
-    padding-right: 30px;
+  .c-accordion-block.c-wysiwyg{
+    .c-accordion__heading h3{
+      padding-right: 30px;
+    }
   }
 
 }

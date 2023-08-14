@@ -1,29 +1,42 @@
-.c-cta-wrapper {
+.c-cta-wrapper.c-wysiwyg {
   width: 100%;
   padding: 80px 30px;
+
+  .c-cta-container {
+    @apply max-w-7xl;
+    max-width: 80rem;
+    margin: auto;
+    display: block;
+    position: relative;
+    text-align: center;
+    padding: 60px 0px;
+    border-radius: 10px;
+    overflow: hidden;
+
+    .c-cta-text {
+      position: relative;
+      margin: 0 auto;
+      display: inline-block;
+      padding: 25px 65px;
+      text-transform: uppercase;
+      font-family: LibreFranklin;
+      font-size: 39px;
+      border: 2px solid #FFFFFF;
+      background-color: #FFC300;
+      color: black;
+      text-decoration: none;
+
+      &:hover{
+        text-decoration: underline;
+      }
+
+    }
+
+  }
+
 }
-.c-cta-container {
-  @apply max-w-7xl;
-  max-width: 80rem;
-  margin: auto;
-  display: block;
-  position: relative;
-  text-align: center;
-  padding: 60px 0px;
-  border-radius: 10px;
-  overflow: hidden;
-}
-.c-cta-text {
-  position: relative;
-  margin: 0 auto;
-  display: inline-block;
-  padding: 25px 65px;
-  text-transform: uppercase;
-  font-family: LibreFranklin;
-  font-size: 39px;
-  border: 2px solid #FFFFFF;
-  background-color: #FFC300;
-}
+
+
 
 
 @media screen and (max-width: 768px){

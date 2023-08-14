@@ -1,4 +1,4 @@
-.c-video-block{
+.c-video-block.c-wysiwyg{
 
   display: block;
   position: relative;
@@ -16,6 +16,7 @@
     background: url('/_resources/images/images/three-up-feature-ring.svg') center center no-repeat;
     min-height: 110px;
     margin-top: 45px;
+    padding: 0px;
     margin-bottom: 45px;
 
 
@@ -24,6 +25,7 @@
       text-align: center;
       font-weight: 700;
       color: #0C125D;
+      padding: 0px;
       font-family: "ABCArizonaMix", "Noto Sans HK";
     }
 
@@ -32,26 +34,28 @@
   .c-video-description p{
     font-size: 18px;
     font-style: normal;
+    padding: 0px;
     color: black;
   }
 
 }
 
-.c-video-block .object-cover.adhere{
+.c-video-block.c-wysiwyg .object-cover.adhere{
   display: none !important;
 }
 
-.c-video-block p{
+.c-video-block.c-wysiwyg p{
   font-size: 14px;
   display: block;
   position: relative;
   width: 100%;
-  color: ##707070;
+  padding: 0px;
+  color: #707070;
   margin: 15px 0px 30px;
   font-style: italic;
 }
 
-.c-video-block .w-full{
+.c-video-block.c-wysiwyg .w-full{
   border-radius: 10px;
   overflow: hidden;
 }
@@ -59,7 +63,7 @@
 
 @media screen and (max-width: 890px){
 
-  .c-video-block .c-video-title{
+  .c-video-block.c-wysiwyg .c-video-title{
     background: none;
     text-align: left;
     display: block;
@@ -68,12 +72,12 @@
     min-height: 0px;
   }
 
-  .c-video-block .c-video-title h2{
+  .c-video-block.c-wysiwyg .c-video-title h2{
     font-size: 25px;
     text-align: left;
   }
 
-  .c-video-block .c-video-description p{
+  .c-video-block.c-wysiwyg .c-video-description p{
     font-size: 16px;
   }
 

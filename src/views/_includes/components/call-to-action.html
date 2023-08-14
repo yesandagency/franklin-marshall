@@ -1,10 +1,10 @@
 {% from "macros/svg.html" import svg %}
 
-<section class="c-cta-wrapper bg-primary-lightgray">
+<section class="c-cta-wrapper bg-primary-lightgray c-wysiwyg">
   <div class="c-cta-container m-auto max-w-7xl" style="background: url({{ data.image }}) center center no-repeat;  background-size: cover;">
     <a href="{{ data.link }}" class="c-cta-text bg-primary-gold">
       {{data.title}}
-      {{ svg('arrow-right', 'arrow-icon arrow-icon-black inline-block mb-1 ml-1') }}
+      {{ svg('arrow-right-black', 'arrow-icon arrow-icon-black inline-block mb-1 ml-1') }}
     </a>
   </div>
 </section>
